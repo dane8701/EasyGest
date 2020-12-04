@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace CustomsGestionHoteliere {
+namespace CustomsGestionHoteliere.encientTravail {
     
     
     /// <summary>
@@ -20,9 +20,9 @@ namespace CustomsGestionHoteliere {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("gset_hotelDataSet1")]
+    [global::System.Xml.Serialization.XmlRootAttribute("gset_hotelDataSet2")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class gset_hotelDataSet1 : global::System.Data.DataSet {
+    public partial class gset_hotelDataSet2 : global::System.Data.DataSet {
         
         private agentDataTable tableagent;
         
@@ -54,7 +54,7 @@ namespace CustomsGestionHoteliere {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public gset_hotelDataSet1() {
+        public gset_hotelDataSet2() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -65,7 +65,7 @@ namespace CustomsGestionHoteliere {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected gset_hotelDataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected gset_hotelDataSet2(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -216,7 +216,7 @@ namespace CustomsGestionHoteliere {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            gset_hotelDataSet1 cln = ((gset_hotelDataSet1)(base.Clone()));
+            gset_hotelDataSet2 cln = ((gset_hotelDataSet2)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -340,9 +340,9 @@ namespace CustomsGestionHoteliere {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "gset_hotelDataSet1";
+            this.DataSetName = "gset_hotelDataSet2";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/gset_hotelDataSet1.xsd";
+            this.Namespace = "http://tempuri.org/gset_hotelDataSet2.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableagent = new agentDataTable();
@@ -434,7 +434,7 @@ namespace CustomsGestionHoteliere {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            gset_hotelDataSet1 ds = new gset_hotelDataSet1();
+            gset_hotelDataSet2 ds = new gset_hotelDataSet2();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -825,7 +825,7 @@ namespace CustomsGestionHoteliere {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                gset_hotelDataSet1 ds = new gset_hotelDataSet1();
+                gset_hotelDataSet2 ds = new gset_hotelDataSet2();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1118,7 +1118,7 @@ namespace CustomsGestionHoteliere {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                gset_hotelDataSet1 ds = new gset_hotelDataSet1();
+                gset_hotelDataSet2 ds = new gset_hotelDataSet2();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1197,8 +1197,6 @@ namespace CustomsGestionHoteliere {
             private global::System.Data.DataColumn columnemail;
             
             private global::System.Data.DataColumn columnnationaliter;
-            
-            private global::System.Data.DataColumn columntype_de_client_;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -1291,14 +1289,6 @@ namespace CustomsGestionHoteliere {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn type_de_client_Column {
-                get {
-                    return this.columntype_de_client_;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1334,7 +1324,7 @@ namespace CustomsGestionHoteliere {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public clientRow AddclientRow(string nom_complet_, string sex, string adress, int numero_de_telephone, string email, string nationaliter, string type_de_client_) {
+            public clientRow AddclientRow(string nom_complet_, string sex, string adress, int numero_de_telephone, string email, string nationaliter) {
                 clientRow rowclientRow = ((clientRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1343,8 +1333,7 @@ namespace CustomsGestionHoteliere {
                         adress,
                         numero_de_telephone,
                         email,
-                        nationaliter,
-                        type_de_client_};
+                        nationaliter};
                 rowclientRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowclientRow);
                 return rowclientRow;
@@ -1381,7 +1370,6 @@ namespace CustomsGestionHoteliere {
                 this.columnnumero_de_telephone = base.Columns["numero de telephone"];
                 this.columnemail = base.Columns["email"];
                 this.columnnationaliter = base.Columns["nationaliter"];
-                this.columntype_de_client_ = base.Columns["type de client "];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1401,8 +1389,6 @@ namespace CustomsGestionHoteliere {
                 base.Columns.Add(this.columnemail);
                 this.columnnationaliter = new global::System.Data.DataColumn("nationaliter", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnnationaliter);
-                this.columntype_de_client_ = new global::System.Data.DataColumn("type de client ", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columntype_de_client_);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnId_client}, true));
                 this.columnId_client.AutoIncrement = true;
@@ -1419,8 +1405,6 @@ namespace CustomsGestionHoteliere {
                 this.columnnumero_de_telephone.AllowDBNull = false;
                 this.columnemail.MaxLength = 10;
                 this.columnnationaliter.MaxLength = 10;
-                this.columntype_de_client_.AllowDBNull = false;
-                this.columntype_de_client_.MaxLength = 30;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1488,7 +1472,7 @@ namespace CustomsGestionHoteliere {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                gset_hotelDataSet1 ds = new gset_hotelDataSet1();
+                gset_hotelDataSet2 ds = new gset_hotelDataSet2();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1865,7 +1849,7 @@ namespace CustomsGestionHoteliere {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                gset_hotelDataSet1 ds = new gset_hotelDataSet1();
+                gset_hotelDataSet2 ds = new gset_hotelDataSet2();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2162,7 +2146,7 @@ namespace CustomsGestionHoteliere {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                gset_hotelDataSet1 ds = new gset_hotelDataSet1();
+                gset_hotelDataSet2 ds = new gset_hotelDataSet2();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2588,7 +2572,7 @@ namespace CustomsGestionHoteliere {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                gset_hotelDataSet1 ds = new gset_hotelDataSet1();
+                gset_hotelDataSet2 ds = new gset_hotelDataSet2();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2979,17 +2963,6 @@ namespace CustomsGestionHoteliere {
                 }
                 set {
                     this[this.tableclient.nationaliterColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string type_de_client_ {
-                get {
-                    return ((string)(this[this.tableclient.type_de_client_Column]));
-                }
-                set {
-                    this[this.tableclient.type_de_client_Column] = value;
                 }
             }
             
@@ -3643,7 +3616,7 @@ namespace CustomsGestionHoteliere {
         }
     }
 }
-namespace CustomsGestionHoteliere.gset_hotelDataSet1TableAdapters {
+namespace CustomsGestionHoteliere.encientTravail.gset_hotelDataSet2TableAdapters {
     
     
     /// <summary>
@@ -3844,7 +3817,7 @@ SELECT Id_agt, [nom complet], adress, [sex ], telephone, [fonction de l agent ],
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(gset_hotelDataSet1.agentDataTable dataTable) {
+        public virtual int Fill(gset_hotelDataSet2.agentDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -3857,9 +3830,9 @@ SELECT Id_agt, [nom complet], adress, [sex ], telephone, [fonction de l agent ],
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual gset_hotelDataSet1.agentDataTable GetData() {
+        public virtual gset_hotelDataSet2.agentDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            gset_hotelDataSet1.agentDataTable dataTable = new gset_hotelDataSet1.agentDataTable();
+            gset_hotelDataSet2.agentDataTable dataTable = new gset_hotelDataSet2.agentDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -3867,14 +3840,14 @@ SELECT Id_agt, [nom complet], adress, [sex ], telephone, [fonction de l agent ],
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(gset_hotelDataSet1.agentDataTable dataTable) {
+        public virtual int Update(gset_hotelDataSet2.agentDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(gset_hotelDataSet1 dataSet) {
+        public virtual int Update(gset_hotelDataSet2 dataSet) {
             return this.Adapter.Update(dataSet, "agent");
         }
         
@@ -4299,7 +4272,7 @@ SELECT [id chambre ], [type de chambre], prix FROM chambre WHERE ([id chambre] =
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(gset_hotelDataSet1.chambreDataTable dataTable) {
+        public virtual int Fill(gset_hotelDataSet2.chambreDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -4312,9 +4285,9 @@ SELECT [id chambre ], [type de chambre], prix FROM chambre WHERE ([id chambre] =
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual gset_hotelDataSet1.chambreDataTable GetData() {
+        public virtual gset_hotelDataSet2.chambreDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            gset_hotelDataSet1.chambreDataTable dataTable = new gset_hotelDataSet1.chambreDataTable();
+            gset_hotelDataSet2.chambreDataTable dataTable = new gset_hotelDataSet2.chambreDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -4322,14 +4295,14 @@ SELECT [id chambre ], [type de chambre], prix FROM chambre WHERE ([id chambre] =
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(gset_hotelDataSet1.chambreDataTable dataTable) {
+        public virtual int Update(gset_hotelDataSet2.chambreDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(gset_hotelDataSet1 dataSet) {
+        public virtual int Update(gset_hotelDataSet2 dataSet) {
             return this.Adapter.Update(dataSet, "chambre");
         }
         
@@ -4576,11 +4549,10 @@ SELECT [id chambre ], [type de chambre], prix FROM chambre WHERE ([id chambre] =
             tableMapping.ColumnMappings.Add("numero de telephone", "numero de telephone");
             tableMapping.ColumnMappings.Add("email", "email");
             tableMapping.ColumnMappings.Add("nationaliter", "nationaliter");
-            tableMapping.ColumnMappings.Add("type de client ", "type de client ");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[client] WHERE (([Id_client] = @Original_Id_client) AND ([nom complet ] = @Original_nom_complet_) AND ([sex] = @Original_sex) AND ([numero de telephone] = @Original_numero_de_telephone) AND ((@IsNull_email = 1 AND [email] IS NULL) OR ([email] = @Original_email)) AND ((@IsNull_nationaliter = 1 AND [nationaliter] IS NULL) OR ([nationaliter] = @Original_nationaliter)) AND ([type de client ] = @Original_type_de_client_))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[client] WHERE (([Id_client] = @Original_Id_client) AND ([nom complet ] = @Original_nom_complet_) AND ([sex] = @Original_sex) AND ([numero de telephone] = @Original_numero_de_telephone) AND ((@IsNull_email = 1 AND [email] IS NULL) OR ([email] = @Original_email)) AND ((@IsNull_nationaliter = 1 AND [nationaliter] IS NULL) OR ([nationaliter] = @Original_nationaliter)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_client", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_client", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_nom_complet_", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nom complet ", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -4590,11 +4562,10 @@ SELECT [id chambre ], [type de chambre], prix FROM chambre WHERE ([id chambre] =
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_email", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "email", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_nationaliter", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nationaliter", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_nationaliter", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nationaliter", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_type_de_client_", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "type de client ", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[client] ([nom complet ], [sex], [adress], [numero de telephone], [email], [nationaliter], [type de client ]) VALUES (@nom_complet_, @sex, @adress, @numero_de_telephone, @email, @nationaliter, @type_de_client_);
-SELECT Id_client, [nom complet ], sex, adress, [numero de telephone], email, nationaliter, [type de client ] FROM client WHERE (Id_client = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[client] ([nom complet ], [sex], [adress], [numero de telephone], [email], [nationaliter]) VALUES (@nom_complet_, @sex, @adress, @numero_de_telephone, @email, @nationaliter);
+SELECT Id_client, [nom complet ], sex, adress, [numero de telephone], email, nationaliter FROM client WHERE (Id_client = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nom_complet_", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nom complet ", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@sex", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "sex", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -4602,11 +4573,10 @@ SELECT Id_client, [nom complet ], sex, adress, [numero de telephone], email, nat
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@numero_de_telephone", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "numero de telephone", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@email", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "email", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nationaliter", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nationaliter", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@type_de_client_", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "type de client ", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[client] SET [nom complet ] = @nom_complet_, [sex] = @sex, [adress] = @adress, [numero de telephone] = @numero_de_telephone, [email] = @email, [nationaliter] = @nationaliter, [type de client ] = @type_de_client_ WHERE (([Id_client] = @Original_Id_client) AND ([nom complet ] = @Original_nom_complet_) AND ([sex] = @Original_sex) AND ([numero de telephone] = @Original_numero_de_telephone) AND ((@IsNull_email = 1 AND [email] IS NULL) OR ([email] = @Original_email)) AND ((@IsNull_nationaliter = 1 AND [nationaliter] IS NULL) OR ([nationaliter] = @Original_nationaliter)) AND ([type de client ] = @Original_type_de_client_));
-SELECT Id_client, [nom complet ], sex, adress, [numero de telephone], email, nationaliter, [type de client ] FROM client WHERE (Id_client = @Id_client)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[client] SET [nom complet ] = @nom_complet_, [sex] = @sex, [adress] = @adress, [numero de telephone] = @numero_de_telephone, [email] = @email, [nationaliter] = @nationaliter WHERE (([Id_client] = @Original_Id_client) AND ([nom complet ] = @Original_nom_complet_) AND ([sex] = @Original_sex) AND ([numero de telephone] = @Original_numero_de_telephone) AND ((@IsNull_email = 1 AND [email] IS NULL) OR ([email] = @Original_email)) AND ((@IsNull_nationaliter = 1 AND [nationaliter] IS NULL) OR ([nationaliter] = @Original_nationaliter)));
+SELECT Id_client, [nom complet ], sex, adress, [numero de telephone], email, nationaliter FROM client WHERE (Id_client = @Id_client)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nom_complet_", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nom complet ", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@sex", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "sex", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -4614,7 +4584,6 @@ SELECT Id_client, [nom complet ], sex, adress, [numero de telephone], email, nat
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@numero_de_telephone", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "numero de telephone", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@email", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "email", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nationaliter", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nationaliter", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@type_de_client_", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "type de client ", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_client", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_client", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_nom_complet_", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nom complet ", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_sex", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "sex", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -4623,7 +4592,6 @@ SELECT Id_client, [nom complet ], sex, adress, [numero de telephone], email, nat
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_email", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "email", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_nationaliter", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nationaliter", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_nationaliter", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nationaliter", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_type_de_client_", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "type de client ", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id_client", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Id_client", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -4641,7 +4609,7 @@ SELECT Id_client, [nom complet ], sex, adress, [numero de telephone], email, nat
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT Id_client, [nom complet ], sex, adress, [numero de telephone], email, nati" +
-                "onaliter, [type de client ] FROM dbo.client";
+                "onaliter FROM dbo.client";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -4649,7 +4617,7 @@ SELECT Id_client, [nom complet ], sex, adress, [numero de telephone], email, nat
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(gset_hotelDataSet1.clientDataTable dataTable) {
+        public virtual int Fill(gset_hotelDataSet2.clientDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -4662,9 +4630,9 @@ SELECT Id_client, [nom complet ], sex, adress, [numero de telephone], email, nat
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual gset_hotelDataSet1.clientDataTable GetData() {
+        public virtual gset_hotelDataSet2.clientDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            gset_hotelDataSet1.clientDataTable dataTable = new gset_hotelDataSet1.clientDataTable();
+            gset_hotelDataSet2.clientDataTable dataTable = new gset_hotelDataSet2.clientDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -4672,14 +4640,14 @@ SELECT Id_client, [nom complet ], sex, adress, [numero de telephone], email, nat
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(gset_hotelDataSet1.clientDataTable dataTable) {
+        public virtual int Update(gset_hotelDataSet2.clientDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(gset_hotelDataSet1 dataSet) {
+        public virtual int Update(gset_hotelDataSet2 dataSet) {
             return this.Adapter.Update(dataSet, "client");
         }
         
@@ -4702,7 +4670,7 @@ SELECT Id_client, [nom complet ], sex, adress, [numero de telephone], email, nat
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Id_client, string Original_nom_complet_, string Original_sex, int Original_numero_de_telephone, string Original_email, string Original_nationaliter, string Original_type_de_client_) {
+        public virtual int Delete(int Original_Id_client, string Original_nom_complet_, string Original_sex, int Original_numero_de_telephone, string Original_email, string Original_nationaliter) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Id_client));
             if ((Original_nom_complet_ == null)) {
                 throw new global::System.ArgumentNullException("Original_nom_complet_");
@@ -4733,12 +4701,6 @@ SELECT Id_client, [nom complet ], sex, adress, [numero de telephone], email, nat
                 this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((string)(Original_nationaliter));
             }
-            if ((Original_type_de_client_ == null)) {
-                throw new global::System.ArgumentNullException("Original_type_de_client_");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_type_de_client_));
-            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -4759,7 +4721,7 @@ SELECT Id_client, [nom complet ], sex, adress, [numero de telephone], email, nat
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string nom_complet_, string sex, string adress, int numero_de_telephone, string email, string nationaliter, string type_de_client_) {
+        public virtual int Insert(string nom_complet_, string sex, string adress, int numero_de_telephone, string email, string nationaliter) {
             if ((nom_complet_ == null)) {
                 throw new global::System.ArgumentNullException("nom_complet_");
             }
@@ -4791,12 +4753,6 @@ SELECT Id_client, [nom complet ], sex, adress, [numero de telephone], email, nat
             else {
                 this.Adapter.InsertCommand.Parameters[5].Value = ((string)(nationaliter));
             }
-            if ((type_de_client_ == null)) {
-                throw new global::System.ArgumentNullException("type_de_client_");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(type_de_client_));
-            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -4817,7 +4773,7 @@ SELECT Id_client, [nom complet ], sex, adress, [numero de telephone], email, nat
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string nom_complet_, string sex, string adress, int numero_de_telephone, string email, string nationaliter, string type_de_client_, int Original_Id_client, string Original_nom_complet_, string Original_sex, int Original_numero_de_telephone, string Original_email, string Original_nationaliter, string Original_type_de_client_, int Id_client) {
+        public virtual int Update(string nom_complet_, string sex, string adress, int numero_de_telephone, string email, string nationaliter, int Original_Id_client, string Original_nom_complet_, string Original_sex, int Original_numero_de_telephone, string Original_email, string Original_nationaliter, int Id_client) {
             if ((nom_complet_ == null)) {
                 throw new global::System.ArgumentNullException("nom_complet_");
             }
@@ -4849,49 +4805,37 @@ SELECT Id_client, [nom complet ], sex, adress, [numero de telephone], email, nat
             else {
                 this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(nationaliter));
             }
-            if ((type_de_client_ == null)) {
-                throw new global::System.ArgumentNullException("type_de_client_");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(type_de_client_));
-            }
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_Id_client));
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_Id_client));
             if ((Original_nom_complet_ == null)) {
                 throw new global::System.ArgumentNullException("Original_nom_complet_");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_nom_complet_));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_nom_complet_));
             }
             if ((Original_sex == null)) {
                 throw new global::System.ArgumentNullException("Original_sex");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_sex));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_sex));
             }
-            this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(Original_numero_de_telephone));
+            this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_numero_de_telephone));
             if ((Original_email == null)) {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_email));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_email));
             }
             if ((Original_nationaliter == null)) {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_nationaliter));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_nationaliter));
             }
-            if ((Original_type_de_client_ == null)) {
-                throw new global::System.ArgumentNullException("Original_type_de_client_");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_type_de_client_));
-            }
-            this.Adapter.UpdateCommand.Parameters[16].Value = ((int)(Id_client));
+            this.Adapter.UpdateCommand.Parameters[14].Value = ((int)(Id_client));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -4912,8 +4856,8 @@ SELECT Id_client, [nom complet ], sex, adress, [numero de telephone], email, nat
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string nom_complet_, string sex, string adress, int numero_de_telephone, string email, string nationaliter, string type_de_client_, int Original_Id_client, string Original_nom_complet_, string Original_sex, int Original_numero_de_telephone, string Original_email, string Original_nationaliter, string Original_type_de_client_) {
-            return this.Update(nom_complet_, sex, adress, numero_de_telephone, email, nationaliter, type_de_client_, Original_Id_client, Original_nom_complet_, Original_sex, Original_numero_de_telephone, Original_email, Original_nationaliter, Original_type_de_client_, Original_Id_client);
+        public virtual int Update(string nom_complet_, string sex, string adress, int numero_de_telephone, string email, string nationaliter, int Original_Id_client, string Original_nom_complet_, string Original_sex, int Original_numero_de_telephone, string Original_email, string Original_nationaliter) {
+            return this.Update(nom_complet_, sex, adress, numero_de_telephone, email, nationaliter, Original_Id_client, Original_nom_complet_, Original_sex, Original_numero_de_telephone, Original_email, Original_nationaliter, Original_Id_client);
         }
     }
     
@@ -5116,7 +5060,7 @@ SELECT Id_facture, [date facture ], [montant total ], [mode paiement], Id_client
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(gset_hotelDataSet1.factureDataTable dataTable) {
+        public virtual int Fill(gset_hotelDataSet2.factureDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -5129,9 +5073,9 @@ SELECT Id_facture, [date facture ], [montant total ], [mode paiement], Id_client
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual gset_hotelDataSet1.factureDataTable GetData() {
+        public virtual gset_hotelDataSet2.factureDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            gset_hotelDataSet1.factureDataTable dataTable = new gset_hotelDataSet1.factureDataTable();
+            gset_hotelDataSet2.factureDataTable dataTable = new gset_hotelDataSet2.factureDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5139,14 +5083,14 @@ SELECT Id_facture, [date facture ], [montant total ], [mode paiement], Id_client
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(gset_hotelDataSet1.factureDataTable dataTable) {
+        public virtual int Update(gset_hotelDataSet2.factureDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(gset_hotelDataSet1 dataSet) {
+        public virtual int Update(gset_hotelDataSet2 dataSet) {
             return this.Adapter.Update(dataSet, "facture");
         }
         
@@ -5480,7 +5424,7 @@ SELECT Id_formul, [formule chambre], [prix formule] FROM formule_chambre WHERE (
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(gset_hotelDataSet1.formule_chambreDataTable dataTable) {
+        public virtual int Fill(gset_hotelDataSet2.formule_chambreDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -5493,9 +5437,9 @@ SELECT Id_formul, [formule chambre], [prix formule] FROM formule_chambre WHERE (
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual gset_hotelDataSet1.formule_chambreDataTable GetData() {
+        public virtual gset_hotelDataSet2.formule_chambreDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            gset_hotelDataSet1.formule_chambreDataTable dataTable = new gset_hotelDataSet1.formule_chambreDataTable();
+            gset_hotelDataSet2.formule_chambreDataTable dataTable = new gset_hotelDataSet2.formule_chambreDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5503,14 +5447,14 @@ SELECT Id_formul, [formule chambre], [prix formule] FROM formule_chambre WHERE (
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(gset_hotelDataSet1.formule_chambreDataTable dataTable) {
+        public virtual int Update(gset_hotelDataSet2.formule_chambreDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(gset_hotelDataSet1 dataSet) {
+        public virtual int Update(gset_hotelDataSet2 dataSet) {
             return this.Adapter.Update(dataSet, "formule_chambre");
         }
         
@@ -5843,7 +5787,7 @@ SELECT Id_reservation, [date de reservation], [date de debut du sejour], [date d
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(gset_hotelDataSet1.reservationDataTable dataTable) {
+        public virtual int Fill(gset_hotelDataSet2.reservationDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -5856,9 +5800,9 @@ SELECT Id_reservation, [date de reservation], [date de debut du sejour], [date d
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual gset_hotelDataSet1.reservationDataTable GetData() {
+        public virtual gset_hotelDataSet2.reservationDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            gset_hotelDataSet1.reservationDataTable dataTable = new gset_hotelDataSet1.reservationDataTable();
+            gset_hotelDataSet2.reservationDataTable dataTable = new gset_hotelDataSet2.reservationDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5866,14 +5810,14 @@ SELECT Id_reservation, [date de reservation], [date de debut du sejour], [date d
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(gset_hotelDataSet1.reservationDataTable dataTable) {
+        public virtual int Update(gset_hotelDataSet2.reservationDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(gset_hotelDataSet1 dataSet) {
+        public virtual int Update(gset_hotelDataSet2 dataSet) {
             return this.Adapter.Update(dataSet, "reservation");
         }
         
@@ -6268,7 +6212,7 @@ SELECT Id_reservation, [date de reservation], [date de debut du sejour], [date d
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(gset_hotelDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(gset_hotelDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._agentTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.agent.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -6332,7 +6276,7 @@ SELECT Id_reservation, [date de reservation], [date de debut du sejour], [date d
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(gset_hotelDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(gset_hotelDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._agentTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.agent.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -6390,7 +6334,7 @@ SELECT Id_reservation, [date de reservation], [date de debut du sejour], [date d
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(gset_hotelDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(gset_hotelDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._factureTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.facture.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -6472,7 +6416,7 @@ SELECT Id_reservation, [date de reservation], [date de debut du sejour], [date d
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(gset_hotelDataSet1 dataSet) {
+        public virtual int UpdateAll(gset_hotelDataSet2 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

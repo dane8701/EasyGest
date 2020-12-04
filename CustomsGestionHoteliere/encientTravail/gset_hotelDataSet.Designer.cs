@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace CustomsGestionHoteliere {
+namespace CustomsGestionHoteliere.encientTravail {
     
     
     /// <summary>
@@ -3690,7 +3690,7 @@ namespace CustomsGestionHoteliere {
         }
     }
 }
-namespace CustomsGestionHoteliere.gset_hotelDataSetTableAdapters {
+namespace CustomsGestionHoteliere.encientTravail.gset_hotelDataSetTableAdapters {
     
     
     /// <summary>
