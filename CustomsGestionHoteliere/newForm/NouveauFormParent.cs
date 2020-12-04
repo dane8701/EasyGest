@@ -16,5 +16,10 @@ namespace CustomsGestionHoteliere
         {
             InitializeComponent();
         }
+
+        private void btCLose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

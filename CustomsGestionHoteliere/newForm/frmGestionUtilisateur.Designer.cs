@@ -60,7 +60,7 @@
             // 
             // bunifuFlatButton2
             // 
-            this.bunifuFlatButton2.Active = false;
+            //this.bunifuFlatButton2.Active = false;
             this.bunifuFlatButton2.Activecolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -104,7 +104,7 @@
             // 
             // bunifuFlatButton1
             // 
-            this.bunifuFlatButton1.Active = false;
+            //this.bunifuFlatButton1.Active = false;
             this.bunifuFlatButton1.Activecolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;

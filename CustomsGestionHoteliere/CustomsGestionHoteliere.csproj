@@ -291,6 +291,11 @@
   <ItemGroup>
     <None Include="Resources\pexels-julie-aagaard-2351274.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\client_management_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_48px.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
