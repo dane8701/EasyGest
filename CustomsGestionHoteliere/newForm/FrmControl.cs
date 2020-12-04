@@ -57,5 +57,35 @@ namespace CustomsGestionHoteliere
             Form f = new FrmGestionPlats();
             f.Show();
         }
+
+        private void guna2GradientTileButton6_Click(object sender, EventArgs e)
+        {
+            Form f = new FrmGestionMenu();
+            f.Show();
+        }
+
+        private void guna2GradientTileButton7_Click(object sender, EventArgs e)
+        {
+            Form f = new FrmGestionTable();
+            f.Show();
+        }
+
+        private void guna2GradientTileButton3_Click(object sender, EventArgs e)
+        {
+            Form f = new FrmGestionReservation();
+            f.Show();
+        }
+
+        private void guna2GradientTileButton10_Click(object sender, EventArgs e)
+        {
+            Form f = new FrmGestionBoisson();
+            f.Show();
+        }
+
+        private void guna2GradientTileButton2_Click(object sender, EventArgs e)
+        {
+            Form f = new FrmGestionCommande();
+            f.Show();
+        }
     }
 }

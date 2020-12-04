@@ -96,7 +96,7 @@ namespace CustomsGestionHoteliere.newForm
             this.txtidTypePlat.FocusedState.Parent = this.txtidTypePlat;
             this.txtidTypePlat.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtidTypePlat.HoverState.Parent = this.txtidTypePlat;
-            this.txtidTypePlat.Location = new System.Drawing.Point(579, 105);
+            this.txtidTypePlat.Location = new System.Drawing.Point(592, 180);
             this.txtidTypePlat.Name = "txtidTypePlat";
             this.txtidTypePlat.PasswordChar = '\0';
             this.txtidTypePlat.PlaceholderText = "";
@@ -104,7 +104,7 @@ namespace CustomsGestionHoteliere.newForm
             this.txtidTypePlat.SelectionStart = 12;
             this.txtidTypePlat.ShadowDecoration.Parent = this.txtidTypePlat;
             this.txtidTypePlat.Size = new System.Drawing.Size(211, 36);
-            this.txtidTypePlat.TabIndex = 76;
+            this.txtidTypePlat.TabIndex = 7;
             // 
             // txtStatut
             // 
@@ -121,7 +121,7 @@ namespace CustomsGestionHoteliere.newForm
             this.txtStatut.FocusedState.Parent = this.txtStatut;
             this.txtStatut.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtStatut.HoverState.Parent = this.txtStatut;
-            this.txtStatut.Location = new System.Drawing.Point(579, 174);
+            this.txtStatut.Location = new System.Drawing.Point(592, 249);
             this.txtStatut.Name = "txtStatut";
             this.txtStatut.PasswordChar = '\0';
             this.txtStatut.PlaceholderText = "";
@@ -129,7 +129,7 @@ namespace CustomsGestionHoteliere.newForm
             this.txtStatut.SelectionStart = 6;
             this.txtStatut.ShadowDecoration.Parent = this.txtStatut;
             this.txtStatut.Size = new System.Drawing.Size(211, 36);
-            this.txtStatut.TabIndex = 75;
+            this.txtStatut.TabIndex = 8;
             // 
             // txtidTypeMenu
             // 
@@ -146,7 +146,7 @@ namespace CustomsGestionHoteliere.newForm
             this.txtidTypeMenu.FocusedState.Parent = this.txtidTypeMenu;
             this.txtidTypeMenu.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtidTypeMenu.HoverState.Parent = this.txtidTypeMenu;
-            this.txtidTypeMenu.Location = new System.Drawing.Point(292, 105);
+            this.txtidTypeMenu.Location = new System.Drawing.Point(305, 180);
             this.txtidTypeMenu.Name = "txtidTypeMenu";
             this.txtidTypeMenu.PasswordChar = '\0';
             this.txtidTypeMenu.PlaceholderText = "";
@@ -154,7 +154,7 @@ namespace CustomsGestionHoteliere.newForm
             this.txtidTypeMenu.SelectionStart = 12;
             this.txtidTypeMenu.ShadowDecoration.Parent = this.txtidTypeMenu;
             this.txtidTypeMenu.Size = new System.Drawing.Size(211, 36);
-            this.txtidTypeMenu.TabIndex = 74;
+            this.txtidTypeMenu.TabIndex = 5;
             // 
             // txtidTypeTable
             // 
@@ -171,7 +171,7 @@ namespace CustomsGestionHoteliere.newForm
             this.txtidTypeTable.FocusedState.Parent = this.txtidTypeTable;
             this.txtidTypeTable.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtidTypeTable.HoverState.Parent = this.txtidTypeTable;
-            this.txtidTypeTable.Location = new System.Drawing.Point(23, 105);
+            this.txtidTypeTable.Location = new System.Drawing.Point(36, 180);
             this.txtidTypeTable.Name = "txtidTypeTable";
             this.txtidTypeTable.PasswordChar = '\0';
             this.txtidTypeTable.PlaceholderText = "";
@@ -179,7 +179,7 @@ namespace CustomsGestionHoteliere.newForm
             this.txtidTypeTable.SelectionStart = 13;
             this.txtidTypeTable.ShadowDecoration.Parent = this.txtidTypeTable;
             this.txtidTypeTable.Size = new System.Drawing.Size(200, 36);
-            this.txtidTypeTable.TabIndex = 73;
+            this.txtidTypeTable.TabIndex = 1;
             // 
             // txtidTypeBoisson
             // 
@@ -196,7 +196,7 @@ namespace CustomsGestionHoteliere.newForm
             this.txtidTypeBoisson.FocusedState.Parent = this.txtidTypeBoisson;
             this.txtidTypeBoisson.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtidTypeBoisson.HoverState.Parent = this.txtidTypeBoisson;
-            this.txtidTypeBoisson.Location = new System.Drawing.Point(22, 243);
+            this.txtidTypeBoisson.Location = new System.Drawing.Point(35, 318);
             this.txtidTypeBoisson.Name = "txtidTypeBoisson";
             this.txtidTypeBoisson.PasswordChar = '\0';
             this.txtidTypeBoisson.PlaceholderText = "";
@@ -204,7 +204,7 @@ namespace CustomsGestionHoteliere.newForm
             this.txtidTypeBoisson.SelectionStart = 15;
             this.txtidTypeBoisson.ShadowDecoration.Parent = this.txtidTypeBoisson;
             this.txtidTypeBoisson.Size = new System.Drawing.Size(200, 36);
-            this.txtidTypeBoisson.TabIndex = 72;
+            this.txtidTypeBoisson.TabIndex = 3;
             // 
             // txtTypeBoisson
             // 
@@ -221,7 +221,7 @@ namespace CustomsGestionHoteliere.newForm
             this.txtTypeBoisson.FocusedState.Parent = this.txtTypeBoisson;
             this.txtTypeBoisson.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTypeBoisson.HoverState.Parent = this.txtTypeBoisson;
-            this.txtTypeBoisson.Location = new System.Drawing.Point(23, 174);
+            this.txtTypeBoisson.Location = new System.Drawing.Point(36, 249);
             this.txtTypeBoisson.Name = "txtTypeBoisson";
             this.txtTypeBoisson.PasswordChar = '\0';
             this.txtTypeBoisson.PlaceholderText = "";
@@ -229,7 +229,7 @@ namespace CustomsGestionHoteliere.newForm
             this.txtTypeBoisson.SelectionStart = 12;
             this.txtTypeBoisson.ShadowDecoration.Parent = this.txtTypeBoisson;
             this.txtTypeBoisson.Size = new System.Drawing.Size(200, 36);
-            this.txtTypeBoisson.TabIndex = 71;
+            this.txtTypeBoisson.TabIndex = 2;
             // 
             // guna2Button16
             // 
@@ -243,12 +243,12 @@ namespace CustomsGestionHoteliere.newForm
             this.guna2Button16.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button16.ForeColor = System.Drawing.Color.White;
             this.guna2Button16.HoverState.Parent = this.guna2Button16;
-            this.guna2Button16.Location = new System.Drawing.Point(292, 243);
+            this.guna2Button16.Location = new System.Drawing.Point(305, 318);
             this.guna2Button16.Name = "guna2Button16";
             this.guna2Button16.ShadowDecoration.Parent = this.guna2Button16;
             this.guna2Button16.Size = new System.Drawing.Size(211, 45);
-            this.guna2Button16.TabIndex = 70;
-            this.guna2Button16.Text = "enregistrer";
+            this.guna2Button16.TabIndex = 10;
+            this.guna2Button16.Text = "Enregistrer";
             this.guna2Button16.Click += new System.EventHandler(this.guna2Button16_Click);
             // 
             // txtTypeMenu
@@ -266,7 +266,7 @@ namespace CustomsGestionHoteliere.newForm
             this.txtTypeMenu.FocusedState.Parent = this.txtTypeMenu;
             this.txtTypeMenu.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTypeMenu.HoverState.Parent = this.txtTypeMenu;
-            this.txtTypeMenu.Location = new System.Drawing.Point(292, 41);
+            this.txtTypeMenu.Location = new System.Drawing.Point(305, 116);
             this.txtTypeMenu.Name = "txtTypeMenu";
             this.txtTypeMenu.PasswordChar = '\0';
             this.txtTypeMenu.PlaceholderText = "";
@@ -274,7 +274,7 @@ namespace CustomsGestionHoteliere.newForm
             this.txtTypeMenu.SelectionStart = 9;
             this.txtTypeMenu.ShadowDecoration.Parent = this.txtTypeMenu;
             this.txtTypeMenu.Size = new System.Drawing.Size(211, 36);
-            this.txtTypeMenu.TabIndex = 69;
+            this.txtTypeMenu.TabIndex = 4;
             // 
             // txtTypePlat
             // 
@@ -291,7 +291,7 @@ namespace CustomsGestionHoteliere.newForm
             this.txtTypePlat.FocusedState.Parent = this.txtTypePlat;
             this.txtTypePlat.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTypePlat.HoverState.Parent = this.txtTypePlat;
-            this.txtTypePlat.Location = new System.Drawing.Point(579, 41);
+            this.txtTypePlat.Location = new System.Drawing.Point(592, 116);
             this.txtTypePlat.Name = "txtTypePlat";
             this.txtTypePlat.PasswordChar = '\0';
             this.txtTypePlat.PlaceholderText = "";
@@ -299,7 +299,7 @@ namespace CustomsGestionHoteliere.newForm
             this.txtTypePlat.SelectionStart = 9;
             this.txtTypePlat.ShadowDecoration.Parent = this.txtTypePlat;
             this.txtTypePlat.Size = new System.Drawing.Size(211, 36);
-            this.txtTypePlat.TabIndex = 68;
+            this.txtTypePlat.TabIndex = 6;
             // 
             // txtTypeTable
             // 
@@ -316,7 +316,7 @@ namespace CustomsGestionHoteliere.newForm
             this.txtTypeTable.FocusedState.Parent = this.txtTypeTable;
             this.txtTypeTable.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTypeTable.HoverState.Parent = this.txtTypeTable;
-            this.txtTypeTable.Location = new System.Drawing.Point(23, 41);
+            this.txtTypeTable.Location = new System.Drawing.Point(36, 116);
             this.txtTypeTable.Name = "txtTypeTable";
             this.txtTypeTable.PasswordChar = '\0';
             this.txtTypeTable.PlaceholderText = "";
@@ -324,7 +324,7 @@ namespace CustomsGestionHoteliere.newForm
             this.txtTypeTable.SelectionStart = 10;
             this.txtTypeTable.ShadowDecoration.Parent = this.txtTypeTable;
             this.txtTypeTable.Size = new System.Drawing.Size(200, 36);
-            this.txtTypeTable.TabIndex = 66;
+            this.txtTypeTable.TabIndex = 0;
             // 
             // txtidStatut
             // 
@@ -341,7 +341,7 @@ namespace CustomsGestionHoteliere.newForm
             this.txtidStatut.FocusedState.Parent = this.txtidStatut;
             this.txtidStatut.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtidStatut.HoverState.Parent = this.txtidStatut;
-            this.txtidStatut.Location = new System.Drawing.Point(579, 243);
+            this.txtidStatut.Location = new System.Drawing.Point(592, 318);
             this.txtidStatut.Name = "txtidStatut";
             this.txtidStatut.PasswordChar = '\0';
             this.txtidStatut.PlaceholderText = "";
@@ -349,7 +349,7 @@ namespace CustomsGestionHoteliere.newForm
             this.txtidStatut.SelectionStart = 9;
             this.txtidStatut.ShadowDecoration.Parent = this.txtidStatut;
             this.txtidStatut.Size = new System.Drawing.Size(211, 36);
-            this.txtidStatut.TabIndex = 62;
+            this.txtidStatut.TabIndex = 9;
             // 
             // bunifuFlatButton1
             // 
@@ -397,6 +397,7 @@ namespace CustomsGestionHoteliere.newForm
             // 
             // FrmGestionParametre
             // 
+            this.AcceptButton = this.guna2Button16;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(871, 577);

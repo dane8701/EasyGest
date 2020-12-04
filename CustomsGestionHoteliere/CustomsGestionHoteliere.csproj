@@ -102,11 +102,11 @@
     <Compile Include="newForm\FrmGestionClient.Designer.cs">
       <DependentUpon>FrmGestionClient.cs</DependentUpon>
     </Compile>
-    <Compile Include="newForm\frmGestionCommande.cs">
+    <Compile Include="newForm\FrmGestionCommande.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="newForm\frmGestionCommande.Designer.cs">
-      <DependentUpon>frmGestionCommande.cs</DependentUpon>
+    <Compile Include="newForm\FrmGestionCommande.Designer.cs">
+      <DependentUpon>FrmGestionCommande.cs</DependentUpon>
     </Compile>
     <Compile Include="newForm\FrmGestionFactures.cs">
       <SubType>Form</SubType>
@@ -114,11 +114,11 @@
     <Compile Include="newForm\FrmGestionFactures.Designer.cs">
       <DependentUpon>FrmGestionFactures.cs</DependentUpon>
     </Compile>
-    <Compile Include="newForm\frmGestionMenu.cs">
+    <Compile Include="newForm\FrmGestionMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="newForm\frmGestionMenu.Designer.cs">
-      <DependentUpon>frmGestionMenu.cs</DependentUpon>
+    <Compile Include="newForm\FrmGestionMenu.Designer.cs">
+      <DependentUpon>FrmGestionMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="newForm\FrmGestionParametre.cs">
       <SubType>Form</SubType>
@@ -237,14 +237,14 @@
     <EmbeddedResource Include="newForm\FrmGestionClient.resx">
       <DependentUpon>FrmGestionClient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="newForm\frmGestionCommande.resx">
-      <DependentUpon>frmGestionCommande.cs</DependentUpon>
+    <EmbeddedResource Include="newForm\FrmGestionCommande.resx">
+      <DependentUpon>FrmGestionCommande.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="newForm\FrmGestionFactures.resx">
       <DependentUpon>FrmGestionFactures.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="newForm\frmGestionMenu.resx">
-      <DependentUpon>frmGestionMenu.cs</DependentUpon>
+    <EmbeddedResource Include="newForm\FrmGestionMenu.resx">
+      <DependentUpon>FrmGestionMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="newForm\FrmGestionParametre.resx">
       <DependentUpon>FrmGestionParametre.cs</DependentUpon>
@@ -383,6 +383,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cocktail_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-julie-aagaard-235127464.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

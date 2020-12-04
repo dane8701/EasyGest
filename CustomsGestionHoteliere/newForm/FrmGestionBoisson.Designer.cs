@@ -35,7 +35,6 @@
             this.AjouterBoisson = new System.Windows.Forms.TabPage();
             this.LinkFermer = new Guna.UI.WinForms.GunaLinkLabel();
             this.txtPhoto = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.txtIdBoisson = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnEnregistrer = new Guna.UI2.WinForms.Guna2Button();
             this.txtPrixBoisson = new Guna.UI2.WinForms.Guna2TextBox();
@@ -44,16 +43,17 @@
             this.ListeBoisson = new System.Windows.Forms.TabPage();
             this.bunifuCustomDataGrid4 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.slider = new System.Windows.Forms.PictureBox();
             this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.slider = new System.Windows.Forms.PictureBox();
+            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
             this.materialTabControl1.SuspendLayout();
             this.AjouterBoisson.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.ListeBoisson.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.slider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -82,9 +82,9 @@
             this.AjouterBoisson.Location = new System.Drawing.Point(4, 22);
             this.AjouterBoisson.Name = "AjouterBoisson";
             this.AjouterBoisson.Padding = new System.Windows.Forms.Padding(3);
-            this.AjouterBoisson.Size = new System.Drawing.Size(718, 418);
+            this.AjouterBoisson.Size = new System.Drawing.Size(851, 476);
             this.AjouterBoisson.TabIndex = 0;
-            this.AjouterBoisson.Text = "AjouterBoisson";
+            this.AjouterBoisson.Text = "Ajouter Boisson";
             this.AjouterBoisson.Click += new System.EventHandler(this.AjouterBoisson_Click);
             // 
             // LinkFermer
@@ -117,18 +117,6 @@
             this.txtPhoto.TabIndex = 75;
             this.txtPhoto.Text = "Photo";
             // 
-            // gunaPictureBox1
-            // 
-            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.gunaPictureBox1.Location = new System.Drawing.Point(465, 102);
-            this.gunaPictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(218, 221);
-            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.gunaPictureBox1.TabIndex = 74;
-            this.gunaPictureBox1.TabStop = false;
-            // 
             // txtIdBoisson
             // 
             this.txtIdBoisson.BorderColor = System.Drawing.Color.Indigo;
@@ -153,7 +141,7 @@
             this.txtIdBoisson.SelectionStart = 9;
             this.txtIdBoisson.ShadowDecoration.Parent = this.txtIdBoisson;
             this.txtIdBoisson.Size = new System.Drawing.Size(300, 46);
-            this.txtIdBoisson.TabIndex = 73;
+            this.txtIdBoisson.TabIndex = 0;
             // 
             // btnEnregistrer
             // 
@@ -171,7 +159,7 @@
             this.btnEnregistrer.Name = "btnEnregistrer";
             this.btnEnregistrer.ShadowDecoration.Parent = this.btnEnregistrer;
             this.btnEnregistrer.Size = new System.Drawing.Size(188, 45);
-            this.btnEnregistrer.TabIndex = 70;
+            this.btnEnregistrer.TabIndex = 3;
             this.btnEnregistrer.Text = "Enregistrer";
             this.btnEnregistrer.Click += new System.EventHandler(this.btnEnregistrer_Click);
             // 
@@ -199,7 +187,7 @@
             this.txtPrixBoisson.SelectionStart = 11;
             this.txtPrixBoisson.ShadowDecoration.Parent = this.txtPrixBoisson;
             this.txtPrixBoisson.Size = new System.Drawing.Size(300, 36);
-            this.txtPrixBoisson.TabIndex = 69;
+            this.txtPrixBoisson.TabIndex = 2;
             // 
             // txtNomBoisson
             // 
@@ -225,7 +213,7 @@
             this.txtNomBoisson.SelectionStart = 10;
             this.txtNomBoisson.ShadowDecoration.Parent = this.txtNomBoisson;
             this.txtNomBoisson.Size = new System.Drawing.Size(300, 36);
-            this.txtNomBoisson.TabIndex = 66;
+            this.txtNomBoisson.TabIndex = 1;
             // 
             // bunifuCustomLabel5
             // 
@@ -248,7 +236,7 @@
             this.ListeBoisson.Padding = new System.Windows.Forms.Padding(3);
             this.ListeBoisson.Size = new System.Drawing.Size(851, 476);
             this.ListeBoisson.TabIndex = 1;
-            this.ListeBoisson.Text = "ListeBoisson";
+            this.ListeBoisson.Text = "Liste Boisson";
             // 
             // bunifuCustomDataGrid4
             // 
@@ -301,7 +289,7 @@
             this.bunifuFlatButton2.IconVisible = true;
             this.bunifuFlatButton2.IconZoom = 90D;
             this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(173, 12);
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(187, 12);
             this.bunifuFlatButton2.Name = "bunifuFlatButton2";
             this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.Transparent;
@@ -313,15 +301,6 @@
             this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton2.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
             this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // slider
-            // 
-            this.slider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(106)))), ((int)(((byte)(79)))));
-            this.slider.Location = new System.Drawing.Point(4, 47);
-            this.slider.Name = "slider";
-            this.slider.Size = new System.Drawing.Size(94, 10);
-            this.slider.TabIndex = 22;
-            this.slider.TabStop = false;
             // 
             // bunifuFlatButton3
             // 
@@ -350,7 +329,7 @@
             this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(106)))), ((int)(((byte)(79)))));
             this.bunifuFlatButton3.selected = false;
-            this.bunifuFlatButton3.Size = new System.Drawing.Size(153, 30);
+            this.bunifuFlatButton3.Size = new System.Drawing.Size(177, 30);
             this.bunifuFlatButton3.TabIndex = 21;
             this.bunifuFlatButton3.Text = "Ajouter Boisson";
             this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -374,6 +353,27 @@
             this.guna2GradientButton4.Size = new System.Drawing.Size(108, 45);
             this.guna2GradientButton4.TabIndex = 16;
             this.guna2GradientButton4.Text = "Rechercher";
+            // 
+            // slider
+            // 
+            this.slider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(106)))), ((int)(((byte)(79)))));
+            this.slider.Location = new System.Drawing.Point(4, 47);
+            this.slider.Name = "slider";
+            this.slider.Size = new System.Drawing.Size(160, 10);
+            this.slider.TabIndex = 22;
+            this.slider.TabStop = false;
+            // 
+            // gunaPictureBox1
+            // 
+            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.gunaPictureBox1.Location = new System.Drawing.Point(465, 102);
+            this.gunaPictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.gunaPictureBox1.Name = "gunaPictureBox1";
+            this.gunaPictureBox1.Size = new System.Drawing.Size(218, 221);
+            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gunaPictureBox1.TabIndex = 74;
+            this.gunaPictureBox1.TabStop = false;
             // 
             // guna2TextBox4
             // 
@@ -404,6 +404,7 @@
             // 
             // FrmGestionBoisson
             // 
+            this.AcceptButton = this.btnEnregistrer;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(244)))));
@@ -419,10 +420,10 @@
             this.materialTabControl1.ResumeLayout(false);
             this.AjouterBoisson.ResumeLayout(false);
             this.AjouterBoisson.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             this.ListeBoisson.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.slider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

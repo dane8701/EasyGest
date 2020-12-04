@@ -1,6 +1,6 @@
 ﻿namespace CustomsGestionHoteliere.newForm
 {
-    partial class frmGestionCommande
+    partial class FrmGestionCommande
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGestionCommande));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGestionCommande));
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.AjouterUtilisateur = new System.Windows.Forms.TabPage();
@@ -42,8 +42,8 @@
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtPrixGlobal = new Guna.UI2.WinForms.Guna2TextBox();
             this.ListeCommande = new System.Windows.Forms.TabPage();
-            this.bunifuCustomDataGrid4 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.bunifuCustomDataGrid4 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
             this.materialTabControl1.SuspendLayout();
             this.AjouterUtilisateur.SuspendLayout();
@@ -74,7 +74,7 @@
             this.bunifuFlatButton1.IconZoom = 90D;
             this.bunifuFlatButton1.IsTab = false;
             this.bunifuFlatButton1.Location = new System.Drawing.Point(256, 2);
-            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.Transparent;
@@ -111,8 +111,8 @@
             this.AjouterUtilisateur.Controls.Add(this.txtPrixGlobal);
             this.AjouterUtilisateur.Location = new System.Drawing.Point(4, 22);
             this.AjouterUtilisateur.Name = "AjouterUtilisateur";
-            this.AjouterUtilisateur.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.AjouterUtilisateur.Size = new System.Drawing.Size(739, 422);
+            this.AjouterUtilisateur.Padding = new System.Windows.Forms.Padding(3);
+            this.AjouterUtilisateur.Size = new System.Drawing.Size(850, 490);
             this.AjouterUtilisateur.TabIndex = 0;
             this.AjouterUtilisateur.Text = "AjouterCommande";
             this.AjouterUtilisateur.Click += new System.EventHandler(this.addUtilisateur_Click);
@@ -127,13 +127,13 @@
             this.cbDatefCommande.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.cbDatefCommande.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.cbDatefCommande.HoverState.Parent = this.cbDatefCommande;
-            this.cbDatefCommande.Location = new System.Drawing.Point(408, 59);
+            this.cbDatefCommande.Location = new System.Drawing.Point(444, 74);
             this.cbDatefCommande.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.cbDatefCommande.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.cbDatefCommande.Name = "cbDatefCommande";
             this.cbDatefCommande.ShadowDecoration.Parent = this.cbDatefCommande;
             this.cbDatefCommande.Size = new System.Drawing.Size(200, 36);
-            this.cbDatefCommande.TabIndex = 72;
+            this.cbDatefCommande.TabIndex = 1;
             this.cbDatefCommande.Value = new System.DateTime(2020, 8, 29, 0, 0, 0, 0);
             // 
             // txtQuantite
@@ -151,8 +151,8 @@
             this.txtQuantite.FocusedState.Parent = this.txtQuantite;
             this.txtQuantite.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtQuantite.HoverState.Parent = this.txtQuantite;
-            this.txtQuantite.Location = new System.Drawing.Point(125, 144);
-            this.txtQuantite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtQuantite.Location = new System.Drawing.Point(161, 159);
+            this.txtQuantite.Margin = new System.Windows.Forms.Padding(4);
             this.txtQuantite.Name = "txtQuantite";
             this.txtQuantite.PasswordChar = '\0';
             this.txtQuantite.PlaceholderText = "";
@@ -160,7 +160,7 @@
             this.txtQuantite.SelectionStart = 8;
             this.txtQuantite.ShadowDecoration.Parent = this.txtQuantite;
             this.txtQuantite.Size = new System.Drawing.Size(483, 36);
-            this.txtQuantite.TabIndex = 71;
+            this.txtQuantite.TabIndex = 2;
             // 
             // btnEnregistrer
             // 
@@ -174,11 +174,11 @@
             this.btnEnregistrer.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnEnregistrer.ForeColor = System.Drawing.Color.White;
             this.btnEnregistrer.HoverState.Parent = this.btnEnregistrer;
-            this.btnEnregistrer.Location = new System.Drawing.Point(280, 360);
+            this.btnEnregistrer.Location = new System.Drawing.Point(316, 375);
             this.btnEnregistrer.Name = "btnEnregistrer";
             this.btnEnregistrer.ShadowDecoration.Parent = this.btnEnregistrer;
             this.btnEnregistrer.Size = new System.Drawing.Size(188, 45);
-            this.btnEnregistrer.TabIndex = 70;
+            this.btnEnregistrer.TabIndex = 5;
             this.btnEnregistrer.Text = "Enregistrer";
             // 
             // txtPrixUnitaire
@@ -196,8 +196,8 @@
             this.txtPrixUnitaire.FocusedState.Parent = this.txtPrixUnitaire;
             this.txtPrixUnitaire.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPrixUnitaire.HoverState.Parent = this.txtPrixUnitaire;
-            this.txtPrixUnitaire.Location = new System.Drawing.Point(125, 245);
-            this.txtPrixUnitaire.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPrixUnitaire.Location = new System.Drawing.Point(161, 260);
+            this.txtPrixUnitaire.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrixUnitaire.Name = "txtPrixUnitaire";
             this.txtPrixUnitaire.PasswordChar = '\0';
             this.txtPrixUnitaire.PlaceholderText = "";
@@ -205,7 +205,7 @@
             this.txtPrixUnitaire.SelectionStart = 12;
             this.txtPrixUnitaire.ShadowDecoration.Parent = this.txtPrixUnitaire;
             this.txtPrixUnitaire.Size = new System.Drawing.Size(200, 36);
-            this.txtPrixUnitaire.TabIndex = 67;
+            this.txtPrixUnitaire.TabIndex = 3;
             // 
             // txtIdCommande
             // 
@@ -222,8 +222,8 @@
             this.txtIdCommande.FocusedState.Parent = this.txtIdCommande;
             this.txtIdCommande.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtIdCommande.HoverState.Parent = this.txtIdCommande;
-            this.txtIdCommande.Location = new System.Drawing.Point(125, 59);
-            this.txtIdCommande.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIdCommande.Location = new System.Drawing.Point(161, 74);
+            this.txtIdCommande.Margin = new System.Windows.Forms.Padding(4);
             this.txtIdCommande.Name = "txtIdCommande";
             this.txtIdCommande.PasswordChar = '\0';
             this.txtIdCommande.PlaceholderText = "";
@@ -231,14 +231,14 @@
             this.txtIdCommande.SelectionStart = 11;
             this.txtIdCommande.ShadowDecoration.Parent = this.txtIdCommande;
             this.txtIdCommande.Size = new System.Drawing.Size(200, 36);
-            this.txtIdCommande.TabIndex = 66;
+            this.txtIdCommande.TabIndex = 0;
             // 
             // bunifuCustomLabel5
             // 
             this.bunifuCustomLabel5.AutoSize = true;
             this.bunifuCustomLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(311, 288);
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(347, 303);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
             this.bunifuCustomLabel5.Size = new System.Drawing.Size(0, 20);
             this.bunifuCustomLabel5.TabIndex = 65;
@@ -258,8 +258,8 @@
             this.txtPrixGlobal.FocusedState.Parent = this.txtPrixGlobal;
             this.txtPrixGlobal.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPrixGlobal.HoverState.Parent = this.txtPrixGlobal;
-            this.txtPrixGlobal.Location = new System.Drawing.Point(408, 245);
-            this.txtPrixGlobal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPrixGlobal.Location = new System.Drawing.Point(444, 260);
+            this.txtPrixGlobal.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrixGlobal.Name = "txtPrixGlobal";
             this.txtPrixGlobal.PasswordChar = '\0';
             this.txtPrixGlobal.PlaceholderText = "";
@@ -267,7 +267,7 @@
             this.txtPrixGlobal.SelectionStart = 10;
             this.txtPrixGlobal.ShadowDecoration.Parent = this.txtPrixGlobal;
             this.txtPrixGlobal.Size = new System.Drawing.Size(200, 36);
-            this.txtPrixGlobal.TabIndex = 61;
+            this.txtPrixGlobal.TabIndex = 4;
             // 
             // ListeCommande
             // 
@@ -277,40 +277,10 @@
             this.ListeCommande.Controls.Add(this.bunifuCustomDataGrid4);
             this.ListeCommande.Location = new System.Drawing.Point(4, 22);
             this.ListeCommande.Name = "ListeCommande";
-            this.ListeCommande.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.ListeCommande.Padding = new System.Windows.Forms.Padding(3);
             this.ListeCommande.Size = new System.Drawing.Size(850, 490);
             this.ListeCommande.TabIndex = 1;
             this.ListeCommande.Text = "ListeCommande";
-            // 
-            // bunifuCustomDataGrid4
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.bunifuCustomDataGrid4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.bunifuCustomDataGrid4.BackgroundColor = System.Drawing.Color.White;
-            this.bunifuCustomDataGrid4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid4.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Indigo;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bunifuCustomDataGrid4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bunifuCustomDataGrid4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.bunifuCustomDataGrid4.DoubleBuffered = true;
-            this.bunifuCustomDataGrid4.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid4.GridColor = System.Drawing.Color.Indigo;
-            this.bunifuCustomDataGrid4.HeaderBgColor = System.Drawing.Color.Indigo;
-            this.bunifuCustomDataGrid4.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuCustomDataGrid4.Location = new System.Drawing.Point(3, 112);
-            this.bunifuCustomDataGrid4.Name = "bunifuCustomDataGrid4";
-            this.bunifuCustomDataGrid4.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid4.RowHeadersWidth = 51;
-            this.bunifuCustomDataGrid4.Size = new System.Drawing.Size(844, 375);
-            this.bunifuCustomDataGrid4.TabIndex = 13;
             // 
             // guna2GradientButton4
             // 
@@ -328,6 +298,36 @@
             this.guna2GradientButton4.Size = new System.Drawing.Size(108, 45);
             this.guna2GradientButton4.TabIndex = 16;
             this.guna2GradientButton4.Text = "Rechercher";
+            // 
+            // bunifuCustomDataGrid4
+            // 
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomDataGrid4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.bunifuCustomDataGrid4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.bunifuCustomDataGrid4.BackgroundColor = System.Drawing.Color.White;
+            this.bunifuCustomDataGrid4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuCustomDataGrid4.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Indigo;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.bunifuCustomDataGrid4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bunifuCustomDataGrid4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.bunifuCustomDataGrid4.DoubleBuffered = true;
+            this.bunifuCustomDataGrid4.EnableHeadersVisualStyles = false;
+            this.bunifuCustomDataGrid4.GridColor = System.Drawing.Color.Indigo;
+            this.bunifuCustomDataGrid4.HeaderBgColor = System.Drawing.Color.Indigo;
+            this.bunifuCustomDataGrid4.HeaderForeColor = System.Drawing.Color.White;
+            this.bunifuCustomDataGrid4.Location = new System.Drawing.Point(3, 112);
+            this.bunifuCustomDataGrid4.Name = "bunifuCustomDataGrid4";
+            this.bunifuCustomDataGrid4.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.bunifuCustomDataGrid4.RowHeadersWidth = 51;
+            this.bunifuCustomDataGrid4.Size = new System.Drawing.Size(844, 375);
+            this.bunifuCustomDataGrid4.TabIndex = 13;
             // 
             // guna2TextBox4
             // 
@@ -356,8 +356,9 @@
             this.guna2TextBox4.Size = new System.Drawing.Size(257, 45);
             this.guna2TextBox4.TabIndex = 15;
             // 
-            // frmGestionCommande
+            // FrmGestionCommande
             // 
+            this.AcceptButton = this.btnEnregistrer;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(244)))));
@@ -365,8 +366,8 @@
             this.Controls.Add(this.materialTabControl1);
             this.Controls.Add(this.bunifuFlatButton1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "frmGestionCommande";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "FrmGestionCommande";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmGestionCommande";
             this.materialTabControl1.ResumeLayout(false);

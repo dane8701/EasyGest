@@ -114,6 +114,7 @@
             this.guna2GradientTileButton2.Size = new System.Drawing.Size(149, 279);
             this.guna2GradientTileButton2.TabIndex = 3;
             this.guna2GradientTileButton2.Text = "Commande";
+            this.guna2GradientTileButton2.Click += new System.EventHandler(this.guna2GradientTileButton2_Click);
             // 
             // guna2GradientTileButton4
             // 
@@ -188,6 +189,7 @@
             this.guna2GradientTileButton8.HoverState.Parent = this.guna2GradientTileButton8;
             this.guna2GradientTileButton8.Image = global::CustomsGestionHoteliere.Properties.Resources.settings_50px;
             this.guna2GradientTileButton8.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2GradientTileButton8.ImageOffset = new System.Drawing.Point(-2, 5);
             this.guna2GradientTileButton8.ImageSize = new System.Drawing.Size(50, 50);
             this.guna2GradientTileButton8.Location = new System.Drawing.Point(711, 395);
             this.guna2GradientTileButton8.Name = "guna2GradientTileButton8";
@@ -226,6 +228,7 @@
             this.guna2GradientTileButton7.TabIndex = 8;
             this.guna2GradientTileButton7.Text = "  Table";
             this.guna2GradientTileButton7.TextOffset = new System.Drawing.Point(4, -10);
+            this.guna2GradientTileButton7.Click += new System.EventHandler(this.guna2GradientTileButton7_Click);
             // 
             // guna2GradientTileButton6
             // 
@@ -253,6 +256,7 @@
             this.guna2GradientTileButton6.Size = new System.Drawing.Size(294, 97);
             this.guna2GradientTileButton6.TabIndex = 7;
             this.guna2GradientTileButton6.Text = "Menu";
+            this.guna2GradientTileButton6.Click += new System.EventHandler(this.guna2GradientTileButton6_Click);
             // 
             // guna2GradientTileButton5
             // 
@@ -306,6 +310,7 @@
             this.guna2GradientTileButton3.Size = new System.Drawing.Size(124, 176);
             this.guna2GradientTileButton3.TabIndex = 4;
             this.guna2GradientTileButton3.Text = "Reservation";
+            this.guna2GradientTileButton3.Click += new System.EventHandler(this.guna2GradientTileButton3_Click);
             // 
             // guna2GradientTileButton1
             // 
@@ -353,7 +358,7 @@
             this.guna2GradientTileButton10.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
             this.guna2GradientTileButton10.HoverState.Parent = this.guna2GradientTileButton10;
             this.guna2GradientTileButton10.Image = global::CustomsGestionHoteliere.Properties.Resources.cocktail_64px;
-            this.guna2GradientTileButton10.ImageOffset = new System.Drawing.Point(0, -15);
+            this.guna2GradientTileButton10.ImageOffset = new System.Drawing.Point(0, -5);
             this.guna2GradientTileButton10.ImageSize = new System.Drawing.Size(40, 40);
             this.guna2GradientTileButton10.Location = new System.Drawing.Point(581, 395);
             this.guna2GradientTileButton10.Name = "guna2GradientTileButton10";
@@ -362,12 +367,13 @@
             this.guna2GradientTileButton10.TabIndex = 11;
             this.guna2GradientTileButton10.Text = "Boisson";
             this.guna2GradientTileButton10.TextOffset = new System.Drawing.Point(0, -20);
+            this.guna2GradientTileButton10.Click += new System.EventHandler(this.guna2GradientTileButton10_Click);
             // 
             // NouveauFormParent
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = global::CustomsGestionHoteliere.Properties.Resources.pexels_julie_aagaard_2351274;
+            this.BackgroundImage = global::CustomsGestionHoteliere.Properties.Resources.pexels_julie_aagaard_235127464;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1152, 597);
             this.Controls.Add(this.guna2GradientTileButton10);

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CustomsGestionHoteliere.newForm
 {
-    public partial class frmGestionMenu : Form
+    public partial class FrmGestionMenu : Form
     {
-        public frmGestionMenu()
+        public FrmGestionMenu()
         {
             InitializeComponent();
         }
