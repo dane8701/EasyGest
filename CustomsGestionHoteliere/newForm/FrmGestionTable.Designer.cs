@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.addUtilisateur = new System.Windows.Forms.TabPage();
             this.txtmontantTotal = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button16 = new Guna.UI2.WinForms.Guna2Button();
-            this.txtcommandeidCommande = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtidFacture = new Guna.UI2.WinForms.Guna2TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -43,11 +43,21 @@
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.slider = new System.Windows.Forms.PictureBox();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.easyGestDataSet = new CustomsGestionHoteliere.EasyGestDataSet();
+            this.tABLESBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tABLESTableAdapter = new CustomsGestionHoteliere.EasyGestDataSetTableAdapters.TABLESTableAdapter();
+            this.idTableDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombrePlaceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.typeTableidTypeTableDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.materialTabControl1.SuspendLayout();
             this.addUtilisateur.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.slider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.easyGestDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tABLESBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -65,9 +75,10 @@
             // addUtilisateur
             // 
             this.addUtilisateur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(244)))));
+            this.addUtilisateur.Controls.Add(this.gunaLabel2);
+            this.addUtilisateur.Controls.Add(this.guna2ComboBox3);
             this.addUtilisateur.Controls.Add(this.txtmontantTotal);
             this.addUtilisateur.Controls.Add(this.guna2Button16);
-            this.addUtilisateur.Controls.Add(this.txtcommandeidCommande);
             this.addUtilisateur.Controls.Add(this.txtidFacture);
             this.addUtilisateur.Location = new System.Drawing.Point(4, 22);
             this.addUtilisateur.Name = "addUtilisateur";
@@ -118,30 +129,6 @@
             this.guna2Button16.Size = new System.Drawing.Size(188, 45);
             this.guna2Button16.TabIndex = 3;
             this.guna2Button16.Text = "Enregistrer";
-            // 
-            // txtcommandeidCommande
-            // 
-            this.txtcommandeidCommande.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(2)))), ((int)(((byte)(8)))));
-            this.txtcommandeidCommande.BorderRadius = 16;
-            this.txtcommandeidCommande.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtcommandeidCommande.DefaultText = "TypeTableidTypeTable";
-            this.txtcommandeidCommande.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtcommandeidCommande.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtcommandeidCommande.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtcommandeidCommande.DisabledState.Parent = this.txtcommandeidCommande;
-            this.txtcommandeidCommande.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtcommandeidCommande.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtcommandeidCommande.FocusedState.Parent = this.txtcommandeidCommande;
-            this.txtcommandeidCommande.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtcommandeidCommande.HoverState.Parent = this.txtcommandeidCommande;
-            this.txtcommandeidCommande.Location = new System.Drawing.Point(281, 149);
-            this.txtcommandeidCommande.Name = "txtcommandeidCommande";
-            this.txtcommandeidCommande.PasswordChar = '\0';
-            this.txtcommandeidCommande.PlaceholderText = "";
-            this.txtcommandeidCommande.SelectedText = "";
-            this.txtcommandeidCommande.ShadowDecoration.Parent = this.txtcommandeidCommande;
-            this.txtcommandeidCommande.Size = new System.Drawing.Size(188, 36);
-            this.txtcommandeidCommande.TabIndex = 2;
             // 
             // txtidFacture
             // 
@@ -225,26 +212,32 @@
             // 
             // bunifuCustomDataGrid4
             // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomDataGrid4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.bunifuCustomDataGrid4.AutoGenerateColumns = false;
             this.bunifuCustomDataGrid4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.bunifuCustomDataGrid4.BackgroundColor = System.Drawing.Color.White;
             this.bunifuCustomDataGrid4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid4.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Indigo;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(2)))), ((int)(((byte)(8)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.bunifuCustomDataGrid4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bunifuCustomDataGrid4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idTableDataGridViewTextBoxColumn,
+            this.nombrePlaceDataGridViewTextBoxColumn,
+            this.typeTableidTypeTableDataGridViewTextBoxColumn});
+            this.bunifuCustomDataGrid4.DataSource = this.tABLESBindingSource;
             this.bunifuCustomDataGrid4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.bunifuCustomDataGrid4.DoubleBuffered = true;
             this.bunifuCustomDataGrid4.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid4.GridColor = System.Drawing.Color.Indigo;
-            this.bunifuCustomDataGrid4.HeaderBgColor = System.Drawing.Color.Indigo;
+            this.bunifuCustomDataGrid4.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(2)))), ((int)(((byte)(8)))));
+            this.bunifuCustomDataGrid4.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(2)))), ((int)(((byte)(8)))));
             this.bunifuCustomDataGrid4.HeaderForeColor = System.Drawing.Color.White;
             this.bunifuCustomDataGrid4.Location = new System.Drawing.Point(3, 104);
             this.bunifuCustomDataGrid4.Name = "bunifuCustomDataGrid4";
@@ -329,6 +322,71 @@
             this.slider.TabIndex = 15;
             this.slider.TabStop = false;
             // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel2.Location = new System.Drawing.Point(278, 149);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(68, 15);
+            this.gunaLabel2.TabIndex = 90;
+            this.gunaLabel2.Text = "idTypeTable";
+            // 
+            // guna2ComboBox3
+            // 
+            this.guna2ComboBox3.BackColor = System.Drawing.SystemColors.Control;
+            this.guna2ComboBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(2)))), ((int)(((byte)(8)))));
+            this.guna2ComboBox3.BorderRadius = 15;
+            this.guna2ComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox3.FocusedColor = System.Drawing.Color.Empty;
+            this.guna2ComboBox3.FocusedState.Parent = this.guna2ComboBox3;
+            this.guna2ComboBox3.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox3.FormattingEnabled = true;
+            this.guna2ComboBox3.HoverState.Parent = this.guna2ComboBox3;
+            this.guna2ComboBox3.ItemHeight = 30;
+            this.guna2ComboBox3.Items.AddRange(new object[] {
+            "admin",
+            "user"});
+            this.guna2ComboBox3.ItemsAppearance.Parent = this.guna2ComboBox3;
+            this.guna2ComboBox3.Location = new System.Drawing.Point(281, 167);
+            this.guna2ComboBox3.Name = "guna2ComboBox3";
+            this.guna2ComboBox3.ShadowDecoration.Parent = this.guna2ComboBox3;
+            this.guna2ComboBox3.Size = new System.Drawing.Size(188, 36);
+            this.guna2ComboBox3.TabIndex = 89;
+            // 
+            // easyGestDataSet
+            // 
+            this.easyGestDataSet.DataSetName = "EasyGestDataSet";
+            this.easyGestDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tABLESBindingSource
+            // 
+            this.tABLESBindingSource.DataMember = "TABLES";
+            this.tABLESBindingSource.DataSource = this.easyGestDataSet;
+            // 
+            // tABLESTableAdapter
+            // 
+            this.tABLESTableAdapter.ClearBeforeFill = true;
+            // 
+            // idTableDataGridViewTextBoxColumn
+            // 
+            this.idTableDataGridViewTextBoxColumn.DataPropertyName = "idTable";
+            this.idTableDataGridViewTextBoxColumn.HeaderText = "idTable";
+            this.idTableDataGridViewTextBoxColumn.Name = "idTableDataGridViewTextBoxColumn";
+            // 
+            // nombrePlaceDataGridViewTextBoxColumn
+            // 
+            this.nombrePlaceDataGridViewTextBoxColumn.DataPropertyName = "nombrePlace";
+            this.nombrePlaceDataGridViewTextBoxColumn.HeaderText = "Nombre Place";
+            this.nombrePlaceDataGridViewTextBoxColumn.Name = "nombrePlaceDataGridViewTextBoxColumn";
+            // 
+            // typeTableidTypeTableDataGridViewTextBoxColumn
+            // 
+            this.typeTableidTypeTableDataGridViewTextBoxColumn.DataPropertyName = "TypeTableidTypeTable";
+            this.typeTableidTypeTableDataGridViewTextBoxColumn.HeaderText = "idTypeTable";
+            this.typeTableidTypeTableDataGridViewTextBoxColumn.Name = "typeTableidTypeTableDataGridViewTextBoxColumn";
+            // 
             // FrmGestionTable
             // 
             this.AcceptButton = this.guna2GradientButton4;
@@ -343,11 +401,15 @@
             this.Name = "FrmGestionTable";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Factures";
+            this.Load += new System.EventHandler(this.FrmGestionTable_Load);
             this.materialTabControl1.ResumeLayout(false);
             this.addUtilisateur.ResumeLayout(false);
+            this.addUtilisateur.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.slider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.easyGestDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tABLESBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -358,7 +420,6 @@
         private System.Windows.Forms.TabPage addUtilisateur;
         private Guna.UI2.WinForms.Guna2TextBox txtmontantTotal;
         private Guna.UI2.WinForms.Guna2Button guna2Button16;
-        private Guna.UI2.WinForms.Guna2TextBox txtcommandeidCommande;
         private Guna.UI2.WinForms.Guna2TextBox txtidFacture;
         private System.Windows.Forms.TabPage tabPage2;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
@@ -367,5 +428,13 @@
         private System.Windows.Forms.PictureBox slider;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI.WinForms.GunaLabel gunaLabel2;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox3;
+        private EasyGestDataSet easyGestDataSet;
+        private System.Windows.Forms.BindingSource tABLESBindingSource;
+        private EasyGestDataSetTableAdapters.TABLESTableAdapter tABLESTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idTableDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombrePlaceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn typeTableidTypeTableDataGridViewTextBoxColumn;
     }
 }

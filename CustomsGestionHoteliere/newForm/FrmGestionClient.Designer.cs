@@ -29,31 +29,48 @@ namespace CustomsGestionHoteliere.newForm
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGestionClient));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGestionClient));
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.addUtilisateur = new System.Windows.Forms.TabPage();
             this.txtprenomClient = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button16 = new Guna.UI2.WinForms.Guna2Button();
             this.txtnomClient = new Guna.UI2.WinForms.Guna2TextBox();
             this.txttelephone = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtCOMMANDESidCommande = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtidClient = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtadresse = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtTablesidTable = new Guna.UI2.WinForms.Guna2TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.bunifuCustomDataGrid4 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.slider = new System.Windows.Forms.PictureBox();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.txtTABLESidTable = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.txtCOMMANDESidCommande = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.easyGestDataSet = new CustomsGestionHoteliere.EasyGestDataSet();
+            this.easyGestDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cLIENTSBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cLIENTSTableAdapter = new CustomsGestionHoteliere.EasyGestDataSetTableAdapters.CLIENTSTableAdapter();
+            this.idClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prenomClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telephoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adresseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tABLESidTableDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cOMMANDESidComandeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.materialTabControl1.SuspendLayout();
             this.addUtilisateur.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.slider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.easyGestDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.easyGestDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cLIENTSBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -71,14 +88,16 @@ namespace CustomsGestionHoteliere.newForm
             // addUtilisateur
             // 
             this.addUtilisateur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(244)))));
+            this.addUtilisateur.Controls.Add(this.gunaLabel2);
+            this.addUtilisateur.Controls.Add(this.txtCOMMANDESidCommande);
+            this.addUtilisateur.Controls.Add(this.gunaLabel1);
+            this.addUtilisateur.Controls.Add(this.txtTABLESidTable);
             this.addUtilisateur.Controls.Add(this.txtprenomClient);
             this.addUtilisateur.Controls.Add(this.guna2Button16);
             this.addUtilisateur.Controls.Add(this.txtnomClient);
             this.addUtilisateur.Controls.Add(this.txttelephone);
-            this.addUtilisateur.Controls.Add(this.txtCOMMANDESidCommande);
             this.addUtilisateur.Controls.Add(this.txtidClient);
             this.addUtilisateur.Controls.Add(this.txtadresse);
-            this.addUtilisateur.Controls.Add(this.txtTablesidTable);
             this.addUtilisateur.Location = new System.Drawing.Point(4, 22);
             this.addUtilisateur.Name = "addUtilisateur";
             this.addUtilisateur.Padding = new System.Windows.Forms.Padding(3);
@@ -130,6 +149,7 @@ namespace CustomsGestionHoteliere.newForm
             this.guna2Button16.Size = new System.Drawing.Size(188, 45);
             this.guna2Button16.TabIndex = 7;
             this.guna2Button16.Text = "Enregistrer";
+            this.guna2Button16.Click += new System.EventHandler(this.guna2Button16_Click);
             // 
             // txtnomClient
             // 
@@ -181,31 +201,6 @@ namespace CustomsGestionHoteliere.newForm
             this.txttelephone.Size = new System.Drawing.Size(211, 36);
             this.txttelephone.TabIndex = 3;
             // 
-            // txtCOMMANDESidCommande
-            // 
-            this.txtCOMMANDESidCommande.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(106)))), ((int)(((byte)(79)))));
-            this.txtCOMMANDESidCommande.BorderRadius = 16;
-            this.txtCOMMANDESidCommande.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCOMMANDESidCommande.DefaultText = " Commandes Id Commande";
-            this.txtCOMMANDESidCommande.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCOMMANDESidCommande.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCOMMANDESidCommande.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCOMMANDESidCommande.DisabledState.Parent = this.txtCOMMANDESidCommande;
-            this.txtCOMMANDESidCommande.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCOMMANDESidCommande.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCOMMANDESidCommande.FocusedState.Parent = this.txtCOMMANDESidCommande;
-            this.txtCOMMANDESidCommande.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCOMMANDESidCommande.HoverState.Parent = this.txtCOMMANDESidCommande;
-            this.txtCOMMANDESidCommande.Location = new System.Drawing.Point(303, 278);
-            this.txtCOMMANDESidCommande.Name = "txtCOMMANDESidCommande";
-            this.txtCOMMANDESidCommande.PasswordChar = '\0';
-            this.txtCOMMANDESidCommande.PlaceholderText = "";
-            this.txtCOMMANDESidCommande.SelectedText = "";
-            this.txtCOMMANDESidCommande.SelectionStart = 22;
-            this.txtCOMMANDESidCommande.ShadowDecoration.Parent = this.txtCOMMANDESidCommande;
-            this.txtCOMMANDESidCommande.Size = new System.Drawing.Size(200, 36);
-            this.txtCOMMANDESidCommande.TabIndex = 6;
-            // 
             // txtidClient
             // 
             this.txtidClient.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(106)))), ((int)(((byte)(79)))));
@@ -256,31 +251,6 @@ namespace CustomsGestionHoteliere.newForm
             this.txtadresse.Size = new System.Drawing.Size(200, 36);
             this.txtadresse.TabIndex = 4;
             // 
-            // txtTablesidTable
-            // 
-            this.txtTablesidTable.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(106)))), ((int)(((byte)(79)))));
-            this.txtTablesidTable.BorderRadius = 16;
-            this.txtTablesidTable.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTablesidTable.DefaultText = "Tables Id Table";
-            this.txtTablesidTable.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTablesidTable.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTablesidTable.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTablesidTable.DisabledState.Parent = this.txtTablesidTable;
-            this.txtTablesidTable.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTablesidTable.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTablesidTable.FocusedState.Parent = this.txtTablesidTable;
-            this.txtTablesidTable.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTablesidTable.HoverState.Parent = this.txtTablesidTable;
-            this.txtTablesidTable.Location = new System.Drawing.Point(413, 212);
-            this.txtTablesidTable.Name = "txtTablesidTable";
-            this.txtTablesidTable.PasswordChar = '\0';
-            this.txtTablesidTable.PlaceholderText = "";
-            this.txtTablesidTable.SelectedText = "";
-            this.txtTablesidTable.SelectionStart = 15;
-            this.txtTablesidTable.ShadowDecoration.Parent = this.txtTablesidTable;
-            this.txtTablesidTable.Size = new System.Drawing.Size(211, 36);
-            this.txtTablesidTable.TabIndex = 5;
-            // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(244)))));
@@ -292,7 +262,34 @@ namespace CustomsGestionHoteliere.newForm
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(839, 487);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "liste Client";
+            this.tabPage2.Text = "Liste Client";
+            // 
+            // guna2TextBox1
+            // 
+            this.guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
+            this.guna2TextBox1.BorderRadius = 16;
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = " Recherche";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.IconLeft = ((System.Drawing.Image)(resources.GetObject("guna2TextBox1.IconLeft")));
+            this.guna2TextBox1.Location = new System.Drawing.Point(458, 26);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.SelectionStart = 10;
+            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Size = new System.Drawing.Size(257, 45);
+            this.guna2TextBox1.TabIndex = 16;
             // 
             // guna2GradientButton4
             // 
@@ -315,12 +312,13 @@ namespace CustomsGestionHoteliere.newForm
             // 
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuCustomDataGrid4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.bunifuCustomDataGrid4.AutoGenerateColumns = false;
             this.bunifuCustomDataGrid4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.bunifuCustomDataGrid4.BackgroundColor = System.Drawing.Color.White;
             this.bunifuCustomDataGrid4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid4.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Indigo;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(106)))), ((int)(((byte)(79)))));
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -328,11 +326,20 @@ namespace CustomsGestionHoteliere.newForm
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.bunifuCustomDataGrid4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.bunifuCustomDataGrid4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bunifuCustomDataGrid4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idClientDataGridViewTextBoxColumn,
+            this.nomClientDataGridViewTextBoxColumn,
+            this.prenomClientDataGridViewTextBoxColumn,
+            this.telephoneDataGridViewTextBoxColumn,
+            this.adresseDataGridViewTextBoxColumn,
+            this.tABLESidTableDataGridViewTextBoxColumn,
+            this.cOMMANDESidComandeDataGridViewTextBoxColumn});
+            this.bunifuCustomDataGrid4.DataSource = this.cLIENTSBindingSource;
             this.bunifuCustomDataGrid4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.bunifuCustomDataGrid4.DoubleBuffered = true;
             this.bunifuCustomDataGrid4.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid4.GridColor = System.Drawing.Color.Indigo;
-            this.bunifuCustomDataGrid4.HeaderBgColor = System.Drawing.Color.Indigo;
+            this.bunifuCustomDataGrid4.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(106)))), ((int)(((byte)(79)))));
+            this.bunifuCustomDataGrid4.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(106)))), ((int)(((byte)(79)))));
             this.bunifuCustomDataGrid4.HeaderForeColor = System.Drawing.Color.White;
             this.bunifuCustomDataGrid4.Location = new System.Drawing.Point(3, 103);
             this.bunifuCustomDataGrid4.Name = "bunifuCustomDataGrid4";
@@ -410,33 +417,6 @@ namespace CustomsGestionHoteliere.newForm
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
-            // guna2TextBox1
-            // 
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
-            this.guna2TextBox1.BorderRadius = 16;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = " Recherche";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.IconLeft = ((System.Drawing.Image)(resources.GetObject("guna2TextBox1.IconLeft")));
-            this.guna2TextBox1.Location = new System.Drawing.Point(458, 26);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.SelectionStart = 10;
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(257, 45);
-            this.guna2TextBox1.TabIndex = 16;
-            // 
             // slider
             // 
             this.slider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(106)))), ((int)(((byte)(79)))));
@@ -445,6 +425,132 @@ namespace CustomsGestionHoteliere.newForm
             this.slider.Size = new System.Drawing.Size(153, 10);
             this.slider.TabIndex = 11;
             this.slider.TabStop = false;
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel1.Location = new System.Drawing.Point(426, 194);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(44, 15);
+            this.gunaLabel1.TabIndex = 74;
+            this.gunaLabel1.Text = "idTable";
+            // 
+            // txtTABLESidTable
+            // 
+            this.txtTABLESidTable.BackColor = System.Drawing.SystemColors.Control;
+            this.txtTABLESidTable.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(106)))), ((int)(((byte)(79)))));
+            this.txtTABLESidTable.BorderRadius = 15;
+            this.txtTABLESidTable.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtTABLESidTable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtTABLESidTable.FocusedColor = System.Drawing.Color.Empty;
+            this.txtTABLESidTable.FocusedState.Parent = this.txtTABLESidTable;
+            this.txtTABLESidTable.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtTABLESidTable.FormattingEnabled = true;
+            this.txtTABLESidTable.HoverState.Parent = this.txtTABLESidTable;
+            this.txtTABLESidTable.ItemHeight = 30;
+            this.txtTABLESidTable.Items.AddRange(new object[] {
+            "1"});
+            this.txtTABLESidTable.ItemsAppearance.Parent = this.txtTABLESidTable;
+            this.txtTABLESidTable.Location = new System.Drawing.Point(413, 212);
+            this.txtTABLESidTable.Name = "txtTABLESidTable";
+            this.txtTABLESidTable.ShadowDecoration.Parent = this.txtTABLESidTable;
+            this.txtTABLESidTable.Size = new System.Drawing.Size(211, 36);
+            this.txtTABLESidTable.TabIndex = 5;
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel2.Location = new System.Drawing.Point(300, 287);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(80, 15);
+            this.gunaLabel2.TabIndex = 76;
+            this.gunaLabel2.Text = "idCommande";
+            // 
+            // txtCOMMANDESidCommande
+            // 
+            this.txtCOMMANDESidCommande.BackColor = System.Drawing.SystemColors.Control;
+            this.txtCOMMANDESidCommande.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(106)))), ((int)(((byte)(79)))));
+            this.txtCOMMANDESidCommande.BorderRadius = 15;
+            this.txtCOMMANDESidCommande.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtCOMMANDESidCommande.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtCOMMANDESidCommande.FocusedColor = System.Drawing.Color.Empty;
+            this.txtCOMMANDESidCommande.FocusedState.Parent = this.txtCOMMANDESidCommande;
+            this.txtCOMMANDESidCommande.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtCOMMANDESidCommande.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.txtCOMMANDESidCommande.FormattingEnabled = true;
+            this.txtCOMMANDESidCommande.HoverState.Parent = this.txtCOMMANDESidCommande;
+            this.txtCOMMANDESidCommande.ItemHeight = 30;
+            this.txtCOMMANDESidCommande.Items.AddRange(new object[] {
+            "1"});
+            this.txtCOMMANDESidCommande.ItemsAppearance.Parent = this.txtCOMMANDESidCommande;
+            this.txtCOMMANDESidCommande.Location = new System.Drawing.Point(284, 305);
+            this.txtCOMMANDESidCommande.Name = "txtCOMMANDESidCommande";
+            this.txtCOMMANDESidCommande.ShadowDecoration.Parent = this.txtCOMMANDESidCommande;
+            this.txtCOMMANDESidCommande.Size = new System.Drawing.Size(224, 36);
+            this.txtCOMMANDESidCommande.TabIndex = 6;
+            // 
+            // easyGestDataSet
+            // 
+            this.easyGestDataSet.DataSetName = "EasyGestDataSet";
+            this.easyGestDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // easyGestDataSetBindingSource
+            // 
+            this.easyGestDataSetBindingSource.DataSource = this.easyGestDataSet;
+            this.easyGestDataSetBindingSource.Position = 0;
+            // 
+            // cLIENTSBindingSource
+            // 
+            this.cLIENTSBindingSource.DataMember = "CLIENTS";
+            this.cLIENTSBindingSource.DataSource = this.easyGestDataSetBindingSource;
+            // 
+            // cLIENTSTableAdapter
+            // 
+            this.cLIENTSTableAdapter.ClearBeforeFill = true;
+            // 
+            // idClientDataGridViewTextBoxColumn
+            // 
+            this.idClientDataGridViewTextBoxColumn.DataPropertyName = "idClient";
+            this.idClientDataGridViewTextBoxColumn.HeaderText = "idClient";
+            this.idClientDataGridViewTextBoxColumn.Name = "idClientDataGridViewTextBoxColumn";
+            // 
+            // nomClientDataGridViewTextBoxColumn
+            // 
+            this.nomClientDataGridViewTextBoxColumn.DataPropertyName = "nomClient";
+            this.nomClientDataGridViewTextBoxColumn.HeaderText = "nomClient";
+            this.nomClientDataGridViewTextBoxColumn.Name = "nomClientDataGridViewTextBoxColumn";
+            // 
+            // prenomClientDataGridViewTextBoxColumn
+            // 
+            this.prenomClientDataGridViewTextBoxColumn.DataPropertyName = "prenomClient";
+            this.prenomClientDataGridViewTextBoxColumn.HeaderText = "prenomClient";
+            this.prenomClientDataGridViewTextBoxColumn.Name = "prenomClientDataGridViewTextBoxColumn";
+            // 
+            // telephoneDataGridViewTextBoxColumn
+            // 
+            this.telephoneDataGridViewTextBoxColumn.DataPropertyName = "telephone";
+            this.telephoneDataGridViewTextBoxColumn.HeaderText = "telephone";
+            this.telephoneDataGridViewTextBoxColumn.Name = "telephoneDataGridViewTextBoxColumn";
+            // 
+            // adresseDataGridViewTextBoxColumn
+            // 
+            this.adresseDataGridViewTextBoxColumn.DataPropertyName = "adresse";
+            this.adresseDataGridViewTextBoxColumn.HeaderText = "adresse";
+            this.adresseDataGridViewTextBoxColumn.Name = "adresseDataGridViewTextBoxColumn";
+            // 
+            // tABLESidTableDataGridViewTextBoxColumn
+            // 
+            this.tABLESidTableDataGridViewTextBoxColumn.DataPropertyName = "TABLESidTable";
+            this.tABLESidTableDataGridViewTextBoxColumn.HeaderText = "idTable";
+            this.tABLESidTableDataGridViewTextBoxColumn.Name = "tABLESidTableDataGridViewTextBoxColumn";
+            // 
+            // cOMMANDESidComandeDataGridViewTextBoxColumn
+            // 
+            this.cOMMANDESidComandeDataGridViewTextBoxColumn.DataPropertyName = "COMMANDESidComande";
+            this.cOMMANDESidComandeDataGridViewTextBoxColumn.HeaderText = "idComande";
+            this.cOMMANDESidComandeDataGridViewTextBoxColumn.Name = "cOMMANDESidComandeDataGridViewTextBoxColumn";
             // 
             // FrmGestionClient
             // 
@@ -463,9 +569,13 @@ namespace CustomsGestionHoteliere.newForm
             this.Load += new System.EventHandler(this.FrmGestionClient_Load);
             this.materialTabControl1.ResumeLayout(false);
             this.addUtilisateur.ResumeLayout(false);
+            this.addUtilisateur.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.slider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.easyGestDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.easyGestDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cLIENTSBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -478,10 +588,8 @@ namespace CustomsGestionHoteliere.newForm
         private Guna.UI2.WinForms.Guna2Button guna2Button16;
         private Guna.UI2.WinForms.Guna2TextBox txtnomClient;
         private Guna.UI2.WinForms.Guna2TextBox txttelephone;
-        private Guna.UI2.WinForms.Guna2TextBox txtCOMMANDESidCommande;
         private Guna.UI2.WinForms.Guna2TextBox txtidClient;
         private Guna.UI2.WinForms.Guna2TextBox txtadresse;
-        private Guna.UI2.WinForms.Guna2TextBox txtTablesidTable;
         private System.Windows.Forms.TabPage tabPage2;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid4;
@@ -489,5 +597,20 @@ namespace CustomsGestionHoteliere.newForm
         private System.Windows.Forms.PictureBox slider;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI.WinForms.GunaLabel gunaLabel2;
+        private Guna.UI2.WinForms.Guna2ComboBox txtCOMMANDESidCommande;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI2.WinForms.Guna2ComboBox txtTABLESidTable;
+        private System.Windows.Forms.BindingSource easyGestDataSetBindingSource;
+        private EasyGestDataSet easyGestDataSet;
+        private System.Windows.Forms.BindingSource cLIENTSBindingSource;
+        private EasyGestDataSetTableAdapters.CLIENTSTableAdapter cLIENTSTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idClientDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomClientDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prenomClientDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telephoneDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adresseDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tABLESidTableDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cOMMANDESidComandeDataGridViewTextBoxColumn;
     }
 }

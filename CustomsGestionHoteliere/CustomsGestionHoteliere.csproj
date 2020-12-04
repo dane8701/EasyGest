@@ -78,17 +78,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="encientTravail\enregistreClient.cs">
-      <SubType>Form</SubType>
+    <Compile Include="EasyGestDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EasyGestDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="encientTravail\enregistreClient.Designer.cs">
-      <DependentUpon>enregistreClient.cs</DependentUpon>
+    <Compile Include="EasyGestDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EasyGestDataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="encientTravail\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="encientTravail\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="EasyGestDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EasyGestDataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="newForm\FrmGestionBoisson.cs">
       <SubType>Form</SubType>
@@ -156,81 +159,8 @@
     <Compile Include="newForm\FrmControl.Designer.cs">
       <DependentUpon>FrmControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="encientTravail\gestfacture.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="encientTravail\gestfacture.Designer.cs">
-      <DependentUpon>gestfacture.cs</DependentUpon>
-    </Compile>
-    <Compile Include="encientTravail\gestReservation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="encientTravail\gestReservation.Designer.cs">
-      <DependentUpon>gestReservation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="encientTravail\gestutilisateur.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="encientTravail\gestutilisateur.Designer.cs">
-      <DependentUpon>gestutilisateur.cs</DependentUpon>
-    </Compile>
-    <Compile Include="encientTravail\gset_hotelDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>gset_hotelDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="encientTravail\gset_hotelDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>gset_hotelDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="encientTravail\gset_hotelDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>gset_hotelDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="encientTravail\gset_hotelDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>gset_hotelDataSet3.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="encientTravail\gset_hotelDataSet4.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>gset_hotelDataSet4.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="encientTravail\login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="encientTravail\login.Designer.cs">
-      <DependentUpon>login.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="encientTravail\splashsreen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="encientTravail\splashsreen.Designer.cs">
-      <DependentUpon>splashsreen.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="encientTravail\enregistreClient.resx">
-      <DependentUpon>enregistreClient.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="encientTravail\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="encientTravail\gestfacture.resx">
-      <DependentUpon>gestfacture.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="encientTravail\gestReservation.resx">
-      <DependentUpon>gestReservation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="encientTravail\gestutilisateur.resx">
-      <DependentUpon>gestutilisateur.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="encientTravail\login.resx">
-      <DependentUpon>login.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="newForm\FrmGestionBoisson.resx">
       <DependentUpon>FrmGestionBoisson.cs</DependentUpon>
     </EmbeddedResource>
@@ -274,63 +204,38 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="encientTravail\splashsreen.resx">
-      <DependentUpon>splashsreen.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="encientTravail\gset_hotelDataSet.xsc">
-      <DependentUpon>gset_hotelDataSet.xsd</DependentUpon>
+    <None Include="EasyGestDataSet.xsc">
+      <DependentUpon>EasyGestDataSet.xsd</DependentUpon>
     </None>
-    <None Include="encientTravail\gset_hotelDataSet.xsd">
+    <None Include="EasyGestDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>gset_hotelDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>EasyGestDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="encientTravail\gset_hotelDataSet.xss">
-      <DependentUpon>gset_hotelDataSet.xsd</DependentUpon>
+    <None Include="EasyGestDataSet.xss">
+      <DependentUpon>EasyGestDataSet.xsd</DependentUpon>
     </None>
-    <None Include="encientTravail\gset_hotelDataSet1.xsc">
-      <DependentUpon>gset_hotelDataSet1.xsd</DependentUpon>
+    <None Include="EasyGestDataSet1.xsc">
+      <DependentUpon>EasyGestDataSet1.xsd</DependentUpon>
     </None>
-    <None Include="encientTravail\gset_hotelDataSet1.xsd">
+    <None Include="EasyGestDataSet1.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>gset_hotelDataSet1.Designer.cs</LastGenOutput>
+      <LastGenOutput>EasyGestDataSet1.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="encientTravail\gset_hotelDataSet1.xss">
-      <DependentUpon>gset_hotelDataSet1.xsd</DependentUpon>
+    <None Include="EasyGestDataSet1.xss">
+      <DependentUpon>EasyGestDataSet1.xsd</DependentUpon>
     </None>
-    <None Include="encientTravail\gset_hotelDataSet2.xsc">
-      <DependentUpon>gset_hotelDataSet2.xsd</DependentUpon>
+    <None Include="EasyGestDataSet2.xsc">
+      <DependentUpon>EasyGestDataSet2.xsd</DependentUpon>
     </None>
-    <None Include="encientTravail\gset_hotelDataSet2.xsd">
+    <None Include="EasyGestDataSet2.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>gset_hotelDataSet2.Designer.cs</LastGenOutput>
+      <LastGenOutput>EasyGestDataSet2.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="encientTravail\gset_hotelDataSet2.xss">
-      <DependentUpon>gset_hotelDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="encientTravail\gset_hotelDataSet3.xsc">
-      <DependentUpon>gset_hotelDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="encientTravail\gset_hotelDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>gset_hotelDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="encientTravail\gset_hotelDataSet3.xss">
-      <DependentUpon>gset_hotelDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="encientTravail\gset_hotelDataSet4.xsc">
-      <DependentUpon>gset_hotelDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="encientTravail\gset_hotelDataSet4.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>gset_hotelDataSet4.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="encientTravail\gset_hotelDataSet4.xss">
-      <DependentUpon>gset_hotelDataSet4.xsd</DependentUpon>
+    <None Include="EasyGestDataSet2.xss">
+      <DependentUpon>EasyGestDataSet2.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -386,6 +291,38 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pexels-julie-aagaard-235127464.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ProcédureStockées\Insert\insert_boisson.sql" />
+    <Content Include="ProcédureStockées\Insert\insert_client.sql" />
+    <Content Include="ProcédureStockées\Insert\insert_client_menu.sql" />
+    <Content Include="ProcédureStockées\Insert\insert_commande.sql" />
+    <Content Include="ProcédureStockées\Insert\insert_facture.sql" />
+    <Content Include="ProcédureStockées\Insert\insert_menu.sql" />
+    <Content Include="ProcédureStockées\Insert\insert_plat.sql" />
+    <Content Include="ProcédureStockées\Insert\insert_reservation.sql" />
+    <Content Include="ProcédureStockées\Insert\insert_role.sql" />
+    <Content Include="ProcédureStockées\Insert\insert_statut.sql" />
+    <Content Include="ProcédureStockées\Insert\insert_table.sql" />
+    <Content Include="ProcédureStockées\Insert\insert_typeBoisson.sql" />
+    <Content Include="ProcédureStockées\Insert\insert_typeMenu.sql" />
+    <Content Include="ProcédureStockées\Insert\insert_typePlat.sql" />
+    <Content Include="ProcédureStockées\Insert\insert_typeTable.sql" />
+    <Content Include="ProcédureStockées\Insert\insert_utilisateur.sql" />
+    <Content Include="ProcédureStockées\Search\search_boisson.sql" />
+    <Content Include="ProcédureStockées\Search\search_client.sql" />
+    <Content Include="ProcédureStockées\Search\search_commande.sql" />
+    <Content Include="ProcédureStockées\Search\search_facture.sql" />
+    <Content Include="ProcédureStockées\Search\search_menu.sql" />
+    <Content Include="ProcédureStockées\Search\search_plat.sql" />
+    <Content Include="ProcédureStockées\Search\search_reservation.sql" />
+    <Content Include="ProcédureStockées\Search\search_table.sql" />
+    <Content Include="ProcédureStockées\Search\search_utilisateur.sql" />
+    <Content Include="ProcédureStockées\Update\update_commandes.sql" />
+    <Content Include="ProcédureStockées\Update\update_menu.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ProcédureStockées\Delete\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

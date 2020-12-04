@@ -31,5 +31,14 @@ namespace CustomsGestionHoteliere.newForm
         {
 
         }
+
+        private void FrmGestionBoisson_Load(object sender, EventArgs e)
+        {
+            // TODO: cette ligne de code charge les données dans la table 'easyGestDataSet.TypeBoissons'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.typeBoissonsTableAdapter.Fill(this.easyGestDataSet.TypeBoissons);
+            // TODO: cette ligne de code charge les données dans la table 'easyGestDataSet.BOISSONS'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.bOISSONSTableAdapter.Fill(this.easyGestDataSet.BOISSONS);
+
+        }
     }
 }

@@ -28,14 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.addUtilisateur = new System.Windows.Forms.TabPage();
-            this.txtmontantTotal = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button16 = new Guna.UI2.WinForms.Guna2Button();
-            this.txtidFacture = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtreservationidReservation = new Guna.UI2.WinForms.Guna2TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -43,11 +41,25 @@
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.slider = new System.Windows.Forms.PictureBox();
+            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
+            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.easyGestDataSet = new CustomsGestionHoteliere.EasyGestDataSet();
+            this.rESERVATIONSBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rESERVATIONSTableAdapter = new CustomsGestionHoteliere.EasyGestDataSetTableAdapters.RESERVATIONSTableAdapter();
+            this.fACTURESidFactureDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cLIENTSidClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tABLESidTableDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.materialTabControl1.SuspendLayout();
             this.addUtilisateur.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.slider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.easyGestDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rESERVATIONSBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -65,40 +77,19 @@
             // addUtilisateur
             // 
             this.addUtilisateur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(244)))));
-            this.addUtilisateur.Controls.Add(this.txtmontantTotal);
+            this.addUtilisateur.Controls.Add(this.gunaLabel2);
+            this.addUtilisateur.Controls.Add(this.guna2ComboBox3);
+            this.addUtilisateur.Controls.Add(this.gunaLabel1);
+            this.addUtilisateur.Controls.Add(this.guna2ComboBox1);
+            this.addUtilisateur.Controls.Add(this.gunaLabel3);
+            this.addUtilisateur.Controls.Add(this.guna2ComboBox2);
             this.addUtilisateur.Controls.Add(this.guna2Button16);
-            this.addUtilisateur.Controls.Add(this.txtidFacture);
-            this.addUtilisateur.Controls.Add(this.txtreservationidReservation);
             this.addUtilisateur.Location = new System.Drawing.Point(4, 22);
             this.addUtilisateur.Name = "addUtilisateur";
             this.addUtilisateur.Padding = new System.Windows.Forms.Padding(3);
             this.addUtilisateur.Size = new System.Drawing.Size(839, 488);
             this.addUtilisateur.TabIndex = 0;
             this.addUtilisateur.Text = "Ajouter Reservation";
-            // 
-            // txtmontantTotal
-            // 
-            this.txtmontantTotal.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(56)))), ((int)(((byte)(236)))));
-            this.txtmontantTotal.BorderRadius = 16;
-            this.txtmontantTotal.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtmontantTotal.DefaultText = "CLIENTS idClient";
-            this.txtmontantTotal.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtmontantTotal.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtmontantTotal.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtmontantTotal.DisabledState.Parent = this.txtmontantTotal;
-            this.txtmontantTotal.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtmontantTotal.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtmontantTotal.FocusedState.Parent = this.txtmontantTotal;
-            this.txtmontantTotal.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtmontantTotal.HoverState.Parent = this.txtmontantTotal;
-            this.txtmontantTotal.Location = new System.Drawing.Point(402, 150);
-            this.txtmontantTotal.Name = "txtmontantTotal";
-            this.txtmontantTotal.PasswordChar = '\0';
-            this.txtmontantTotal.PlaceholderText = "";
-            this.txtmontantTotal.SelectedText = "";
-            this.txtmontantTotal.ShadowDecoration.Parent = this.txtmontantTotal;
-            this.txtmontantTotal.Size = new System.Drawing.Size(200, 36);
-            this.txtmontantTotal.TabIndex = 71;
             // 
             // guna2Button16
             // 
@@ -118,54 +109,6 @@
             this.guna2Button16.Size = new System.Drawing.Size(200, 45);
             this.guna2Button16.TabIndex = 70;
             this.guna2Button16.Text = "Enregistrer";
-            // 
-            // txtidFacture
-            // 
-            this.txtidFacture.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(56)))), ((int)(((byte)(236)))));
-            this.txtidFacture.BorderRadius = 16;
-            this.txtidFacture.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtidFacture.DefaultText = "Facture idClient";
-            this.txtidFacture.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtidFacture.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtidFacture.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtidFacture.DisabledState.Parent = this.txtidFacture;
-            this.txtidFacture.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtidFacture.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtidFacture.FocusedState.Parent = this.txtidFacture;
-            this.txtidFacture.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtidFacture.HoverState.Parent = this.txtidFacture;
-            this.txtidFacture.Location = new System.Drawing.Point(196, 150);
-            this.txtidFacture.Name = "txtidFacture";
-            this.txtidFacture.PasswordChar = '\0';
-            this.txtidFacture.PlaceholderText = "";
-            this.txtidFacture.SelectedText = "";
-            this.txtidFacture.ShadowDecoration.Parent = this.txtidFacture;
-            this.txtidFacture.Size = new System.Drawing.Size(200, 36);
-            this.txtidFacture.TabIndex = 66;
-            // 
-            // txtreservationidReservation
-            // 
-            this.txtreservationidReservation.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(56)))), ((int)(((byte)(236)))));
-            this.txtreservationidReservation.BorderRadius = 16;
-            this.txtreservationidReservation.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtreservationidReservation.DefaultText = "TABLES idTable ";
-            this.txtreservationidReservation.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtreservationidReservation.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtreservationidReservation.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtreservationidReservation.DisabledState.Parent = this.txtreservationidReservation;
-            this.txtreservationidReservation.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtreservationidReservation.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtreservationidReservation.FocusedState.Parent = this.txtreservationidReservation;
-            this.txtreservationidReservation.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtreservationidReservation.HoverState.Parent = this.txtreservationidReservation;
-            this.txtreservationidReservation.Location = new System.Drawing.Point(296, 192);
-            this.txtreservationidReservation.Name = "txtreservationidReservation";
-            this.txtreservationidReservation.PasswordChar = '\0';
-            this.txtreservationidReservation.PlaceholderText = "";
-            this.txtreservationidReservation.SelectedText = "";
-            this.txtreservationidReservation.ShadowDecoration.Parent = this.txtreservationidReservation;
-            this.txtreservationidReservation.Size = new System.Drawing.Size(200, 36);
-            this.txtreservationidReservation.TabIndex = 62;
             // 
             // tabPage2
             // 
@@ -225,26 +168,32 @@
             // 
             // bunifuCustomDataGrid4
             // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomDataGrid4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.bunifuCustomDataGrid4.AutoGenerateColumns = false;
             this.bunifuCustomDataGrid4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.bunifuCustomDataGrid4.BackgroundColor = System.Drawing.Color.White;
             this.bunifuCustomDataGrid4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid4.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Indigo;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(56)))), ((int)(((byte)(236)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.bunifuCustomDataGrid4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bunifuCustomDataGrid4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.fACTURESidFactureDataGridViewTextBoxColumn,
+            this.cLIENTSidClientDataGridViewTextBoxColumn,
+            this.tABLESidTableDataGridViewTextBoxColumn});
+            this.bunifuCustomDataGrid4.DataSource = this.rESERVATIONSBindingSource;
             this.bunifuCustomDataGrid4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.bunifuCustomDataGrid4.DoubleBuffered = true;
             this.bunifuCustomDataGrid4.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid4.GridColor = System.Drawing.Color.Indigo;
-            this.bunifuCustomDataGrid4.HeaderBgColor = System.Drawing.Color.Indigo;
+            this.bunifuCustomDataGrid4.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(56)))), ((int)(((byte)(236)))));
+            this.bunifuCustomDataGrid4.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(56)))), ((int)(((byte)(236)))));
             this.bunifuCustomDataGrid4.HeaderForeColor = System.Drawing.Color.White;
             this.bunifuCustomDataGrid4.Location = new System.Drawing.Point(3, 104);
             this.bunifuCustomDataGrid4.Name = "bunifuCustomDataGrid4";
@@ -329,6 +278,137 @@
             this.slider.TabIndex = 15;
             this.slider.TabStop = false;
             // 
+            // gunaLabel3
+            // 
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel3.Location = new System.Drawing.Point(173, 110);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(90, 15);
+            this.gunaLabel3.TabIndex = 84;
+            this.gunaLabel3.Text = "Facture idClient";
+            // 
+            // guna2ComboBox2
+            // 
+            this.guna2ComboBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.guna2ComboBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(56)))), ((int)(((byte)(236)))));
+            this.guna2ComboBox2.BorderRadius = 15;
+            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.Empty;
+            this.guna2ComboBox2.FocusedState.Parent = this.guna2ComboBox2;
+            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox2.FormattingEnabled = true;
+            this.guna2ComboBox2.HoverState.Parent = this.guna2ComboBox2;
+            this.guna2ComboBox2.ItemHeight = 30;
+            this.guna2ComboBox2.Items.AddRange(new object[] {
+            "admin",
+            "user"});
+            this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
+            this.guna2ComboBox2.Location = new System.Drawing.Point(173, 128);
+            this.guna2ComboBox2.Name = "guna2ComboBox2";
+            this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
+            this.guna2ComboBox2.Size = new System.Drawing.Size(209, 36);
+            this.guna2ComboBox2.TabIndex = 83;
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel1.Location = new System.Drawing.Point(413, 110);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(95, 15);
+            this.gunaLabel1.TabIndex = 86;
+            this.gunaLabel1.Text = "CLIENTS idClient";
+            // 
+            // guna2ComboBox1
+            // 
+            this.guna2ComboBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.guna2ComboBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(56)))), ((int)(((byte)(236)))));
+            this.guna2ComboBox1.BorderRadius = 15;
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty;
+            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox1.FormattingEnabled = true;
+            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.ItemHeight = 30;
+            this.guna2ComboBox1.Items.AddRange(new object[] {
+            "admin",
+            "user"});
+            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Location = new System.Drawing.Point(413, 128);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Size = new System.Drawing.Size(209, 36);
+            this.guna2ComboBox1.TabIndex = 85;
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel2.Location = new System.Drawing.Point(296, 188);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(47, 15);
+            this.gunaLabel2.TabIndex = 88;
+            this.gunaLabel2.Text = "idTable ";
+            // 
+            // guna2ComboBox3
+            // 
+            this.guna2ComboBox3.BackColor = System.Drawing.SystemColors.Control;
+            this.guna2ComboBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(56)))), ((int)(((byte)(236)))));
+            this.guna2ComboBox3.BorderRadius = 15;
+            this.guna2ComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox3.FocusedColor = System.Drawing.Color.Empty;
+            this.guna2ComboBox3.FocusedState.Parent = this.guna2ComboBox3;
+            this.guna2ComboBox3.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox3.FormattingEnabled = true;
+            this.guna2ComboBox3.HoverState.Parent = this.guna2ComboBox3;
+            this.guna2ComboBox3.ItemHeight = 30;
+            this.guna2ComboBox3.Items.AddRange(new object[] {
+            "admin",
+            "user"});
+            this.guna2ComboBox3.ItemsAppearance.Parent = this.guna2ComboBox3;
+            this.guna2ComboBox3.Location = new System.Drawing.Point(296, 206);
+            this.guna2ComboBox3.Name = "guna2ComboBox3";
+            this.guna2ComboBox3.ShadowDecoration.Parent = this.guna2ComboBox3;
+            this.guna2ComboBox3.Size = new System.Drawing.Size(198, 36);
+            this.guna2ComboBox3.TabIndex = 87;
+            // 
+            // easyGestDataSet
+            // 
+            this.easyGestDataSet.DataSetName = "EasyGestDataSet";
+            this.easyGestDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // rESERVATIONSBindingSource
+            // 
+            this.rESERVATIONSBindingSource.DataMember = "RESERVATIONS";
+            this.rESERVATIONSBindingSource.DataSource = this.easyGestDataSet;
+            // 
+            // rESERVATIONSTableAdapter
+            // 
+            this.rESERVATIONSTableAdapter.ClearBeforeFill = true;
+            // 
+            // fACTURESidFactureDataGridViewTextBoxColumn
+            // 
+            this.fACTURESidFactureDataGridViewTextBoxColumn.DataPropertyName = "FACTURESidFacture";
+            this.fACTURESidFactureDataGridViewTextBoxColumn.HeaderText = "idFacture";
+            this.fACTURESidFactureDataGridViewTextBoxColumn.Name = "fACTURESidFactureDataGridViewTextBoxColumn";
+            // 
+            // cLIENTSidClientDataGridViewTextBoxColumn
+            // 
+            this.cLIENTSidClientDataGridViewTextBoxColumn.DataPropertyName = "CLIENTSidClient";
+            this.cLIENTSidClientDataGridViewTextBoxColumn.HeaderText = "idClient";
+            this.cLIENTSidClientDataGridViewTextBoxColumn.Name = "cLIENTSidClientDataGridViewTextBoxColumn";
+            // 
+            // tABLESidTableDataGridViewTextBoxColumn
+            // 
+            this.tABLESidTableDataGridViewTextBoxColumn.DataPropertyName = "TABLESidTable";
+            this.tABLESidTableDataGridViewTextBoxColumn.HeaderText = "idTable";
+            this.tABLESidTableDataGridViewTextBoxColumn.Name = "tABLESidTableDataGridViewTextBoxColumn";
+            // 
             // FrmGestionReservation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -342,11 +422,15 @@
             this.Name = "FrmGestionReservation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Factures";
+            this.Load += new System.EventHandler(this.FrmGestionReservation_Load);
             this.materialTabControl1.ResumeLayout(false);
             this.addUtilisateur.ResumeLayout(false);
+            this.addUtilisateur.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.slider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.easyGestDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rESERVATIONSBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -355,10 +439,7 @@
 
         private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
         private System.Windows.Forms.TabPage addUtilisateur;
-        private Guna.UI2.WinForms.Guna2TextBox txtmontantTotal;
         private Guna.UI2.WinForms.Guna2Button guna2Button16;
-        private Guna.UI2.WinForms.Guna2TextBox txtidFacture;
-        private Guna.UI2.WinForms.Guna2TextBox txtreservationidReservation;
         private System.Windows.Forms.TabPage tabPage2;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid4;
@@ -366,5 +447,17 @@
         private System.Windows.Forms.PictureBox slider;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI.WinForms.GunaLabel gunaLabel2;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox3;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI.WinForms.GunaLabel gunaLabel3;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
+        private EasyGestDataSet easyGestDataSet;
+        private System.Windows.Forms.BindingSource rESERVATIONSBindingSource;
+        private EasyGestDataSetTableAdapters.RESERVATIONSTableAdapter rESERVATIONSTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fACTURESidFactureDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cLIENTSidClientDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tABLESidTableDataGridViewTextBoxColumn;
     }
 }

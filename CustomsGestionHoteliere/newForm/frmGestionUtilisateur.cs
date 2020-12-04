@@ -40,5 +40,12 @@ namespace CustomsGestionHoteliere.newForm
         {
 
         }
+
+        private void FrmGestionUtilisateur_Load(object sender, EventArgs e)
+        {
+            // TODO: cette ligne de code charge les données dans la table 'easyGestDataSet.UTILISATEURS'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.uTILISATEURSTableAdapter.Fill(this.easyGestDataSet.UTILISATEURS);
+
+        }
     }
 }

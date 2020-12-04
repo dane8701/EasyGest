@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGestionCommande));
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.AjouterUtilisateur = new System.Windows.Forms.TabPage();
             this.cbDatefCommande = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -45,47 +45,26 @@
             this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.bunifuCustomDataGrid4 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.slider = new System.Windows.Forms.PictureBox();
+            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.easyGestDataSet = new CustomsGestionHoteliere.EasyGestDataSet();
+            this.cOMMANDESBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cOMMANDESTableAdapter = new CustomsGestionHoteliere.EasyGestDataSetTableAdapters.COMMANDESTableAdapter();
+            this.idComandeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateComandeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantiterDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.montantUnitaireDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.montantGlobalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.menuidMenuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.materialTabControl1.SuspendLayout();
             this.AjouterUtilisateur.SuspendLayout();
             this.ListeCommande.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.easyGestDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cOMMANDESBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // bunifuFlatButton1
-            // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = " Commande";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = null;
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 90D;
-            this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(256, 2);
-            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.Indigo;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(142, 50);
-            this.bunifuFlatButton1.TabIndex = 9;
-            this.bunifuFlatButton1.Text = " Commande";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // materialTabControl1
             // 
@@ -170,7 +149,7 @@
             this.btnEnregistrer.CheckedState.Parent = this.btnEnregistrer;
             this.btnEnregistrer.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnEnregistrer.CustomImages.Parent = this.btnEnregistrer;
-            this.btnEnregistrer.FillColor = System.Drawing.Color.Indigo;
+            this.btnEnregistrer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(167)))), ((int)(((byte)(201)))));
             this.btnEnregistrer.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnEnregistrer.ForeColor = System.Drawing.Color.White;
             this.btnEnregistrer.HoverState.Parent = this.btnEnregistrer;
@@ -287,8 +266,8 @@
             this.guna2GradientButton4.BorderRadius = 16;
             this.guna2GradientButton4.CheckedState.Parent = this.guna2GradientButton4;
             this.guna2GradientButton4.CustomImages.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(106)))), ((int)(((byte)(79)))));
-            this.guna2GradientButton4.FillColor2 = System.Drawing.Color.Green;
+            this.guna2GradientButton4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(167)))), ((int)(((byte)(201)))));
+            this.guna2GradientButton4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.guna2GradientButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton4.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton4.HoverState.Parent = this.guna2GradientButton4;
@@ -301,26 +280,35 @@
             // 
             // bunifuCustomDataGrid4
             // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomDataGrid4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.bunifuCustomDataGrid4.AutoGenerateColumns = false;
             this.bunifuCustomDataGrid4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.bunifuCustomDataGrid4.BackgroundColor = System.Drawing.Color.White;
             this.bunifuCustomDataGrid4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid4.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Indigo;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(167)))), ((int)(((byte)(201)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.bunifuCustomDataGrid4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bunifuCustomDataGrid4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idComandeDataGridViewTextBoxColumn,
+            this.dateComandeDataGridViewTextBoxColumn,
+            this.quantiterDataGridViewTextBoxColumn,
+            this.montantUnitaireDataGridViewTextBoxColumn,
+            this.montantGlobalDataGridViewTextBoxColumn,
+            this.menuidMenuDataGridViewTextBoxColumn});
+            this.bunifuCustomDataGrid4.DataSource = this.cOMMANDESBindingSource;
             this.bunifuCustomDataGrid4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.bunifuCustomDataGrid4.DoubleBuffered = true;
             this.bunifuCustomDataGrid4.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid4.GridColor = System.Drawing.Color.Indigo;
-            this.bunifuCustomDataGrid4.HeaderBgColor = System.Drawing.Color.Indigo;
+            this.bunifuCustomDataGrid4.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(167)))), ((int)(((byte)(201)))));
+            this.bunifuCustomDataGrid4.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(167)))), ((int)(((byte)(201)))));
             this.bunifuCustomDataGrid4.HeaderForeColor = System.Drawing.Color.White;
             this.bunifuCustomDataGrid4.Location = new System.Drawing.Point(3, 112);
             this.bunifuCustomDataGrid4.Name = "bunifuCustomDataGrid4";
@@ -356,6 +344,135 @@
             this.guna2TextBox4.Size = new System.Drawing.Size(257, 45);
             this.guna2TextBox4.TabIndex = 15;
             // 
+            // bunifuFlatButton2
+            // 
+            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton2.BorderRadius = 0;
+            this.bunifuFlatButton2.ButtonText = "Liste Commande";
+            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton2.Iconimage = null;
+            this.bunifuFlatButton2.Iconimage_right = null;
+            this.bunifuFlatButton2.Iconimage_right_Selected = null;
+            this.bunifuFlatButton2.Iconimage_Selected = null;
+            this.bunifuFlatButton2.IconMarginLeft = 0;
+            this.bunifuFlatButton2.IconMarginRight = 0;
+            this.bunifuFlatButton2.IconRightVisible = true;
+            this.bunifuFlatButton2.IconRightZoom = 0D;
+            this.bunifuFlatButton2.IconVisible = true;
+            this.bunifuFlatButton2.IconZoom = 90D;
+            this.bunifuFlatButton2.IsTab = false;
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(209, 12);
+            this.bunifuFlatButton2.Name = "bunifuFlatButton2";
+            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.Indigo;
+            this.bunifuFlatButton2.selected = false;
+            this.bunifuFlatButton2.Size = new System.Drawing.Size(166, 35);
+            this.bunifuFlatButton2.TabIndex = 15;
+            this.bunifuFlatButton2.Text = "Liste Commande";
+            this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton2.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
+            this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton2.Click += new System.EventHandler(this.bunifuFlatButton2_Click);
+            // 
+            // slider
+            // 
+            this.slider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(167)))), ((int)(((byte)(201)))));
+            this.slider.Location = new System.Drawing.Point(5, 44);
+            this.slider.Name = "slider";
+            this.slider.Size = new System.Drawing.Size(153, 10);
+            this.slider.TabIndex = 14;
+            this.slider.TabStop = false;
+            // 
+            // bunifuFlatButton1
+            // 
+            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton1.BorderRadius = 0;
+            this.bunifuFlatButton1.ButtonText = "Ajouter Commande";
+            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.Iconimage = null;
+            this.bunifuFlatButton1.Iconimage_right = null;
+            this.bunifuFlatButton1.Iconimage_right_Selected = null;
+            this.bunifuFlatButton1.Iconimage_Selected = null;
+            this.bunifuFlatButton1.IconMarginLeft = 0;
+            this.bunifuFlatButton1.IconMarginRight = 0;
+            this.bunifuFlatButton1.IconRightVisible = true;
+            this.bunifuFlatButton1.IconRightZoom = 0D;
+            this.bunifuFlatButton1.IconVisible = true;
+            this.bunifuFlatButton1.IconZoom = 90D;
+            this.bunifuFlatButton1.IsTab = false;
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(5, 12);
+            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
+            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(106)))), ((int)(((byte)(79)))));
+            this.bunifuFlatButton1.selected = false;
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(198, 30);
+            this.bunifuFlatButton1.TabIndex = 13;
+            this.bunifuFlatButton1.Text = "Ajouter Commande";
+            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
+            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
+            // 
+            // easyGestDataSet
+            // 
+            this.easyGestDataSet.DataSetName = "EasyGestDataSet";
+            this.easyGestDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cOMMANDESBindingSource
+            // 
+            this.cOMMANDESBindingSource.DataMember = "COMMANDES";
+            this.cOMMANDESBindingSource.DataSource = this.easyGestDataSet;
+            // 
+            // cOMMANDESTableAdapter
+            // 
+            this.cOMMANDESTableAdapter.ClearBeforeFill = true;
+            // 
+            // idComandeDataGridViewTextBoxColumn
+            // 
+            this.idComandeDataGridViewTextBoxColumn.DataPropertyName = "idComande";
+            this.idComandeDataGridViewTextBoxColumn.HeaderText = "idComande";
+            this.idComandeDataGridViewTextBoxColumn.Name = "idComandeDataGridViewTextBoxColumn";
+            // 
+            // dateComandeDataGridViewTextBoxColumn
+            // 
+            this.dateComandeDataGridViewTextBoxColumn.DataPropertyName = "dateComande";
+            this.dateComandeDataGridViewTextBoxColumn.HeaderText = "Date Comande";
+            this.dateComandeDataGridViewTextBoxColumn.Name = "dateComandeDataGridViewTextBoxColumn";
+            // 
+            // quantiterDataGridViewTextBoxColumn
+            // 
+            this.quantiterDataGridViewTextBoxColumn.DataPropertyName = "quantiter";
+            this.quantiterDataGridViewTextBoxColumn.HeaderText = "Quantiter";
+            this.quantiterDataGridViewTextBoxColumn.Name = "quantiterDataGridViewTextBoxColumn";
+            // 
+            // montantUnitaireDataGridViewTextBoxColumn
+            // 
+            this.montantUnitaireDataGridViewTextBoxColumn.DataPropertyName = "montantUnitaire";
+            this.montantUnitaireDataGridViewTextBoxColumn.HeaderText = "Montant Unitaire";
+            this.montantUnitaireDataGridViewTextBoxColumn.Name = "montantUnitaireDataGridViewTextBoxColumn";
+            // 
+            // montantGlobalDataGridViewTextBoxColumn
+            // 
+            this.montantGlobalDataGridViewTextBoxColumn.DataPropertyName = "montantGlobal";
+            this.montantGlobalDataGridViewTextBoxColumn.HeaderText = "Montant Global";
+            this.montantGlobalDataGridViewTextBoxColumn.Name = "montantGlobalDataGridViewTextBoxColumn";
+            // 
+            // menuidMenuDataGridViewTextBoxColumn
+            // 
+            this.menuidMenuDataGridViewTextBoxColumn.DataPropertyName = "MenuidMenu";
+            this.menuidMenuDataGridViewTextBoxColumn.HeaderText = "idMenu";
+            this.menuidMenuDataGridViewTextBoxColumn.Name = "menuidMenuDataGridViewTextBoxColumn";
+            // 
             // FrmGestionCommande
             // 
             this.AcceptButton = this.btnEnregistrer;
@@ -363,24 +480,29 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(871, 577);
-            this.Controls.Add(this.materialTabControl1);
+            this.Controls.Add(this.bunifuFlatButton2);
+            this.Controls.Add(this.slider);
             this.Controls.Add(this.bunifuFlatButton1);
+            this.Controls.Add(this.materialTabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmGestionCommande";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmGestionCommande";
+            this.Load += new System.EventHandler(this.FrmGestionCommande_Load);
             this.materialTabControl1.ResumeLayout(false);
             this.AjouterUtilisateur.ResumeLayout(false);
             this.AjouterUtilisateur.PerformLayout();
             this.ListeCommande.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.easyGestDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cOMMANDESBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
         private System.Windows.Forms.TabPage ListeCommande;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid4;
@@ -394,5 +516,17 @@
         private Guna.UI2.WinForms.Guna2DateTimePicker cbDatefCommande;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
+        private System.Windows.Forms.PictureBox slider;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
+        private EasyGestDataSet easyGestDataSet;
+        private System.Windows.Forms.BindingSource cOMMANDESBindingSource;
+        private EasyGestDataSetTableAdapters.COMMANDESTableAdapter cOMMANDESTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idComandeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateComandeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantiterDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn montantUnitaireDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn montantGlobalDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn menuidMenuDataGridViewTextBoxColumn;
     }
 }

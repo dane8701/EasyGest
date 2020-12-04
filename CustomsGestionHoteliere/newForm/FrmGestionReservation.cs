@@ -16,5 +16,12 @@ namespace CustomsGestionHoteliere.newForm
         {
             InitializeComponent();
         }
+
+        private void FrmGestionReservation_Load(object sender, EventArgs e)
+        {
+            // TODO: cette ligne de code charge les données dans la table 'easyGestDataSet.RESERVATIONS'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.rESERVATIONSTableAdapter.Fill(this.easyGestDataSet.RESERVATIONS);
+
+        }
     }
 }

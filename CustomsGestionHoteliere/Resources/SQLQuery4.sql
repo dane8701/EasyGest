@@ -1,0 +1,2 @@
+﻿ALTER TABLE PLATS 
+    ADD CONSTRAINT FKplats1 FOREIGN KEY (TypePlatidTypePlat) REFERENCES TypePlats (idTypePlat);
