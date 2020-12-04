@@ -90,17 +90,71 @@
     <Compile Include="encientTravail\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="newForm\frmGestionUtilisateur.cs">
+    <Compile Include="newForm\FrmGestionBoisson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="newForm\frmGestionUtilisateur.Designer.cs">
-      <DependentUpon>frmGestionUtilisateur.cs</DependentUpon>
+    <Compile Include="newForm\FrmGestionBoisson.Designer.cs">
+      <DependentUpon>FrmGestionBoisson.cs</DependentUpon>
     </Compile>
-    <Compile Include="newForm\NouveauFormParent.cs">
+    <Compile Include="newForm\FrmGestionClient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="newForm\NouveauFormParent.Designer.cs">
-      <DependentUpon>NouveauFormParent.cs</DependentUpon>
+    <Compile Include="newForm\FrmGestionClient.Designer.cs">
+      <DependentUpon>FrmGestionClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newForm\frmGestionCommande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newForm\frmGestionCommande.Designer.cs">
+      <DependentUpon>frmGestionCommande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newForm\FrmGestionFactures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newForm\FrmGestionFactures.Designer.cs">
+      <DependentUpon>FrmGestionFactures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newForm\frmGestionMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newForm\frmGestionMenu.Designer.cs">
+      <DependentUpon>frmGestionMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newForm\FrmGestionParametre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newForm\FrmGestionParametre.Designer.cs">
+      <DependentUpon>FrmGestionParametre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newForm\FrmGestionPlats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newForm\FrmGestionPlats.Designer.cs">
+      <DependentUpon>FrmGestionPlats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newForm\FrmGestionReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newForm\FrmGestionReservation.Designer.cs">
+      <DependentUpon>FrmGestionReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newForm\FrmGestionTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newForm\FrmGestionTable.Designer.cs">
+      <DependentUpon>FrmGestionTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newForm\FrmGestionUtilisateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newForm\FrmGestionUtilisateur.Designer.cs">
+      <DependentUpon>FrmGestionUtilisateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newForm\FrmControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newForm\FrmControl.Designer.cs">
+      <DependentUpon>FrmControl.cs</DependentUpon>
     </Compile>
     <Compile Include="encientTravail\gestfacture.cs">
       <SubType>Form</SubType>
@@ -177,11 +231,38 @@
     <EmbeddedResource Include="encientTravail\login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="newForm\frmGestionUtilisateur.resx">
-      <DependentUpon>frmGestionUtilisateur.cs</DependentUpon>
+    <EmbeddedResource Include="newForm\FrmGestionBoisson.resx">
+      <DependentUpon>FrmGestionBoisson.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="newForm\NouveauFormParent.resx">
-      <DependentUpon>NouveauFormParent.cs</DependentUpon>
+    <EmbeddedResource Include="newForm\FrmGestionClient.resx">
+      <DependentUpon>FrmGestionClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newForm\frmGestionCommande.resx">
+      <DependentUpon>frmGestionCommande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newForm\FrmGestionFactures.resx">
+      <DependentUpon>FrmGestionFactures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newForm\frmGestionMenu.resx">
+      <DependentUpon>frmGestionMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newForm\FrmGestionParametre.resx">
+      <DependentUpon>FrmGestionParametre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newForm\FrmGestionPlats.resx">
+      <DependentUpon>FrmGestionPlats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newForm\FrmGestionReservation.resx">
+      <DependentUpon>FrmGestionReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newForm\FrmGestionTable.resx">
+      <DependentUpon>FrmGestionTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newForm\FrmGestionUtilisateur.resx">
+      <DependentUpon>FrmGestionUtilisateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newForm\FrmControl.resx">
+      <DependentUpon>FrmControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -296,6 +377,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\help_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plate_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cocktail_64px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

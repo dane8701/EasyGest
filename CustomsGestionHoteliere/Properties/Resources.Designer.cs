@@ -83,6 +83,16 @@ namespace CustomsGestionHoteliere.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cocktail_64px {
+            get {
+                object obj = ResourceManager.GetObject("cocktail_64px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Coffee_Table_80px {
             get {
                 object obj = ResourceManager.GetObject("Coffee Table_80px", resourceCulture);
@@ -146,6 +156,16 @@ namespace CustomsGestionHoteliere.Properties {
         internal static System.Drawing.Bitmap pexels_rachel_claire_4577397 {
             get {
                 object obj = ResourceManager.GetObject("pexels-rachel-claire-4577397", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plate_64px {
+            get {
+                object obj = ResourceManager.GetObject("plate_64px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

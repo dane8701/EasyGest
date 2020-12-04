@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace CustomsGestionHoteliere.newForm
 {
-    public partial class FrmGestionUtilisateur : Form
+    public partial class FrmGestionFactures : Form
     {
-        public FrmGestionUtilisateur()
+        public FrmGestionFactures()
         {
             InitializeComponent();
         }
 
-        private void slider_Click(object sender, EventArgs e)
+        private void addUtilisateur_Click(object sender, EventArgs e)
         {
 
         }
@@ -34,11 +34,6 @@ namespace CustomsGestionHoteliere.newForm
             slider.Left = ((Bunifu.Framework.UI.BunifuFlatButton)sender).Left;
             slider.Width = ((Bunifu.Framework.UI.BunifuFlatButton)sender).Width;
             materialTabControl1.SelectTab(1);
-        }
-
-        private void guna2GradientButton4_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

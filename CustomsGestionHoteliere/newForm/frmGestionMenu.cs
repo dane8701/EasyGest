@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CustomsGestionHoteliere
+namespace CustomsGestionHoteliere.newForm
 {
-    public partial class NouveauFormParent : Form
+    public partial class frmGestionMenu : Form
     {
-        public NouveauFormParent()
+        public frmGestionMenu()
         {
             InitializeComponent();
-        }
-
-        private void btCLose_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

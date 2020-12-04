@@ -117,44 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pexels-julie-aagaard-2351274" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pexels-julie-aagaard-2351274.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pexels-rachel-claire-4577397" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pexels-rachel-claire-4577397.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="settings_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\settings_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bill_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bill_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ticket_purchase_26px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ticket_purchase_26px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="client_management_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\client_management_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="help_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\help_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="help_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\help_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="meal_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\meal_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="plate_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plate_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="customer_support_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\customer_support_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Coffee Table_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Coffee Table_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cocktail_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cocktail_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>
