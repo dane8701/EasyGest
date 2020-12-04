@@ -46,7 +46,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(25)))), ((int)(((byte)(22)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(226)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.guna2TileButton1);
             this.panel1.Controls.Add(this.btCLose);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
@@ -108,7 +108,7 @@
             this.guna2GradientTileButton2.ShadowDecoration.Parent = this.guna2GradientTileButton2;
             this.guna2GradientTileButton2.Size = new System.Drawing.Size(149, 279);
             this.guna2GradientTileButton2.TabIndex = 3;
-            this.guna2GradientTileButton2.Text = "guna2GradientTileButton2";
+            this.guna2GradientTileButton2.Text = "Commande";
             // 
             // guna2GradientTileButton4
             // 
@@ -129,7 +129,7 @@
             this.guna2GradientTileButton4.ShadowDecoration.Parent = this.guna2GradientTileButton4;
             this.guna2GradientTileButton4.Size = new System.Drawing.Size(255, 97);
             this.guna2GradientTileButton4.TabIndex = 5;
-            this.guna2GradientTileButton4.Text = "guna2GradientTileButton4";
+            this.guna2GradientTileButton4.Text = "Client";
             // 
             // guna2GradientTileButton9
             // 
@@ -290,6 +290,7 @@
             this.guna2GradientTileButton1.HoverState.Parent = this.guna2GradientTileButton1;
             this.guna2GradientTileButton1.Image = global::CustomsGestionHoteliere.Properties.Resources.bill_64px;
             this.guna2GradientTileButton1.ImageSize = new System.Drawing.Size(50, 50);
+            this.guna2GradientTileButton1.ImeMode = System.Windows.Forms.ImeMode.AlphaFull;
             this.guna2GradientTileButton1.Location = new System.Drawing.Point(711, 110);
             this.guna2GradientTileButton1.Name = "guna2GradientTileButton1";
             this.guna2GradientTileButton1.ShadowDecoration.Parent = this.guna2GradientTileButton1;
@@ -300,7 +301,7 @@
             // NouveauFormParent
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::CustomsGestionHoteliere.Properties.Resources.pexels_julie_aagaard_2351274;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1152, 597);

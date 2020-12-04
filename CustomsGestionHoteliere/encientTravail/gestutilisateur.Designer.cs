@@ -1,4 +1,6 @@
-﻿namespace CustomsGestionHoteliere
+﻿using CustomsGestionHoteliere.encientTravail;
+
+namespace CustomsGestionHoteliere
 {
     partial class gestutilisateur
     {
@@ -45,9 +47,9 @@
             this.txtnom = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2TileButton2 = new Guna.UI2.WinForms.Guna2TileButton();
-            this.gset_hotelDataSet = new CustomsGestionHoteliere.gset_hotelDataSet();
+            this.gset_hotelDataSet = new CustomsGestionHoteliere.encientTravail.gset_hotelDataSet();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.agentTableAdapter = new CustomsGestionHoteliere.gset_hotelDataSetTableAdapters.agentTableAdapter();
+            this.agentTableAdapter = new CustomsGestionHoteliere.encientTravail.gset_hotelDataSetTableAdapters.agentTableAdapter();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gset_hotelDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -426,6 +428,6 @@
         private Guna.UI2.WinForms.Guna2TileButton guna2TileButton2;
         private gset_hotelDataSet gset_hotelDataSet;
         private System.Windows.Forms.BindingSource bindingSource1;
-        private gset_hotelDataSetTableAdapters.agentTableAdapter agentTableAdapter;
+        private encientTravail.gset_hotelDataSetTableAdapters.agentTableAdapter agentTableAdapter;
     }
 }

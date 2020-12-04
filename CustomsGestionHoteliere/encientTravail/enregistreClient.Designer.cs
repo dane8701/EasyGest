@@ -1,4 +1,6 @@
-﻿namespace CustomsGestionHoteliere
+﻿using CustomsGestionHoteliere.encientTravail;
+
+namespace CustomsGestionHoteliere
 {
     partial class enregistreClient
     {
@@ -43,9 +45,9 @@
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.guna2TileButton2 = new Guna.UI2.WinForms.Guna2TileButton();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.gset_hotelDataSet2 = new CustomsGestionHoteliere.gset_hotelDataSet2();
+            this.gset_hotelDataSet2 = new CustomsGestionHoteliere.encientTravail.gset_hotelDataSet2();
             this.clientBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clientTableAdapter = new CustomsGestionHoteliere.gset_hotelDataSet2TableAdapters.clientTableAdapter();
+            this.clientTableAdapter = new CustomsGestionHoteliere.encientTravail.gset_hotelDataSet2TableAdapters.clientTableAdapter();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gset_hotelDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).BeginInit();
@@ -365,6 +367,6 @@
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private gset_hotelDataSet2 gset_hotelDataSet2;
         private System.Windows.Forms.BindingSource clientBindingSource;
-        private gset_hotelDataSet2TableAdapters.clientTableAdapter clientTableAdapter;
+        private encientTravail.gset_hotelDataSet2TableAdapters.clientTableAdapter clientTableAdapter;
     }
 }

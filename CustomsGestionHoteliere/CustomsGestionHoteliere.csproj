@@ -90,6 +90,12 @@
     <Compile Include="encientTravail\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="newForm\frmGestionUtilisateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newForm\frmGestionUtilisateur.Designer.cs">
+      <DependentUpon>frmGestionUtilisateur.cs</DependentUpon>
+    </Compile>
     <Compile Include="newForm\NouveauFormParent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="encientTravail\login.resx">
       <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newForm\frmGestionUtilisateur.resx">
+      <DependentUpon>frmGestionUtilisateur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="newForm\NouveauFormParent.resx">
       <DependentUpon>NouveauFormParent.cs</DependentUpon>

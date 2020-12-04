@@ -1,4 +1,6 @@
-﻿namespace CustomsGestionHoteliere
+﻿using CustomsGestionHoteliere.encientTravail;
+
+namespace CustomsGestionHoteliere
 {
     partial class gestfacture
     {
@@ -46,9 +48,9 @@
             this.cbidfactu = new Guna.UI2.WinForms.Guna2TextBox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.guna2Button16 = new Guna.UI2.WinForms.Guna2Button();
-            this.gset_hotelDataSet = new CustomsGestionHoteliere.gset_hotelDataSet();
+            this.gset_hotelDataSet = new CustomsGestionHoteliere.encientTravail.gset_hotelDataSet();
             this.factureBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.factureTableAdapter = new CustomsGestionHoteliere.gset_hotelDataSetTableAdapters.factureTableAdapter();
+            this.factureTableAdapter = new CustomsGestionHoteliere.encientTravail.gset_hotelDataSetTableAdapters.factureTableAdapter();
             this.guna2TileButton2 = new Guna.UI2.WinForms.Guna2TileButton();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.panel1.SuspendLayout();
@@ -438,7 +440,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button16;
         private gset_hotelDataSet gset_hotelDataSet;
         private System.Windows.Forms.BindingSource factureBindingSource;
-        private gset_hotelDataSetTableAdapters.factureTableAdapter factureTableAdapter;
+        private encientTravail.gset_hotelDataSetTableAdapters.factureTableAdapter factureTableAdapter;
         private Guna.UI2.WinForms.Guna2TileButton guna2TileButton2;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }

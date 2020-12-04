@@ -1,4 +1,6 @@
-﻿namespace CustomsGestionHoteliere
+﻿using CustomsGestionHoteliere.encientTravail;
+
+namespace CustomsGestionHoteliere
 {
     partial class Form1
     {
@@ -62,7 +64,7 @@
             this.nationaliterDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.typeDeClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clientBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.gset_hotelDataSet4 = new CustomsGestionHoteliere.gset_hotelDataSet4();
+            this.gset_hotelDataSet4 = new CustomsGestionHoteliere.encientTravail.gset_hotelDataSet4();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -134,10 +136,10 @@
             this.guna2TextBox9 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2GradientButton5 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.clientTableAdapter1 = new CustomsGestionHoteliere.gset_hotelDataSet4TableAdapters.clientTableAdapter();
-            this.reservationTableAdapter = new CustomsGestionHoteliere.gset_hotelDataSet4TableAdapters.reservationTableAdapter();
-            this.factureTableAdapter = new CustomsGestionHoteliere.gset_hotelDataSet4TableAdapters.factureTableAdapter();
-            this.agentTableAdapter = new CustomsGestionHoteliere.gset_hotelDataSet4TableAdapters.agentTableAdapter();
+            this.clientTableAdapter1 = new CustomsGestionHoteliere.encientTravail.gset_hotelDataSet4TableAdapters.clientTableAdapter();
+            this.reservationTableAdapter = new CustomsGestionHoteliere.encientTravail.gset_hotelDataSet4TableAdapters.reservationTableAdapter();
+            this.factureTableAdapter = new CustomsGestionHoteliere.encientTravail.gset_hotelDataSet4TableAdapters.factureTableAdapter();
+            this.agentTableAdapter = new CustomsGestionHoteliere.encientTravail.gset_hotelDataSet4TableAdapters.agentTableAdapter();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.slider)).BeginInit();
@@ -1595,7 +1597,7 @@
         public Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton4;
         private gset_hotelDataSet4 gset_hotelDataSet4;
         private System.Windows.Forms.BindingSource clientBindingSource1;
-        private gset_hotelDataSet4TableAdapters.clientTableAdapter clientTableAdapter1;
+        private encientTravail.gset_hotelDataSet4TableAdapters.clientTableAdapter clientTableAdapter1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idclientDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomCompletDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn sexDataGridViewTextBoxColumn;
@@ -1606,7 +1608,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn typeDeClientDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource gsethotelDataSet4BindingSource;
         private System.Windows.Forms.BindingSource reservationBindingSource;
-        private gset_hotelDataSet4TableAdapters.reservationTableAdapter reservationTableAdapter;
+        private encientTravail.gset_hotelDataSet4TableAdapters.reservationTableAdapter reservationTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idreservationDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateDeReservationDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateDeDebutDuSejourDataGridViewTextBoxColumn;
@@ -1620,7 +1622,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idformulDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreDeChambreDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource factureBindingSource;
-        private gset_hotelDataSet4TableAdapters.factureTableAdapter factureTableAdapter;
+        private encientTravail.gset_hotelDataSet4TableAdapters.factureTableAdapter factureTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idfactureDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateFactureDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn montantTotalDataGridViewTextBoxColumn;
@@ -1630,7 +1632,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idreservationDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dureDuSejourDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource agentBindingSource;
-        private gset_hotelDataSet4TableAdapters.agentTableAdapter agentTableAdapter;
+        private encientTravail.gset_hotelDataSet4TableAdapters.agentTableAdapter agentTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idagtDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomCompletDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn adressDataGridViewTextBoxColumn1;

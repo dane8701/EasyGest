@@ -1,4 +1,6 @@
-﻿namespace CustomsGestionHoteliere
+﻿using CustomsGestionHoteliere.encientTravail;
+
+namespace CustomsGestionHoteliere
 {
     partial class gestReservation
     {
@@ -36,7 +38,7 @@
             this.bunifuCustomLabel13 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.idagt = new Guna.UI2.WinForms.Guna2ComboBox();
             this.reservationBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gset_hotelDataSet = new CustomsGestionHoteliere.gset_hotelDataSet();
+            this.gset_hotelDataSet = new CustomsGestionHoteliere.encientTravail.gset_hotelDataSet();
             this.bunifuCustomLabel14 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.idclt = new Guna.UI2.WinForms.Guna2ComboBox();
             this.datedeb = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -54,7 +56,7 @@
             this.guna2Button16 = new Guna.UI2.WinForms.Guna2Button();
             this.idreserve = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.reservationTableAdapter = new CustomsGestionHoteliere.gset_hotelDataSetTableAdapters.reservationTableAdapter();
+            this.reservationTableAdapter = new CustomsGestionHoteliere.encientTravail.gset_hotelDataSetTableAdapters.reservationTableAdapter();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.reservationBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gset_hotelDataSet)).BeginInit();
@@ -493,6 +495,6 @@
         private Guna.UI2.WinForms.Guna2TileButton guna2TileButton2;
         private gset_hotelDataSet gset_hotelDataSet;
         private System.Windows.Forms.BindingSource reservationBindingSource;
-        private gset_hotelDataSetTableAdapters.reservationTableAdapter reservationTableAdapter;
+        private encientTravail.gset_hotelDataSetTableAdapters.reservationTableAdapter reservationTableAdapter;
     }
 }
