@@ -29,41 +29,45 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGestionCommande));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGestionCommande));
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.AjouterUtilisateur = new System.Windows.Forms.TabPage();
+            this.txtprg = new Guna.UI2.WinForms.Guna2TextBox();
             this.cbDatefCommande = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txtQuantite = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnEnregistrer = new Guna.UI2.WinForms.Guna2Button();
             this.txtPrixUnitaire = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtIdCommande = new Guna.UI2.WinForms.Guna2TextBox();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.txtPrixGlobal = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtmenueID = new Guna.UI2.WinForms.Guna2TextBox();
             this.ListeCommande = new System.Windows.Forms.TabPage();
+            this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.bunifuCustomDataGrid4 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.slider = new System.Windows.Forms.PictureBox();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.easyGestDataSet = new CustomsGestionHoteliere.EasyGestDataSet();
-            this.cOMMANDESBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cOMMANDESTableAdapter = new CustomsGestionHoteliere.EasyGestDataSetTableAdapters.COMMANDESTableAdapter();
+            this.bunifuCustomDataGrid4 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.idComandeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateComandeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantiterDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.montantUnitaireDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.montantGlobalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuidMenuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cOMMANDESBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.easyGestDataSet5 = new CustomsGestionHoteliere.EasyGestDataSet5();
+            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.slider = new System.Windows.Forms.PictureBox();
+            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.cOMMANDESTableAdapter = new CustomsGestionHoteliere.EasyGestDataSet5TableAdapters.COMMANDESTableAdapter();
+            this.gunaImageButton1 = new Guna.UI.WinForms.GunaImageButton();
             this.materialTabControl1.SuspendLayout();
             this.AjouterUtilisateur.SuspendLayout();
             this.ListeCommande.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.slider)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.easyGestDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cOMMANDESBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.easyGestDataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slider)).BeginInit();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -81,13 +85,14 @@
             // AjouterUtilisateur
             // 
             this.AjouterUtilisateur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(244)))));
+            this.AjouterUtilisateur.Controls.Add(this.txtprg);
             this.AjouterUtilisateur.Controls.Add(this.cbDatefCommande);
             this.AjouterUtilisateur.Controls.Add(this.txtQuantite);
             this.AjouterUtilisateur.Controls.Add(this.btnEnregistrer);
             this.AjouterUtilisateur.Controls.Add(this.txtPrixUnitaire);
             this.AjouterUtilisateur.Controls.Add(this.txtIdCommande);
             this.AjouterUtilisateur.Controls.Add(this.bunifuCustomLabel5);
-            this.AjouterUtilisateur.Controls.Add(this.txtPrixGlobal);
+            this.AjouterUtilisateur.Controls.Add(this.txtmenueID);
             this.AjouterUtilisateur.Location = new System.Drawing.Point(4, 22);
             this.AjouterUtilisateur.Name = "AjouterUtilisateur";
             this.AjouterUtilisateur.Padding = new System.Windows.Forms.Padding(3);
@@ -95,6 +100,32 @@
             this.AjouterUtilisateur.TabIndex = 0;
             this.AjouterUtilisateur.Text = "AjouterCommande";
             this.AjouterUtilisateur.Click += new System.EventHandler(this.addUtilisateur_Click);
+            // 
+            // txtprg
+            // 
+            this.txtprg.BorderColor = System.Drawing.Color.Indigo;
+            this.txtprg.BorderRadius = 16;
+            this.txtprg.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtprg.DefaultText = "PrixGlobal";
+            this.txtprg.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtprg.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtprg.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtprg.DisabledState.Parent = this.txtprg;
+            this.txtprg.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtprg.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtprg.FocusedState.Parent = this.txtprg;
+            this.txtprg.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtprg.HoverState.Parent = this.txtprg;
+            this.txtprg.Location = new System.Drawing.Point(467, 187);
+            this.txtprg.Margin = new System.Windows.Forms.Padding(4);
+            this.txtprg.Name = "txtprg";
+            this.txtprg.PasswordChar = '\0';
+            this.txtprg.PlaceholderText = "";
+            this.txtprg.SelectedText = "";
+            this.txtprg.SelectionStart = 10;
+            this.txtprg.ShadowDecoration.Parent = this.txtprg;
+            this.txtprg.Size = new System.Drawing.Size(177, 36);
+            this.txtprg.TabIndex = 66;
             // 
             // cbDatefCommande
             // 
@@ -130,7 +161,7 @@
             this.txtQuantite.FocusedState.Parent = this.txtQuantite;
             this.txtQuantite.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtQuantite.HoverState.Parent = this.txtQuantite;
-            this.txtQuantite.Location = new System.Drawing.Point(161, 159);
+            this.txtQuantite.Location = new System.Drawing.Point(161, 131);
             this.txtQuantite.Margin = new System.Windows.Forms.Padding(4);
             this.txtQuantite.Name = "txtQuantite";
             this.txtQuantite.PasswordChar = '\0';
@@ -159,6 +190,7 @@
             this.btnEnregistrer.Size = new System.Drawing.Size(188, 45);
             this.btnEnregistrer.TabIndex = 5;
             this.btnEnregistrer.Text = "Enregistrer";
+            this.btnEnregistrer.Click += new System.EventHandler(this.btnEnregistrer_Click);
             // 
             // txtPrixUnitaire
             // 
@@ -175,7 +207,7 @@
             this.txtPrixUnitaire.FocusedState.Parent = this.txtPrixUnitaire;
             this.txtPrixUnitaire.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPrixUnitaire.HoverState.Parent = this.txtPrixUnitaire;
-            this.txtPrixUnitaire.Location = new System.Drawing.Point(161, 260);
+            this.txtPrixUnitaire.Location = new System.Drawing.Point(161, 187);
             this.txtPrixUnitaire.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrixUnitaire.Name = "txtPrixUnitaire";
             this.txtPrixUnitaire.PasswordChar = '\0';
@@ -222,35 +254,38 @@
             this.bunifuCustomLabel5.Size = new System.Drawing.Size(0, 20);
             this.bunifuCustomLabel5.TabIndex = 65;
             // 
-            // txtPrixGlobal
+            // txtmenueID
             // 
-            this.txtPrixGlobal.BorderColor = System.Drawing.Color.Indigo;
-            this.txtPrixGlobal.BorderRadius = 16;
-            this.txtPrixGlobal.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPrixGlobal.DefaultText = "PrixGlobal";
-            this.txtPrixGlobal.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPrixGlobal.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPrixGlobal.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPrixGlobal.DisabledState.Parent = this.txtPrixGlobal;
-            this.txtPrixGlobal.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPrixGlobal.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPrixGlobal.FocusedState.Parent = this.txtPrixGlobal;
-            this.txtPrixGlobal.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPrixGlobal.HoverState.Parent = this.txtPrixGlobal;
-            this.txtPrixGlobal.Location = new System.Drawing.Point(444, 260);
-            this.txtPrixGlobal.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPrixGlobal.Name = "txtPrixGlobal";
-            this.txtPrixGlobal.PasswordChar = '\0';
-            this.txtPrixGlobal.PlaceholderText = "";
-            this.txtPrixGlobal.SelectedText = "";
-            this.txtPrixGlobal.SelectionStart = 10;
-            this.txtPrixGlobal.ShadowDecoration.Parent = this.txtPrixGlobal;
-            this.txtPrixGlobal.Size = new System.Drawing.Size(200, 36);
-            this.txtPrixGlobal.TabIndex = 4;
+            this.txtmenueID.BorderColor = System.Drawing.Color.Indigo;
+            this.txtmenueID.BorderRadius = 16;
+            this.txtmenueID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtmenueID.DefaultText = "Menu id";
+            this.txtmenueID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtmenueID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtmenueID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtmenueID.DisabledState.Parent = this.txtmenueID;
+            this.txtmenueID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtmenueID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtmenueID.FocusedState.Parent = this.txtmenueID;
+            this.txtmenueID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtmenueID.HoverState.Parent = this.txtmenueID;
+            this.txtmenueID.Location = new System.Drawing.Point(161, 248);
+            this.txtmenueID.Margin = new System.Windows.Forms.Padding(4);
+            this.txtmenueID.Name = "txtmenueID";
+            this.txtmenueID.PasswordChar = '\0';
+            this.txtmenueID.PlaceholderText = "";
+            this.txtmenueID.SelectedText = "";
+            this.txtmenueID.SelectionStart = 7;
+            this.txtmenueID.ShadowDecoration.Parent = this.txtmenueID;
+            this.txtmenueID.Size = new System.Drawing.Size(483, 36);
+            this.txtmenueID.TabIndex = 4;
+            this.txtmenueID.TextChanged += new System.EventHandler(this.txtPrixGlobal_TextChanged);
             // 
             // ListeCommande
             // 
             this.ListeCommande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(244)))));
+            this.ListeCommande.Controls.Add(this.guna2GradientButton2);
+            this.ListeCommande.Controls.Add(this.guna2GradientButton1);
             this.ListeCommande.Controls.Add(this.guna2GradientButton4);
             this.ListeCommande.Controls.Add(this.guna2TextBox4);
             this.ListeCommande.Controls.Add(this.bunifuCustomDataGrid4);
@@ -260,6 +295,42 @@
             this.ListeCommande.Size = new System.Drawing.Size(850, 490);
             this.ListeCommande.TabIndex = 1;
             this.ListeCommande.Text = "ListeCommande";
+            // 
+            // guna2GradientButton2
+            // 
+            this.guna2GradientButton2.BorderRadius = 16;
+            this.guna2GradientButton2.CheckedState.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.CustomImages.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(167)))), ((int)(((byte)(201)))));
+            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.guna2GradientButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton2.HoverState.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.Location = new System.Drawing.Point(141, 61);
+            this.guna2GradientButton2.Name = "guna2GradientButton2";
+            this.guna2GradientButton2.ShadowDecoration.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.Size = new System.Drawing.Size(108, 45);
+            this.guna2GradientButton2.TabIndex = 18;
+            this.guna2GradientButton2.Text = "Refresh";
+            this.guna2GradientButton2.Click += new System.EventHandler(this.guna2GradientButton2_Click);
+            // 
+            // guna2GradientButton1
+            // 
+            this.guna2GradientButton1.BorderRadius = 16;
+            this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(167)))), ((int)(((byte)(201)))));
+            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.Location = new System.Drawing.Point(7, 61);
+            this.guna2GradientButton1.Name = "guna2GradientButton1";
+            this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.Size = new System.Drawing.Size(108, 45);
+            this.guna2GradientButton1.TabIndex = 17;
+            this.guna2GradientButton1.Text = "Update";
+            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // guna2GradientButton4
             // 
@@ -277,6 +348,34 @@
             this.guna2GradientButton4.Size = new System.Drawing.Size(108, 45);
             this.guna2GradientButton4.TabIndex = 16;
             this.guna2GradientButton4.Text = "Rechercher";
+            this.guna2GradientButton4.Click += new System.EventHandler(this.guna2GradientButton4_Click);
+            // 
+            // guna2TextBox4
+            // 
+            this.guna2TextBox4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
+            this.guna2TextBox4.BorderRadius = 16;
+            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox4.DefaultText = " Recherche";
+            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox4.DisabledState.Parent = this.guna2TextBox4;
+            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox4.FocusedState.Parent = this.guna2TextBox4;
+            this.guna2TextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
+            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
+            this.guna2TextBox4.IconLeft = ((System.Drawing.Image)(resources.GetObject("guna2TextBox4.IconLeft")));
+            this.guna2TextBox4.Location = new System.Drawing.Point(452, 33);
+            this.guna2TextBox4.Name = "guna2TextBox4";
+            this.guna2TextBox4.PasswordChar = '\0';
+            this.guna2TextBox4.PlaceholderText = "";
+            this.guna2TextBox4.SelectedText = "";
+            this.guna2TextBox4.SelectionStart = 10;
+            this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
+            this.guna2TextBox4.Size = new System.Drawing.Size(257, 45);
+            this.guna2TextBox4.TabIndex = 15;
             // 
             // bunifuCustomDataGrid4
             // 
@@ -317,32 +416,51 @@
             this.bunifuCustomDataGrid4.Size = new System.Drawing.Size(844, 375);
             this.bunifuCustomDataGrid4.TabIndex = 13;
             // 
-            // guna2TextBox4
+            // idComandeDataGridViewTextBoxColumn
             // 
-            this.guna2TextBox4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
-            this.guna2TextBox4.BorderRadius = 16;
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = " Recherche";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.FocusedState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.IconLeft = ((System.Drawing.Image)(resources.GetObject("guna2TextBox4.IconLeft")));
-            this.guna2TextBox4.Location = new System.Drawing.Point(452, 33);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.SelectionStart = 10;
-            this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Size = new System.Drawing.Size(257, 45);
-            this.guna2TextBox4.TabIndex = 15;
+            this.idComandeDataGridViewTextBoxColumn.DataPropertyName = "idComande";
+            this.idComandeDataGridViewTextBoxColumn.HeaderText = "idComande";
+            this.idComandeDataGridViewTextBoxColumn.Name = "idComandeDataGridViewTextBoxColumn";
+            // 
+            // dateComandeDataGridViewTextBoxColumn
+            // 
+            this.dateComandeDataGridViewTextBoxColumn.DataPropertyName = "dateComande";
+            this.dateComandeDataGridViewTextBoxColumn.HeaderText = "dateComande";
+            this.dateComandeDataGridViewTextBoxColumn.Name = "dateComandeDataGridViewTextBoxColumn";
+            // 
+            // quantiterDataGridViewTextBoxColumn
+            // 
+            this.quantiterDataGridViewTextBoxColumn.DataPropertyName = "quantiter";
+            this.quantiterDataGridViewTextBoxColumn.HeaderText = "quantiter";
+            this.quantiterDataGridViewTextBoxColumn.Name = "quantiterDataGridViewTextBoxColumn";
+            // 
+            // montantUnitaireDataGridViewTextBoxColumn
+            // 
+            this.montantUnitaireDataGridViewTextBoxColumn.DataPropertyName = "montantUnitaire";
+            this.montantUnitaireDataGridViewTextBoxColumn.HeaderText = "montantUnitaire";
+            this.montantUnitaireDataGridViewTextBoxColumn.Name = "montantUnitaireDataGridViewTextBoxColumn";
+            // 
+            // montantGlobalDataGridViewTextBoxColumn
+            // 
+            this.montantGlobalDataGridViewTextBoxColumn.DataPropertyName = "montantGlobal";
+            this.montantGlobalDataGridViewTextBoxColumn.HeaderText = "montantGlobal";
+            this.montantGlobalDataGridViewTextBoxColumn.Name = "montantGlobalDataGridViewTextBoxColumn";
+            // 
+            // menuidMenuDataGridViewTextBoxColumn
+            // 
+            this.menuidMenuDataGridViewTextBoxColumn.DataPropertyName = "MenuidMenu";
+            this.menuidMenuDataGridViewTextBoxColumn.HeaderText = "IdMenu";
+            this.menuidMenuDataGridViewTextBoxColumn.Name = "menuidMenuDataGridViewTextBoxColumn";
+            // 
+            // cOMMANDESBindingSource
+            // 
+            this.cOMMANDESBindingSource.DataMember = "COMMANDES";
+            this.cOMMANDESBindingSource.DataSource = this.easyGestDataSet5;
+            // 
+            // easyGestDataSet5
+            // 
+            this.easyGestDataSet5.DataSetName = "EasyGestDataSet5";
+            this.easyGestDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bunifuFlatButton2
             // 
@@ -423,55 +541,23 @@
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
-            // easyGestDataSet
-            // 
-            this.easyGestDataSet.DataSetName = "EasyGestDataSet";
-            this.easyGestDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cOMMANDESBindingSource
-            // 
-            this.cOMMANDESBindingSource.DataMember = "COMMANDES";
-            this.cOMMANDESBindingSource.DataSource = this.easyGestDataSet;
-            // 
             // cOMMANDESTableAdapter
             // 
             this.cOMMANDESTableAdapter.ClearBeforeFill = true;
             // 
-            // idComandeDataGridViewTextBoxColumn
+            // gunaImageButton1
             // 
-            this.idComandeDataGridViewTextBoxColumn.DataPropertyName = "idComande";
-            this.idComandeDataGridViewTextBoxColumn.HeaderText = "idComande";
-            this.idComandeDataGridViewTextBoxColumn.Name = "idComandeDataGridViewTextBoxColumn";
-            // 
-            // dateComandeDataGridViewTextBoxColumn
-            // 
-            this.dateComandeDataGridViewTextBoxColumn.DataPropertyName = "dateComande";
-            this.dateComandeDataGridViewTextBoxColumn.HeaderText = "Date Comande";
-            this.dateComandeDataGridViewTextBoxColumn.Name = "dateComandeDataGridViewTextBoxColumn";
-            // 
-            // quantiterDataGridViewTextBoxColumn
-            // 
-            this.quantiterDataGridViewTextBoxColumn.DataPropertyName = "quantiter";
-            this.quantiterDataGridViewTextBoxColumn.HeaderText = "Quantiter";
-            this.quantiterDataGridViewTextBoxColumn.Name = "quantiterDataGridViewTextBoxColumn";
-            // 
-            // montantUnitaireDataGridViewTextBoxColumn
-            // 
-            this.montantUnitaireDataGridViewTextBoxColumn.DataPropertyName = "montantUnitaire";
-            this.montantUnitaireDataGridViewTextBoxColumn.HeaderText = "Montant Unitaire";
-            this.montantUnitaireDataGridViewTextBoxColumn.Name = "montantUnitaireDataGridViewTextBoxColumn";
-            // 
-            // montantGlobalDataGridViewTextBoxColumn
-            // 
-            this.montantGlobalDataGridViewTextBoxColumn.DataPropertyName = "montantGlobal";
-            this.montantGlobalDataGridViewTextBoxColumn.HeaderText = "Montant Global";
-            this.montantGlobalDataGridViewTextBoxColumn.Name = "montantGlobalDataGridViewTextBoxColumn";
-            // 
-            // menuidMenuDataGridViewTextBoxColumn
-            // 
-            this.menuidMenuDataGridViewTextBoxColumn.DataPropertyName = "MenuidMenu";
-            this.menuidMenuDataGridViewTextBoxColumn.HeaderText = "idMenu";
-            this.menuidMenuDataGridViewTextBoxColumn.Name = "menuidMenuDataGridViewTextBoxColumn";
+            this.gunaImageButton1.BackColor = System.Drawing.Color.White;
+            this.gunaImageButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaImageButton1.Image = global::CustomsGestionHoteliere.Properties.Resources.delete_96px;
+            this.gunaImageButton1.ImageSize = new System.Drawing.Size(64, 64);
+            this.gunaImageButton1.Location = new System.Drawing.Point(823, 12);
+            this.gunaImageButton1.Name = "gunaImageButton1";
+            this.gunaImageButton1.OnHoverImage = null;
+            this.gunaImageButton1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.gunaImageButton1.Size = new System.Drawing.Size(36, 26);
+            this.gunaImageButton1.TabIndex = 16;
+            this.gunaImageButton1.Click += new System.EventHandler(this.gunaImageButton1_Click);
             // 
             // FrmGestionCommande
             // 
@@ -480,6 +566,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(871, 577);
+            this.Controls.Add(this.gunaImageButton1);
             this.Controls.Add(this.bunifuFlatButton2);
             this.Controls.Add(this.slider);
             this.Controls.Add(this.bunifuFlatButton1);
@@ -495,9 +582,9 @@
             this.AjouterUtilisateur.PerformLayout();
             this.ListeCommande.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.slider)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.easyGestDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cOMMANDESBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.easyGestDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slider)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -512,21 +599,25 @@
         private Guna.UI2.WinForms.Guna2TextBox txtPrixUnitaire;
         private Guna.UI2.WinForms.Guna2TextBox txtIdCommande;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
-        private Guna.UI2.WinForms.Guna2TextBox txtPrixGlobal;
+        private Guna.UI2.WinForms.Guna2TextBox txtmenueID;
         private Guna.UI2.WinForms.Guna2DateTimePicker cbDatefCommande;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
         private System.Windows.Forms.PictureBox slider;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
-        private EasyGestDataSet easyGestDataSet;
+        private EasyGestDataSet5 easyGestDataSet5;
         private System.Windows.Forms.BindingSource cOMMANDESBindingSource;
-        private EasyGestDataSetTableAdapters.COMMANDESTableAdapter cOMMANDESTableAdapter;
+        private EasyGestDataSet5TableAdapters.COMMANDESTableAdapter cOMMANDESTableAdapter;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idComandeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateComandeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn quantiterDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn montantUnitaireDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn montantGlobalDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn menuidMenuDataGridViewTextBoxColumn;
+        private Guna.UI2.WinForms.Guna2TextBox txtprg;
+        private Guna.UI.WinForms.GunaImageButton gunaImageButton1;
     }
 }

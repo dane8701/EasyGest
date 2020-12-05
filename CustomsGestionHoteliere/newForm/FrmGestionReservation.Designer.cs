@@ -33,6 +33,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.addUtilisateur = new System.Windows.Forms.TabPage();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
+            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Button16 = new Guna.UI2.WinForms.Guna2Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -40,26 +46,23 @@
             this.bunifuCustomDataGrid4 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.slider = new System.Windows.Forms.PictureBox();
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.easyGestDataSet = new CustomsGestionHoteliere.EasyGestDataSet();
+            this.easyGestDataSet8 = new CustomsGestionHoteliere.EasyGestDataSet8();
             this.rESERVATIONSBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.rESERVATIONSTableAdapter = new CustomsGestionHoteliere.EasyGestDataSetTableAdapters.RESERVATIONSTableAdapter();
+            this.rESERVATIONSTableAdapter = new CustomsGestionHoteliere.EasyGestDataSet8TableAdapters.RESERVATIONSTableAdapter();
             this.fACTURESidFactureDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cLIENTSidClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tABLESidTableDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.slider = new System.Windows.Forms.PictureBox();
+            this.gunaImageButton1 = new Guna.UI.WinForms.GunaImageButton();
             this.materialTabControl1.SuspendLayout();
             this.addUtilisateur.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.slider)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.easyGestDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.easyGestDataSet8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rESERVATIONSBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slider)).BeginInit();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -91,6 +94,108 @@
             this.addUtilisateur.TabIndex = 0;
             this.addUtilisateur.Text = "Ajouter Reservation";
             // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel2.Location = new System.Drawing.Point(296, 188);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(47, 15);
+            this.gunaLabel2.TabIndex = 88;
+            this.gunaLabel2.Text = "idTable ";
+            // 
+            // guna2ComboBox3
+            // 
+            this.guna2ComboBox3.BackColor = System.Drawing.SystemColors.Control;
+            this.guna2ComboBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(56)))), ((int)(((byte)(236)))));
+            this.guna2ComboBox3.BorderRadius = 15;
+            this.guna2ComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox3.FocusedColor = System.Drawing.Color.Empty;
+            this.guna2ComboBox3.FocusedState.Parent = this.guna2ComboBox3;
+            this.guna2ComboBox3.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox3.FormattingEnabled = true;
+            this.guna2ComboBox3.HoverState.Parent = this.guna2ComboBox3;
+            this.guna2ComboBox3.ItemHeight = 30;
+            this.guna2ComboBox3.Items.AddRange(new object[] {
+            "admin",
+            "user"});
+            this.guna2ComboBox3.ItemsAppearance.Parent = this.guna2ComboBox3;
+            this.guna2ComboBox3.Location = new System.Drawing.Point(296, 206);
+            this.guna2ComboBox3.Name = "guna2ComboBox3";
+            this.guna2ComboBox3.ShadowDecoration.Parent = this.guna2ComboBox3;
+            this.guna2ComboBox3.Size = new System.Drawing.Size(198, 36);
+            this.guna2ComboBox3.TabIndex = 87;
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel1.Location = new System.Drawing.Point(413, 110);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(95, 15);
+            this.gunaLabel1.TabIndex = 86;
+            this.gunaLabel1.Text = "CLIENTS idClient";
+            // 
+            // guna2ComboBox1
+            // 
+            this.guna2ComboBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.guna2ComboBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(56)))), ((int)(((byte)(236)))));
+            this.guna2ComboBox1.BorderRadius = 15;
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty;
+            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox1.FormattingEnabled = true;
+            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.ItemHeight = 30;
+            this.guna2ComboBox1.Items.AddRange(new object[] {
+            "admin",
+            "user"});
+            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Location = new System.Drawing.Point(413, 128);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Size = new System.Drawing.Size(209, 36);
+            this.guna2ComboBox1.TabIndex = 85;
+            // 
+            // gunaLabel3
+            // 
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel3.Location = new System.Drawing.Point(173, 110);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(90, 15);
+            this.gunaLabel3.TabIndex = 84;
+            this.gunaLabel3.Text = "Facture idClient";
+            // 
+            // guna2ComboBox2
+            // 
+            this.guna2ComboBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.guna2ComboBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(56)))), ((int)(((byte)(236)))));
+            this.guna2ComboBox2.BorderRadius = 15;
+            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.Empty;
+            this.guna2ComboBox2.FocusedState.Parent = this.guna2ComboBox2;
+            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox2.FormattingEnabled = true;
+            this.guna2ComboBox2.HoverState.Parent = this.guna2ComboBox2;
+            this.guna2ComboBox2.ItemHeight = 30;
+            this.guna2ComboBox2.Items.AddRange(new object[] {
+            "admin",
+            "user"});
+            this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
+            this.guna2ComboBox2.Location = new System.Drawing.Point(173, 128);
+            this.guna2ComboBox2.Name = "guna2ComboBox2";
+            this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
+            this.guna2ComboBox2.Size = new System.Drawing.Size(209, 36);
+            this.guna2ComboBox2.TabIndex = 83;
+            // 
             // guna2Button16
             // 
             this.guna2Button16.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
@@ -109,10 +214,13 @@
             this.guna2Button16.Size = new System.Drawing.Size(200, 45);
             this.guna2Button16.TabIndex = 70;
             this.guna2Button16.Text = "Enregistrer";
+            this.guna2Button16.Click += new System.EventHandler(this.guna2Button16_Click);
             // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(244)))));
+            this.tabPage2.Controls.Add(this.guna2GradientButton2);
+            this.tabPage2.Controls.Add(this.guna2GradientButton1);
             this.tabPage2.Controls.Add(this.guna2TextBox1);
             this.tabPage2.Controls.Add(this.guna2GradientButton4);
             this.tabPage2.Controls.Add(this.bunifuCustomDataGrid4);
@@ -165,6 +273,7 @@
             this.guna2GradientButton4.Size = new System.Drawing.Size(108, 45);
             this.guna2GradientButton4.TabIndex = 14;
             this.guna2GradientButton4.Text = "Rechercher";
+            this.guna2GradientButton4.Click += new System.EventHandler(this.guna2GradientButton4_Click);
             // 
             // bunifuCustomDataGrid4
             // 
@@ -269,6 +378,74 @@
             this.bunifuFlatButton1.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
+            // easyGestDataSet8
+            // 
+            this.easyGestDataSet8.DataSetName = "EasyGestDataSet8";
+            this.easyGestDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // rESERVATIONSBindingSource
+            // 
+            this.rESERVATIONSBindingSource.DataMember = "RESERVATIONS";
+            this.rESERVATIONSBindingSource.DataSource = this.easyGestDataSet8;
+            // 
+            // rESERVATIONSTableAdapter
+            // 
+            this.rESERVATIONSTableAdapter.ClearBeforeFill = true;
+            // 
+            // fACTURESidFactureDataGridViewTextBoxColumn
+            // 
+            this.fACTURESidFactureDataGridViewTextBoxColumn.DataPropertyName = "FACTURESidFacture";
+            this.fACTURESidFactureDataGridViewTextBoxColumn.HeaderText = "FACTURESidFacture";
+            this.fACTURESidFactureDataGridViewTextBoxColumn.Name = "fACTURESidFactureDataGridViewTextBoxColumn";
+            // 
+            // cLIENTSidClientDataGridViewTextBoxColumn
+            // 
+            this.cLIENTSidClientDataGridViewTextBoxColumn.DataPropertyName = "CLIENTSidClient";
+            this.cLIENTSidClientDataGridViewTextBoxColumn.HeaderText = "CLIENTSidClient";
+            this.cLIENTSidClientDataGridViewTextBoxColumn.Name = "cLIENTSidClientDataGridViewTextBoxColumn";
+            // 
+            // tABLESidTableDataGridViewTextBoxColumn
+            // 
+            this.tABLESidTableDataGridViewTextBoxColumn.DataPropertyName = "TABLESidTable";
+            this.tABLESidTableDataGridViewTextBoxColumn.HeaderText = "TABLESidTable";
+            this.tABLESidTableDataGridViewTextBoxColumn.Name = "tABLESidTableDataGridViewTextBoxColumn";
+            // 
+            // guna2GradientButton1
+            // 
+            this.guna2GradientButton1.BorderRadius = 16;
+            this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(56)))), ((int)(((byte)(236)))));
+            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.Location = new System.Drawing.Point(6, 53);
+            this.guna2GradientButton1.Name = "guna2GradientButton1";
+            this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.Size = new System.Drawing.Size(108, 45);
+            this.guna2GradientButton1.TabIndex = 17;
+            this.guna2GradientButton1.Text = "Update";
+            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
+            // 
+            // guna2GradientButton2
+            // 
+            this.guna2GradientButton2.BorderRadius = 16;
+            this.guna2GradientButton2.CheckedState.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.CustomImages.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(56)))), ((int)(((byte)(236)))));
+            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.guna2GradientButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton2.HoverState.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.Location = new System.Drawing.Point(120, 53);
+            this.guna2GradientButton2.Name = "guna2GradientButton2";
+            this.guna2GradientButton2.ShadowDecoration.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.Size = new System.Drawing.Size(108, 45);
+            this.guna2GradientButton2.TabIndex = 18;
+            this.guna2GradientButton2.Text = "Refresh";
+            this.guna2GradientButton2.Click += new System.EventHandler(this.guna2GradientButton2_Click);
+            // 
             // slider
             // 
             this.slider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(56)))), ((int)(((byte)(236)))));
@@ -278,142 +455,26 @@
             this.slider.TabIndex = 15;
             this.slider.TabStop = false;
             // 
-            // gunaLabel3
+            // gunaImageButton1
             // 
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel3.Location = new System.Drawing.Point(173, 110);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(90, 15);
-            this.gunaLabel3.TabIndex = 84;
-            this.gunaLabel3.Text = "Facture idClient";
-            // 
-            // guna2ComboBox2
-            // 
-            this.guna2ComboBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.guna2ComboBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(56)))), ((int)(((byte)(236)))));
-            this.guna2ComboBox2.BorderRadius = 15;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox2.FocusedState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox2.FormattingEnabled = true;
-            this.guna2ComboBox2.HoverState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.Items.AddRange(new object[] {
-            "admin",
-            "user"});
-            this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(173, 128);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Size = new System.Drawing.Size(209, 36);
-            this.guna2ComboBox2.TabIndex = 83;
-            // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel1.Location = new System.Drawing.Point(413, 110);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(95, 15);
-            this.gunaLabel1.TabIndex = 86;
-            this.gunaLabel1.Text = "CLIENTS idClient";
-            // 
-            // guna2ComboBox1
-            // 
-            this.guna2ComboBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.guna2ComboBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(56)))), ((int)(((byte)(236)))));
-            this.guna2ComboBox1.BorderRadius = 15;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.FormattingEnabled = true;
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
-            "admin",
-            "user"});
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(413, 128);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(209, 36);
-            this.guna2ComboBox1.TabIndex = 85;
-            // 
-            // gunaLabel2
-            // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel2.Location = new System.Drawing.Point(296, 188);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(47, 15);
-            this.gunaLabel2.TabIndex = 88;
-            this.gunaLabel2.Text = "idTable ";
-            // 
-            // guna2ComboBox3
-            // 
-            this.guna2ComboBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.guna2ComboBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(56)))), ((int)(((byte)(236)))));
-            this.guna2ComboBox3.BorderRadius = 15;
-            this.guna2ComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox3.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox3.FocusedState.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox3.FormattingEnabled = true;
-            this.guna2ComboBox3.HoverState.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.ItemHeight = 30;
-            this.guna2ComboBox3.Items.AddRange(new object[] {
-            "admin",
-            "user"});
-            this.guna2ComboBox3.ItemsAppearance.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Location = new System.Drawing.Point(296, 206);
-            this.guna2ComboBox3.Name = "guna2ComboBox3";
-            this.guna2ComboBox3.ShadowDecoration.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Size = new System.Drawing.Size(198, 36);
-            this.guna2ComboBox3.TabIndex = 87;
-            // 
-            // easyGestDataSet
-            // 
-            this.easyGestDataSet.DataSetName = "EasyGestDataSet";
-            this.easyGestDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // rESERVATIONSBindingSource
-            // 
-            this.rESERVATIONSBindingSource.DataMember = "RESERVATIONS";
-            this.rESERVATIONSBindingSource.DataSource = this.easyGestDataSet;
-            // 
-            // rESERVATIONSTableAdapter
-            // 
-            this.rESERVATIONSTableAdapter.ClearBeforeFill = true;
-            // 
-            // fACTURESidFactureDataGridViewTextBoxColumn
-            // 
-            this.fACTURESidFactureDataGridViewTextBoxColumn.DataPropertyName = "FACTURESidFacture";
-            this.fACTURESidFactureDataGridViewTextBoxColumn.HeaderText = "idFacture";
-            this.fACTURESidFactureDataGridViewTextBoxColumn.Name = "fACTURESidFactureDataGridViewTextBoxColumn";
-            // 
-            // cLIENTSidClientDataGridViewTextBoxColumn
-            // 
-            this.cLIENTSidClientDataGridViewTextBoxColumn.DataPropertyName = "CLIENTSidClient";
-            this.cLIENTSidClientDataGridViewTextBoxColumn.HeaderText = "idClient";
-            this.cLIENTSidClientDataGridViewTextBoxColumn.Name = "cLIENTSidClientDataGridViewTextBoxColumn";
-            // 
-            // tABLESidTableDataGridViewTextBoxColumn
-            // 
-            this.tABLESidTableDataGridViewTextBoxColumn.DataPropertyName = "TABLESidTable";
-            this.tABLESidTableDataGridViewTextBoxColumn.HeaderText = "idTable";
-            this.tABLESidTableDataGridViewTextBoxColumn.Name = "tABLESidTableDataGridViewTextBoxColumn";
+            this.gunaImageButton1.BackColor = System.Drawing.Color.White;
+            this.gunaImageButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaImageButton1.Image = global::CustomsGestionHoteliere.Properties.Resources.delete_96px;
+            this.gunaImageButton1.ImageSize = new System.Drawing.Size(64, 64);
+            this.gunaImageButton1.Location = new System.Drawing.Point(823, 3);
+            this.gunaImageButton1.Name = "gunaImageButton1";
+            this.gunaImageButton1.OnHoverImage = null;
+            this.gunaImageButton1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.gunaImageButton1.Size = new System.Drawing.Size(36, 26);
+            this.gunaImageButton1.TabIndex = 18;
+            this.gunaImageButton1.Click += new System.EventHandler(this.gunaImageButton1_Click);
             // 
             // FrmGestionReservation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(871, 577);
+            this.Controls.Add(this.gunaImageButton1);
             this.Controls.Add(this.materialTabControl1);
             this.Controls.Add(this.bunifuFlatButton2);
             this.Controls.Add(this.slider);
@@ -428,9 +489,9 @@
             this.addUtilisateur.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.slider)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.easyGestDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.easyGestDataSet8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rESERVATIONSBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slider)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -453,11 +514,14 @@
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
-        private EasyGestDataSet easyGestDataSet;
+        private EasyGestDataSet8 easyGestDataSet8;
         private System.Windows.Forms.BindingSource rESERVATIONSBindingSource;
-        private EasyGestDataSetTableAdapters.RESERVATIONSTableAdapter rESERVATIONSTableAdapter;
+        private EasyGestDataSet8TableAdapters.RESERVATIONSTableAdapter rESERVATIONSTableAdapter;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private System.Windows.Forms.DataGridViewTextBoxColumn fACTURESidFactureDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cLIENTSidClientDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tABLESidTableDataGridViewTextBoxColumn;
+        private Guna.UI.WinForms.GunaImageButton gunaImageButton1;
     }
 }

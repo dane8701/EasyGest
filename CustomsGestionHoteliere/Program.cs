@@ -16,7 +16,7 @@ namespace CustomsGestionHoteliere
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new NouveauFormParent());
+            Application.Run(new FormSplachScreen());
         }
     }
 }

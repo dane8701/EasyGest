@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace CustomsGestionHoteliere.newForm
 {
-    public partial class formLogin : Form
+    public partial class FrmLogin : Form
     {
-        SqlConnection conn = new SqlConnection(@"");
-        public formLogin()
+        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=EasyGest;Integrated Security=True");
+        public FrmLogin()
         {
             InitializeComponent();
         }
@@ -35,7 +35,7 @@ namespace CustomsGestionHoteliere.newForm
                 else
                 {
                     NouveauFormParent fr = new NouveauFormParent();
-                    fr.bunifuFlatButton4.Visible = false;
+                   fr.guna2GradientTileButton5.Visible = false;
                     fr.Show();
                     this.Hide();
                 }
@@ -43,7 +43,7 @@ namespace CustomsGestionHoteliere.newForm
             }
             else
             {
-                MessageBox.Show("eror");
+                MessageBox.Show("idenfiant invalide ");
             }
 
         }
@@ -54,7 +54,7 @@ namespace CustomsGestionHoteliere.newForm
 
             if (conn.State == ConnectionState.Closed)
                 conn.Open();
-            string query = " select * from agent where [username]= '" + user + "' and [mot de passe ]= '" + password + "'";
+            string query = "SELECT * from UTILISATEURS where [nomUtilisateur]= '" + user + "' and [motDePasse]= '" + password + "'";
             SqlDataAdapter sdt = new SqlDataAdapter(query, conn);
             DataTable das = new DataTable();
             sdt.Fill(das);
@@ -66,6 +66,11 @@ namespace CustomsGestionHoteliere.newForm
             {
                 return false;
             }
+        }
+
+        private void gunaImageButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();       
         }
     }
 }

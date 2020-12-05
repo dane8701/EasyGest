@@ -86,5 +86,11 @@ namespace CustomsGestionHoteliere.newForm
             slider.Width = ((Bunifu.Framework.UI.BunifuFlatButton)sender).Width;
             materialTabControl1.SelectTab(3);
         }
+
+        private void gunaImageButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+               
+        }
     }
 }

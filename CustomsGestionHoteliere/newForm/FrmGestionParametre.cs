@@ -108,5 +108,11 @@ namespace CustomsGestionHoteliere.newForm
             adp.Fill(Dat);
             con.Close();
         }
+
+        private void gunaImageButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();      
+             
+        }
     }
 }

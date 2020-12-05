@@ -44,6 +44,7 @@ namespace CustomsGestionHoteliere.newForm
             this.txtidStatut = new Guna.UI2.WinForms.Guna2TextBox();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.slider = new System.Windows.Forms.PictureBox();
+            this.gunaImageButton1 = new Guna.UI.WinForms.GunaImageButton();
             this.materialTabControl1.SuspendLayout();
             this.addUtilisateur.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.slider)).BeginInit();
@@ -395,12 +396,27 @@ namespace CustomsGestionHoteliere.newForm
             this.slider.TabIndex = 15;
             this.slider.TabStop = false;
             // 
+            // gunaImageButton1
+            // 
+            this.gunaImageButton1.BackColor = System.Drawing.Color.White;
+            this.gunaImageButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaImageButton1.Image = global::CustomsGestionHoteliere.Properties.Resources.delete_96px;
+            this.gunaImageButton1.ImageSize = new System.Drawing.Size(64, 64);
+            this.gunaImageButton1.Location = new System.Drawing.Point(823, 9);
+            this.gunaImageButton1.Name = "gunaImageButton1";
+            this.gunaImageButton1.OnHoverImage = null;
+            this.gunaImageButton1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.gunaImageButton1.Size = new System.Drawing.Size(36, 26);
+            this.gunaImageButton1.TabIndex = 18;
+            this.gunaImageButton1.Click += new System.EventHandler(this.gunaImageButton1_Click);
+            // 
             // FrmGestionParametre
             // 
             this.AcceptButton = this.guna2Button16;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(871, 577);
+            this.Controls.Add(this.gunaImageButton1);
             this.Controls.Add(this.materialTabControl1);
             this.Controls.Add(this.slider);
             this.Controls.Add(this.bunifuFlatButton1);
@@ -432,5 +448,6 @@ namespace CustomsGestionHoteliere.newForm
         private Guna.UI2.WinForms.Guna2TextBox txtidTypeMenu;
         private Guna.UI2.WinForms.Guna2TextBox txtidTypeTable;
         private Guna.UI2.WinForms.Guna2TextBox txtidTypeBoisson;
+        private Guna.UI.WinForms.GunaImageButton gunaImageButton1;
     }
 }

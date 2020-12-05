@@ -34,9 +34,9 @@ namespace CustomsGestionHoteliere.newForm
         private void FrmGestionMenu_Load(object sender, EventArgs e)
         {
             // TODO: cette ligne de code charge les données dans la table 'easyGestDataSet2.TypeMenus'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.typeMenusTableAdapter.Fill(this.easyGestDataSet2.TypeMenus);
+            //this.typeMenusTableAdapter.Fill(this.easyGestDataSet2.TypeMenus);
             // TODO: cette ligne de code charge les données dans la table 'easyGestDataSet.MENUS'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.mENUSTableAdapter.Fill(this.easyGestDataSet.MENUS);
+            //this.mENUSTableAdapter.Fill(this.easyGestDataSet.MENUS);
 
         }
 
@@ -48,6 +48,11 @@ namespace CustomsGestionHoteliere.newForm
         private void btnEnregistrer_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void gunaImageButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -113,6 +113,26 @@ namespace CustomsGestionHoteliere.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap delete_64px {
+            get {
+                object obj = ResourceManager.GetObject("delete_64px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap delete_96px {
+            get {
+                object obj = ResourceManager.GetObject("delete_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap help_30px {
             get {
                 object obj = ResourceManager.GetObject("help_30px", resourceCulture);

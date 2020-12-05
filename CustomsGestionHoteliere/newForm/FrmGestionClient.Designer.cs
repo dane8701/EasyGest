@@ -30,11 +30,15 @@ namespace CustomsGestionHoteliere.newForm
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGestionClient));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.addUtilisateur = new System.Windows.Forms.TabPage();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.txtCOMMANDESidCommande = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.txtTABLESidTable = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtprenomClient = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button16 = new Guna.UI2.WinForms.Guna2Button();
             this.txtnomClient = new Guna.UI2.WinForms.Guna2TextBox();
@@ -42,20 +46,10 @@ namespace CustomsGestionHoteliere.newForm
             this.txtidClient = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtadresse = new Guna.UI2.WinForms.Guna2TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.bunifuCustomDataGrid4 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.slider = new System.Windows.Forms.PictureBox();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.txtTABLESidTable = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.txtCOMMANDESidCommande = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.easyGestDataSet = new CustomsGestionHoteliere.EasyGestDataSet();
-            this.easyGestDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cLIENTSBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cLIENTSTableAdapter = new CustomsGestionHoteliere.EasyGestDataSetTableAdapters.CLIENTSTableAdapter();
             this.idClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prenomClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,14 +57,21 @@ namespace CustomsGestionHoteliere.newForm
             this.adresseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tABLESidTableDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cOMMANDESidComandeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cLIENTSBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.easyGestDataSet4 = new CustomsGestionHoteliere.EasyGestDataSet4();
+            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.cLIENTSTableAdapter = new CustomsGestionHoteliere.EasyGestDataSet4TableAdapters.CLIENTSTableAdapter();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.slider = new System.Windows.Forms.PictureBox();
+            this.gunaImageButton1 = new Guna.UI.WinForms.GunaImageButton();
             this.materialTabControl1.SuspendLayout();
             this.addUtilisateur.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.slider)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.easyGestDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.easyGestDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cLIENTSBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.easyGestDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slider)).BeginInit();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -105,6 +106,72 @@ namespace CustomsGestionHoteliere.newForm
             this.addUtilisateur.TabIndex = 0;
             this.addUtilisateur.Text = "Ajouter Client";
             this.addUtilisateur.Click += new System.EventHandler(this.addUtilisateur_Click);
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel2.Location = new System.Drawing.Point(281, 271);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(80, 15);
+            this.gunaLabel2.TabIndex = 76;
+            this.gunaLabel2.Text = "idCommande";
+            // 
+            // txtCOMMANDESidCommande
+            // 
+            this.txtCOMMANDESidCommande.BackColor = System.Drawing.SystemColors.Control;
+            this.txtCOMMANDESidCommande.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(106)))), ((int)(((byte)(79)))));
+            this.txtCOMMANDESidCommande.BorderRadius = 15;
+            this.txtCOMMANDESidCommande.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtCOMMANDESidCommande.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtCOMMANDESidCommande.FocusedColor = System.Drawing.Color.Empty;
+            this.txtCOMMANDESidCommande.FocusedState.Parent = this.txtCOMMANDESidCommande;
+            this.txtCOMMANDESidCommande.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtCOMMANDESidCommande.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.txtCOMMANDESidCommande.FormattingEnabled = true;
+            this.txtCOMMANDESidCommande.HoverState.Parent = this.txtCOMMANDESidCommande;
+            this.txtCOMMANDESidCommande.ItemHeight = 30;
+            this.txtCOMMANDESidCommande.Items.AddRange(new object[] {
+            "1"});
+            this.txtCOMMANDESidCommande.ItemsAppearance.Parent = this.txtCOMMANDESidCommande;
+            this.txtCOMMANDESidCommande.Location = new System.Drawing.Point(284, 305);
+            this.txtCOMMANDESidCommande.Name = "txtCOMMANDESidCommande";
+            this.txtCOMMANDESidCommande.ShadowDecoration.Parent = this.txtCOMMANDESidCommande;
+            this.txtCOMMANDESidCommande.Size = new System.Drawing.Size(224, 36);
+            this.txtCOMMANDESidCommande.TabIndex = 6;
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel1.Location = new System.Drawing.Point(426, 194);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(51, 15);
+            this.gunaLabel1.TabIndex = 74;
+            this.gunaLabel1.Text = "N° Table";
+            // 
+            // txtTABLESidTable
+            // 
+            this.txtTABLESidTable.BackColor = System.Drawing.SystemColors.Control;
+            this.txtTABLESidTable.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(106)))), ((int)(((byte)(79)))));
+            this.txtTABLESidTable.BorderRadius = 15;
+            this.txtTABLESidTable.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtTABLESidTable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtTABLESidTable.FocusedColor = System.Drawing.Color.Empty;
+            this.txtTABLESidTable.FocusedState.Parent = this.txtTABLESidTable;
+            this.txtTABLESidTable.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtTABLESidTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.txtTABLESidTable.FormattingEnabled = true;
+            this.txtTABLESidTable.HoverState.Parent = this.txtTABLESidTable;
+            this.txtTABLESidTable.ItemHeight = 30;
+            this.txtTABLESidTable.Items.AddRange(new object[] {
+            "1"});
+            this.txtTABLESidTable.ItemsAppearance.Parent = this.txtTABLESidTable;
+            this.txtTABLESidTable.Location = new System.Drawing.Point(413, 212);
+            this.txtTABLESidTable.Name = "txtTABLESidTable";
+            this.txtTABLESidTable.ShadowDecoration.Parent = this.txtTABLESidTable;
+            this.txtTABLESidTable.Size = new System.Drawing.Size(211, 36);
+            this.txtTABLESidTable.TabIndex = 5;
             // 
             // txtprenomClient
             // 
@@ -254,9 +321,11 @@ namespace CustomsGestionHoteliere.newForm
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(244)))));
-            this.tabPage2.Controls.Add(this.guna2TextBox1);
+            this.tabPage2.Controls.Add(this.guna2GradientButton2);
+            this.tabPage2.Controls.Add(this.guna2GradientButton1);
             this.tabPage2.Controls.Add(this.guna2GradientButton4);
             this.tabPage2.Controls.Add(this.bunifuCustomDataGrid4);
+            this.tabPage2.Controls.Add(this.guna2TextBox1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -264,32 +333,41 @@ namespace CustomsGestionHoteliere.newForm
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Liste Client";
             // 
-            // guna2TextBox1
+            // guna2GradientButton2
             // 
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
-            this.guna2TextBox1.BorderRadius = 16;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = " Recherche";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.IconLeft = ((System.Drawing.Image)(resources.GetObject("guna2TextBox1.IconLeft")));
-            this.guna2TextBox1.Location = new System.Drawing.Point(458, 26);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.SelectionStart = 10;
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(257, 45);
-            this.guna2TextBox1.TabIndex = 16;
+            this.guna2GradientButton2.BorderRadius = 16;
+            this.guna2GradientButton2.CheckedState.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.CustomImages.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(106)))), ((int)(((byte)(79)))));
+            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.Green;
+            this.guna2GradientButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton2.HoverState.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.Location = new System.Drawing.Point(16, 41);
+            this.guna2GradientButton2.Name = "guna2GradientButton2";
+            this.guna2GradientButton2.ShadowDecoration.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.Size = new System.Drawing.Size(108, 45);
+            this.guna2GradientButton2.TabIndex = 18;
+            this.guna2GradientButton2.Text = "Update";
+            this.guna2GradientButton2.Click += new System.EventHandler(this.guna2GradientButton2_Click);
+            // 
+            // guna2GradientButton1
+            // 
+            this.guna2GradientButton1.BorderRadius = 16;
+            this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(106)))), ((int)(((byte)(79)))));
+            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Green;
+            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.Location = new System.Drawing.Point(130, 41);
+            this.guna2GradientButton1.Name = "guna2GradientButton1";
+            this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.Size = new System.Drawing.Size(108, 45);
+            this.guna2GradientButton1.TabIndex = 17;
+            this.guna2GradientButton1.Text = "Refresh";
+            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // guna2GradientButton4
             // 
@@ -307,24 +385,25 @@ namespace CustomsGestionHoteliere.newForm
             this.guna2GradientButton4.Size = new System.Drawing.Size(108, 45);
             this.guna2GradientButton4.TabIndex = 14;
             this.guna2GradientButton4.Text = "Rechercher";
+            this.guna2GradientButton4.Click += new System.EventHandler(this.guna2GradientButton4_Click);
             // 
             // bunifuCustomDataGrid4
             // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomDataGrid4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.bunifuCustomDataGrid4.AutoGenerateColumns = false;
             this.bunifuCustomDataGrid4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.bunifuCustomDataGrid4.BackgroundColor = System.Drawing.Color.White;
             this.bunifuCustomDataGrid4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid4.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(106)))), ((int)(((byte)(79)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(106)))), ((int)(((byte)(79)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.bunifuCustomDataGrid4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bunifuCustomDataGrid4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idClientDataGridViewTextBoxColumn,
@@ -346,6 +425,58 @@ namespace CustomsGestionHoteliere.newForm
             this.bunifuCustomDataGrid4.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.bunifuCustomDataGrid4.Size = new System.Drawing.Size(833, 381);
             this.bunifuCustomDataGrid4.TabIndex = 13;
+            // 
+            // idClientDataGridViewTextBoxColumn
+            // 
+            this.idClientDataGridViewTextBoxColumn.DataPropertyName = "idClient";
+            this.idClientDataGridViewTextBoxColumn.HeaderText = "idClient";
+            this.idClientDataGridViewTextBoxColumn.Name = "idClientDataGridViewTextBoxColumn";
+            // 
+            // nomClientDataGridViewTextBoxColumn
+            // 
+            this.nomClientDataGridViewTextBoxColumn.DataPropertyName = "nomClient";
+            this.nomClientDataGridViewTextBoxColumn.HeaderText = "nomClient";
+            this.nomClientDataGridViewTextBoxColumn.Name = "nomClientDataGridViewTextBoxColumn";
+            // 
+            // prenomClientDataGridViewTextBoxColumn
+            // 
+            this.prenomClientDataGridViewTextBoxColumn.DataPropertyName = "prenomClient";
+            this.prenomClientDataGridViewTextBoxColumn.HeaderText = "prenomClient";
+            this.prenomClientDataGridViewTextBoxColumn.Name = "prenomClientDataGridViewTextBoxColumn";
+            // 
+            // telephoneDataGridViewTextBoxColumn
+            // 
+            this.telephoneDataGridViewTextBoxColumn.DataPropertyName = "telephone";
+            this.telephoneDataGridViewTextBoxColumn.HeaderText = "telephone";
+            this.telephoneDataGridViewTextBoxColumn.Name = "telephoneDataGridViewTextBoxColumn";
+            // 
+            // adresseDataGridViewTextBoxColumn
+            // 
+            this.adresseDataGridViewTextBoxColumn.DataPropertyName = "adresse";
+            this.adresseDataGridViewTextBoxColumn.HeaderText = "adresse";
+            this.adresseDataGridViewTextBoxColumn.Name = "adresseDataGridViewTextBoxColumn";
+            // 
+            // tABLESidTableDataGridViewTextBoxColumn
+            // 
+            this.tABLESidTableDataGridViewTextBoxColumn.DataPropertyName = "TABLESidTable";
+            this.tABLESidTableDataGridViewTextBoxColumn.HeaderText = "N° Table";
+            this.tABLESidTableDataGridViewTextBoxColumn.Name = "tABLESidTableDataGridViewTextBoxColumn";
+            // 
+            // cOMMANDESidComandeDataGridViewTextBoxColumn
+            // 
+            this.cOMMANDESidComandeDataGridViewTextBoxColumn.DataPropertyName = "COMMANDESidComande";
+            this.cOMMANDESidComandeDataGridViewTextBoxColumn.HeaderText = "idComande";
+            this.cOMMANDESidComandeDataGridViewTextBoxColumn.Name = "cOMMANDESidComandeDataGridViewTextBoxColumn";
+            // 
+            // cLIENTSBindingSource
+            // 
+            this.cLIENTSBindingSource.DataMember = "CLIENTS";
+            this.cLIENTSBindingSource.DataSource = this.easyGestDataSet4;
+            // 
+            // easyGestDataSet4
+            // 
+            this.easyGestDataSet4.DataSetName = "EasyGestDataSet4";
+            this.easyGestDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bunifuFlatButton2
             // 
@@ -417,6 +548,37 @@ namespace CustomsGestionHoteliere.newForm
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
+            // cLIENTSTableAdapter
+            // 
+            this.cLIENTSTableAdapter.ClearBeforeFill = true;
+            // 
+            // guna2TextBox1
+            // 
+            this.guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
+            this.guna2TextBox1.BorderRadius = 16;
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = " Recherche";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.IconLeft = ((System.Drawing.Image)(resources.GetObject("guna2TextBox1.IconLeft")));
+            this.guna2TextBox1.Location = new System.Drawing.Point(458, 26);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.SelectionStart = 10;
+            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Size = new System.Drawing.Size(257, 45);
+            this.guna2TextBox1.TabIndex = 16;
+            // 
             // slider
             // 
             this.slider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(106)))), ((int)(((byte)(79)))));
@@ -426,131 +588,19 @@ namespace CustomsGestionHoteliere.newForm
             this.slider.TabIndex = 11;
             this.slider.TabStop = false;
             // 
-            // gunaLabel1
+            // gunaImageButton1
             // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel1.Location = new System.Drawing.Point(426, 194);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(44, 15);
-            this.gunaLabel1.TabIndex = 74;
-            this.gunaLabel1.Text = "idTable";
-            // 
-            // txtTABLESidTable
-            // 
-            this.txtTABLESidTable.BackColor = System.Drawing.SystemColors.Control;
-            this.txtTABLESidTable.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(106)))), ((int)(((byte)(79)))));
-            this.txtTABLESidTable.BorderRadius = 15;
-            this.txtTABLESidTable.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txtTABLESidTable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtTABLESidTable.FocusedColor = System.Drawing.Color.Empty;
-            this.txtTABLESidTable.FocusedState.Parent = this.txtTABLESidTable;
-            this.txtTABLESidTable.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtTABLESidTable.FormattingEnabled = true;
-            this.txtTABLESidTable.HoverState.Parent = this.txtTABLESidTable;
-            this.txtTABLESidTable.ItemHeight = 30;
-            this.txtTABLESidTable.Items.AddRange(new object[] {
-            "1"});
-            this.txtTABLESidTable.ItemsAppearance.Parent = this.txtTABLESidTable;
-            this.txtTABLESidTable.Location = new System.Drawing.Point(413, 212);
-            this.txtTABLESidTable.Name = "txtTABLESidTable";
-            this.txtTABLESidTable.ShadowDecoration.Parent = this.txtTABLESidTable;
-            this.txtTABLESidTable.Size = new System.Drawing.Size(211, 36);
-            this.txtTABLESidTable.TabIndex = 5;
-            // 
-            // gunaLabel2
-            // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel2.Location = new System.Drawing.Point(300, 287);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(80, 15);
-            this.gunaLabel2.TabIndex = 76;
-            this.gunaLabel2.Text = "idCommande";
-            // 
-            // txtCOMMANDESidCommande
-            // 
-            this.txtCOMMANDESidCommande.BackColor = System.Drawing.SystemColors.Control;
-            this.txtCOMMANDESidCommande.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(106)))), ((int)(((byte)(79)))));
-            this.txtCOMMANDESidCommande.BorderRadius = 15;
-            this.txtCOMMANDESidCommande.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txtCOMMANDESidCommande.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtCOMMANDESidCommande.FocusedColor = System.Drawing.Color.Empty;
-            this.txtCOMMANDESidCommande.FocusedState.Parent = this.txtCOMMANDESidCommande;
-            this.txtCOMMANDESidCommande.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtCOMMANDESidCommande.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.txtCOMMANDESidCommande.FormattingEnabled = true;
-            this.txtCOMMANDESidCommande.HoverState.Parent = this.txtCOMMANDESidCommande;
-            this.txtCOMMANDESidCommande.ItemHeight = 30;
-            this.txtCOMMANDESidCommande.Items.AddRange(new object[] {
-            "1"});
-            this.txtCOMMANDESidCommande.ItemsAppearance.Parent = this.txtCOMMANDESidCommande;
-            this.txtCOMMANDESidCommande.Location = new System.Drawing.Point(284, 305);
-            this.txtCOMMANDESidCommande.Name = "txtCOMMANDESidCommande";
-            this.txtCOMMANDESidCommande.ShadowDecoration.Parent = this.txtCOMMANDESidCommande;
-            this.txtCOMMANDESidCommande.Size = new System.Drawing.Size(224, 36);
-            this.txtCOMMANDESidCommande.TabIndex = 6;
-            // 
-            // easyGestDataSet
-            // 
-            this.easyGestDataSet.DataSetName = "EasyGestDataSet";
-            this.easyGestDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // easyGestDataSetBindingSource
-            // 
-            this.easyGestDataSetBindingSource.DataSource = this.easyGestDataSet;
-            this.easyGestDataSetBindingSource.Position = 0;
-            // 
-            // cLIENTSBindingSource
-            // 
-            this.cLIENTSBindingSource.DataMember = "CLIENTS";
-            this.cLIENTSBindingSource.DataSource = this.easyGestDataSetBindingSource;
-            // 
-            // cLIENTSTableAdapter
-            // 
-            this.cLIENTSTableAdapter.ClearBeforeFill = true;
-            // 
-            // idClientDataGridViewTextBoxColumn
-            // 
-            this.idClientDataGridViewTextBoxColumn.DataPropertyName = "idClient";
-            this.idClientDataGridViewTextBoxColumn.HeaderText = "idClient";
-            this.idClientDataGridViewTextBoxColumn.Name = "idClientDataGridViewTextBoxColumn";
-            // 
-            // nomClientDataGridViewTextBoxColumn
-            // 
-            this.nomClientDataGridViewTextBoxColumn.DataPropertyName = "nomClient";
-            this.nomClientDataGridViewTextBoxColumn.HeaderText = "nomClient";
-            this.nomClientDataGridViewTextBoxColumn.Name = "nomClientDataGridViewTextBoxColumn";
-            // 
-            // prenomClientDataGridViewTextBoxColumn
-            // 
-            this.prenomClientDataGridViewTextBoxColumn.DataPropertyName = "prenomClient";
-            this.prenomClientDataGridViewTextBoxColumn.HeaderText = "prenomClient";
-            this.prenomClientDataGridViewTextBoxColumn.Name = "prenomClientDataGridViewTextBoxColumn";
-            // 
-            // telephoneDataGridViewTextBoxColumn
-            // 
-            this.telephoneDataGridViewTextBoxColumn.DataPropertyName = "telephone";
-            this.telephoneDataGridViewTextBoxColumn.HeaderText = "telephone";
-            this.telephoneDataGridViewTextBoxColumn.Name = "telephoneDataGridViewTextBoxColumn";
-            // 
-            // adresseDataGridViewTextBoxColumn
-            // 
-            this.adresseDataGridViewTextBoxColumn.DataPropertyName = "adresse";
-            this.adresseDataGridViewTextBoxColumn.HeaderText = "adresse";
-            this.adresseDataGridViewTextBoxColumn.Name = "adresseDataGridViewTextBoxColumn";
-            // 
-            // tABLESidTableDataGridViewTextBoxColumn
-            // 
-            this.tABLESidTableDataGridViewTextBoxColumn.DataPropertyName = "TABLESidTable";
-            this.tABLESidTableDataGridViewTextBoxColumn.HeaderText = "idTable";
-            this.tABLESidTableDataGridViewTextBoxColumn.Name = "tABLESidTableDataGridViewTextBoxColumn";
-            // 
-            // cOMMANDESidComandeDataGridViewTextBoxColumn
-            // 
-            this.cOMMANDESidComandeDataGridViewTextBoxColumn.DataPropertyName = "COMMANDESidComande";
-            this.cOMMANDESidComandeDataGridViewTextBoxColumn.HeaderText = "idComande";
-            this.cOMMANDESidComandeDataGridViewTextBoxColumn.Name = "cOMMANDESidComandeDataGridViewTextBoxColumn";
+            this.gunaImageButton1.BackColor = System.Drawing.Color.White;
+            this.gunaImageButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaImageButton1.Image = global::CustomsGestionHoteliere.Properties.Resources.delete_96px;
+            this.gunaImageButton1.ImageSize = new System.Drawing.Size(64, 64);
+            this.gunaImageButton1.Location = new System.Drawing.Point(823, 12);
+            this.gunaImageButton1.Name = "gunaImageButton1";
+            this.gunaImageButton1.OnHoverImage = null;
+            this.gunaImageButton1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.gunaImageButton1.Size = new System.Drawing.Size(36, 26);
+            this.gunaImageButton1.TabIndex = 14;
+            this.gunaImageButton1.Click += new System.EventHandler(this.gunaImageButton1_Click);
             // 
             // FrmGestionClient
             // 
@@ -558,6 +608,7 @@ namespace CustomsGestionHoteliere.newForm
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(871, 577);
+            this.Controls.Add(this.gunaImageButton1);
             this.Controls.Add(this.materialTabControl1);
             this.Controls.Add(this.bunifuFlatButton2);
             this.Controls.Add(this.slider);
@@ -572,10 +623,9 @@ namespace CustomsGestionHoteliere.newForm
             this.addUtilisateur.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.slider)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.easyGestDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.easyGestDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cLIENTSBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.easyGestDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slider)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -598,13 +648,14 @@ namespace CustomsGestionHoteliere.newForm
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
-        private Guna.UI2.WinForms.Guna2ComboBox txtCOMMANDESidCommande;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI2.WinForms.Guna2ComboBox txtTABLESidTable;
-        private System.Windows.Forms.BindingSource easyGestDataSetBindingSource;
-        private EasyGestDataSet easyGestDataSet;
+        public Guna.UI2.WinForms.Guna2ComboBox txtCOMMANDESidCommande;
+        private EasyGestDataSet4 easyGestDataSet4;
         private System.Windows.Forms.BindingSource cLIENTSBindingSource;
-        private EasyGestDataSetTableAdapters.CLIENTSTableAdapter cLIENTSTableAdapter;
+        private EasyGestDataSet4TableAdapters.CLIENTSTableAdapter cLIENTSTableAdapter;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idClientDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomClientDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn prenomClientDataGridViewTextBoxColumn;
@@ -612,5 +663,6 @@ namespace CustomsGestionHoteliere.newForm
         private System.Windows.Forms.DataGridViewTextBoxColumn adresseDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tABLESidTableDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cOMMANDESidComandeDataGridViewTextBoxColumn;
+        private Guna.UI.WinForms.GunaImageButton gunaImageButton1;
     }
 }

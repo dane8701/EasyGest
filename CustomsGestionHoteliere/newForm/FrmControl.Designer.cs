@@ -409,7 +409,7 @@
         private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton2;
         private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton3;
         private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton4;
-        private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton5;
+        public Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton5;
         private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton6;
         private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton7;
         private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton8;
