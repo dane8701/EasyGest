@@ -133,6 +133,26 @@ namespace CustomsGestionHoteliere.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap key_24px {
+            get {
+                object obj = ResourceManager.GetObject("key_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap male_user_50px {
+            get {
+                object obj = ResourceManager.GetObject("male_user_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap meal_50px {
             get {
                 object obj = ResourceManager.GetObject("meal_50px", resourceCulture);
@@ -156,6 +176,16 @@ namespace CustomsGestionHoteliere.Properties {
         internal static System.Drawing.Bitmap pexels_julie_aagaard_235127464 {
             get {
                 object obj = ResourceManager.GetObject("pexels-julie-aagaard-235127464", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pexels_narda_yescas_1566837 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-narda-yescas-1566837", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

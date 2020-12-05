@@ -13,7 +13,7 @@ namespace CustomsGestionHoteliere.newForm
 {
     public partial class FrmGestionClient : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog = EasyGest; Integrated Security = True");
+        SqlConnection con = new SqlConnection(@"Data Source=.;Initial Catalog = EasyGest; Integrated Security = True");
         SqlCommand com = new SqlCommand();
         public FrmGestionClient()
         {
@@ -28,7 +28,7 @@ namespace CustomsGestionHoteliere.newForm
         private void FrmGestionClient_Load(object sender, EventArgs e)
         {
             // TODO: cette ligne de code charge les données dans la table 'easyGestDataSet.CLIENTS'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.cLIENTSTableAdapter.Fill(this.easyGestDataSet.CLIENTS);
+           // this.cLIENTSTableAdapter.Fill(this.easyGestDataSet.CLIENTS);
 
         }
 
@@ -59,7 +59,6 @@ namespace CustomsGestionHoteliere.newForm
             adp.SelectCommand.Parameters.AddWithValue("@adresse", txtadresse.Text);
             adp.SelectCommand.Parameters.AddWithValue("@TABLESidTable", int.Parse(txtTABLESidTable.Text));
             adp.SelectCommand.Parameters.AddWithValue("@COMMANDESidComande", int.Parse(txtCOMMANDESidCommande.Text));
-
             DataTable Dat = new DataTable();
             adp.Fill(Dat);
             con.Close();

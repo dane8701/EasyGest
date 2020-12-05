@@ -33,11 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bunifu.UI.WinForms.BunifuPages">
-      <HintPath>..\..\..\..\..\Desktop\controle\bunifu\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
-    </Reference>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\..\Downloads\Compressed\Bunifu-Browser-master\Bunifu-Browser-master\Bunifu Browser\bin\Debug\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\controle\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.CodeParser.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -47,7 +44,7 @@
     <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Xpo.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="Guna.UI">
-      <HintPath>..\..\..\..\..\Downloads\Telegram Desktop\Guna.UI\Guna.UI.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\Telegram Desktop\Guna.UI\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI2">
       <HintPath>..\..\..\..\Downloads\Compressed\YoutubeMacDemo\YoutubeMacDemo\bin\Debug\Guna.UI2.dll</HintPath>
@@ -92,6 +89,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EasyGestDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="newForm\formLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newForm\formLogin.Designer.cs">
+      <DependentUpon>formLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="newForm\FrmGestionBoisson.cs">
       <SubType>Form</SubType>
@@ -161,6 +164,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="newForm\formLogin.resx">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="newForm\FrmGestionBoisson.resx">
       <DependentUpon>FrmGestionBoisson.cs</DependentUpon>
     </EmbeddedResource>
@@ -320,6 +326,9 @@
     <Content Include="ProcédureStockées\Search\search_utilisateur.sql" />
     <Content Include="ProcédureStockées\Update\update_commandes.sql" />
     <Content Include="ProcédureStockées\Update\update_menu.sql" />
+    <None Include="Resources\pexels-narda-yescas-1566837.jpg" />
+    <None Include="Resources\key_24px.png" />
+    <None Include="Resources\male_user_50px.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ProcédureStockées\Delete\" />
