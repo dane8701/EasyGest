@@ -20,8 +20,6 @@ namespace CustomsGestionHoteliere
         private void FrmPreview_Load(object sender, EventArgs e)
         {
             // TODO: cette ligne de code charge les données dans la table 'EasyGestDataSet11.FACTURES'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.FACTURESTableAdapter.Fill(this.EasyGestDataSet11.FACTURES);
-
             this.reportViewer1.RefreshReport();
         }
     }
