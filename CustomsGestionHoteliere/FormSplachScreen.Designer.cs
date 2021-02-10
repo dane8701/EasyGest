@@ -166,7 +166,7 @@ namespace CustomsGestionHoteliere
             this.bunifuCircleProgressbar2.LabelVisible = true;
             this.bunifuCircleProgressbar2.LineProgressThickness = 8;
             this.bunifuCircleProgressbar2.LineThickness = 5;
-            this.bunifuCircleProgressbar2.Location = new System.Drawing.Point(130, 191);
+            this.bunifuCircleProgressbar2.Location = new System.Drawing.Point(130, 217);
             this.bunifuCircleProgressbar2.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.bunifuCircleProgressbar2.MaxValue = 100;
             this.bunifuCircleProgressbar2.Name = "bunifuCircleProgressbar2";
@@ -183,7 +183,7 @@ namespace CustomsGestionHoteliere
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(44)))), ((int)(((byte)(1)))));
-            this.label4.Location = new System.Drawing.Point(156, 516);
+            this.label4.Location = new System.Drawing.Point(151, 516);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(159, 18);
             this.label4.TabIndex = 15;
