@@ -15,20 +15,20 @@ namespace CustomsGestionHoteliere.newForm
 {
     public partial class FrmGestionCommande : Form
     {
-        private readonly CommandeBLO commandeBLO;
+        //private readonly CommandeBLO commandeBLO;
         private readonly ClientBLO clientBLO;
         public FrmGestionCommande()
         {
             InitializeComponent();
-            commandeBLO = new CommandeBLO(ConfigurationManager.AppSettings["Dbfolder"]);
+            //commandeBLO = new CommandeBLO(ConfigurationManager.AppSettings["Dbfolder"]);
             clientBLO = new ClientBLO(ConfigurationManager.AppSettings["Dbfolder"]);
         }
         private void loaddata()
         {
             string value = txtSearch.Text.ToLower();
-            var commandes = commandeBLO.GetAllClient();
+            //var commandes = commandeBLO.GetAllClient();
             dataGridView1.DataSource = null;
-            dataGridView1.DataSource = commandes;
+            //dataGridView1.DataSource = commandes;
             dataGridView1.ClearSelection();
         }
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
@@ -69,7 +69,7 @@ namespace CustomsGestionHoteliere.newForm
                 {
                     for (int i = 0; i < dataGridView1.SelectedRows.Count; i++)
                     {
-                        commandeBLO.DeleteCommande(dataGridView1.SelectedRows[i].DataBoundItem as Commande);
+                        //commandeBLO.DeleteCommande(dataGridView1.SelectedRows[i].DataBoundItem as Commande);
                     }
                     loaddata();
                 }

@@ -33,8 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu.Core">
+      <HintPath>D:\2ème Année\1er Trimestre\C# Avancée\Zeus\Frame\Bunifu.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\..\Desktop\controle\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>D:\2ème Année\1er Trimestre\C# Avancée\Zeus\Frame\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.CodeParser.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -44,16 +47,16 @@
     <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Xpo.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="Guna.UI">
-      <HintPath>..\..\..\..\Downloads\Telegram Desktop\Guna.UI\Guna.UI.dll</HintPath>
+      <HintPath>D:\2ème Année\1er Trimestre\C# Avancée\Zeus\Frame\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI2">
-      <HintPath>..\..\..\..\Downloads\Compressed\YoutubeMacDemo\YoutubeMacDemo\bin\Debug\Guna.UI2.dll</HintPath>
+      <HintPath>D:\2ème Année\1er Trimestre\C# Avancée\Zeus\Frame\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="MaterialSkin">
-      <HintPath>..\..\..\..\Desktop\controle\MaterialSkin.dll</HintPath>
+      <HintPath>D:\2ème Année\1er Trimestre\C# Avancée\Zeus\Frame\MaterialSkin.dll</HintPath>
     </Reference>
     <Reference Include="MetroFramework">
-      <HintPath>..\..\..\..\Desktop\controle\MetroFramework.dll</HintPath>
+      <HintPath>D:\2ème Année\1er Trimestre\C# Avancée\Zeus\Frame\MetroFramework.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
@@ -99,96 +102,96 @@
     <Compile Include="close.Designer.cs">
       <DependentUpon>close.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSplachScreen.cs">
+    <Compile Include="Form\FormSplachScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSplachScreen.Designer.cs">
+    <Compile Include="Form\FormSplachScreen.Designer.cs">
       <DependentUpon>FormSplachScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPreview.cs">
+    <Compile Include="Form\FrmPreview.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPreview.Designer.cs">
+    <Compile Include="Form\FrmPreview.Designer.cs">
       <DependentUpon>FrmPreview.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="FrmLogin.cs">
+    <Compile Include="Form\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLogin.Designer.cs">
+    <Compile Include="Form\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmGestionBoisson.cs">
+    <Compile Include="Form\FrmGestionBoisson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmGestionBoisson.Designer.cs">
+    <Compile Include="Form\FrmGestionBoisson.Designer.cs">
       <DependentUpon>FrmGestionBoisson.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmGestionClient.cs">
+    <Compile Include="Form\FrmGestionClient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmGestionClient.Designer.cs">
+    <Compile Include="Form\FrmGestionClient.Designer.cs">
       <DependentUpon>FrmGestionClient.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmGestionCommande.cs">
+    <Compile Include="Form\FrmGestionCommande.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmGestionCommande.Designer.cs">
+    <Compile Include="Form\FrmGestionCommande.Designer.cs">
       <DependentUpon>FrmGestionCommande.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmGestionFactures.cs">
+    <Compile Include="Form\FrmGestionFactures.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmGestionFactures.Designer.cs">
+    <Compile Include="Form\FrmGestionFactures.Designer.cs">
       <DependentUpon>FrmGestionFactures.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\FrmGestionMenu.cs">
+    <Compile Include="OldForm\FrmGestionMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FrmGestionMenu.Designer.cs">
+    <Compile Include="OldForm\FrmGestionMenu.Designer.cs">
       <DependentUpon>FrmGestionMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\FrmGestionParametre.cs">
+    <Compile Include="OldForm\FrmGestionParametre.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FrmGestionParametre.Designer.cs">
+    <Compile Include="OldForm\FrmGestionParametre.Designer.cs">
       <DependentUpon>FrmGestionParametre.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmGestionPlat.cs">
+    <Compile Include="Form\FrmGestionPlat.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmGestionPlat.Designer.cs">
+    <Compile Include="Form\FrmGestionPlat.Designer.cs">
       <DependentUpon>FrmGestionPlat.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\FrmGestionReservation.cs">
+    <Compile Include="OldForm\FrmGestionReservation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FrmGestionReservation.Designer.cs">
+    <Compile Include="OldForm\FrmGestionReservation.Designer.cs">
       <DependentUpon>FrmGestionReservation.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmGestionTable.cs">
+    <Compile Include="Form\FrmGestionTable.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmGestionTable.Designer.cs">
+    <Compile Include="Form\FrmGestionTable.Designer.cs">
       <DependentUpon>FrmGestionTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\FrmGestionUtilisateur.cs">
+    <Compile Include="OldForm\FrmGestionUtilisateur.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FrmGestionUtilisateur.Designer.cs">
+    <Compile Include="OldForm\FrmGestionUtilisateur.Designer.cs">
       <DependentUpon>FrmGestionUtilisateur.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmControl.cs">
+    <Compile Include="Form\FrmControl.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmControl.Designer.cs">
+    <Compile Include="Form\FrmControl.Designer.cs">
       <DependentUpon>FrmControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\FrmStatut.cs">
+    <Compile Include="OldForm\FrmStatut.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FrmStatut.Designer.cs">
+    <Compile Include="OldForm\FrmStatut.Designer.cs">
       <DependentUpon>FrmStatut.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -197,50 +200,50 @@
     <EmbeddedResource Include="close.resx">
       <DependentUpon>close.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSplachScreen.resx">
+    <EmbeddedResource Include="Form\FormSplachScreen.resx">
       <DependentUpon>FormSplachScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPreview.resx">
+    <EmbeddedResource Include="Form\FrmPreview.resx">
       <DependentUpon>FrmPreview.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmLogin.resx">
+    <EmbeddedResource Include="Form\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmGestionBoisson.resx">
+    <EmbeddedResource Include="Form\FrmGestionBoisson.resx">
       <DependentUpon>FrmGestionBoisson.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmGestionClient.resx">
+    <EmbeddedResource Include="Form\FrmGestionClient.resx">
       <DependentUpon>FrmGestionClient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmGestionCommande.resx">
+    <EmbeddedResource Include="Form\FrmGestionCommande.resx">
       <DependentUpon>FrmGestionCommande.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmGestionFactures.resx">
+    <EmbeddedResource Include="Form\FrmGestionFactures.resx">
       <DependentUpon>FrmGestionFactures.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FrmGestionMenu.resx">
+    <EmbeddedResource Include="OldForm\FrmGestionMenu.resx">
       <DependentUpon>FrmGestionMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FrmGestionParametre.resx">
+    <EmbeddedResource Include="OldForm\FrmGestionParametre.resx">
       <DependentUpon>FrmGestionParametre.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmGestionPlat.resx">
+    <EmbeddedResource Include="Form\FrmGestionPlat.resx">
       <DependentUpon>FrmGestionPlat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FrmGestionReservation.resx">
+    <EmbeddedResource Include="OldForm\FrmGestionReservation.resx">
       <DependentUpon>FrmGestionReservation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmGestionTable.resx">
+    <EmbeddedResource Include="Form\FrmGestionTable.resx">
       <DependentUpon>FrmGestionTable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FrmGestionUtilisateur.resx">
+    <EmbeddedResource Include="OldForm\FrmGestionUtilisateur.resx">
       <DependentUpon>FrmGestionUtilisateur.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmControl.resx">
+    <EmbeddedResource Include="Form\FrmControl.resx">
       <DependentUpon>FrmControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FrmStatut.resx">
+    <EmbeddedResource Include="OldForm\FrmStatut.resx">
       <DependentUpon>FrmStatut.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -253,7 +256,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Form\Report1.rdlc" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

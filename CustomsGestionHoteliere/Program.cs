@@ -17,7 +17,7 @@ namespace CustomsGestionHoteliere
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmGestionCommande());
+            Application.Run(new FrmLogin());
         }
     }
 }
