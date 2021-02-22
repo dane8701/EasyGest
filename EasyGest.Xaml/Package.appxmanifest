@@ -7,11 +7,11 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="52c0c5de-abaf-49fd-9881-acc451beb5f1"
+    Name="c8ae6857-e31b-4dbf-abea-17aae59edb30"
     Publisher="CN=DrDane"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="52c0c5de-abaf-49fd-9881-acc451beb5f1" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="c8ae6857-e31b-4dbf-abea-17aae59edb30" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>EasyGest.Xaml</DisplayName>
