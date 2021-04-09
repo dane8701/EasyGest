@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Les informations générales relatives à un assembly dépendent de 
 // l'ensemble d'attributs suivant. Changez les valeurs de ces attributs pour modifier les informations
 // associées à un assembly.
-[assembly: AssemblyTitle("EasyGest.ASP")]
+[assembly: AssemblyTitle("EASYGEST")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("EasyGest.ASP")]
+[assembly: AssemblyProduct("EASYGEST")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Le GUID suivant est pour l'ID de la typelib si ce projet est exposé à COM
-[assembly: Guid("04de87c9-24ba-48eb-b731-9df95bcca1be")]
+[assembly: Guid("481335e1-9ca1-4fbe-b82a-5e4420146f63")]
 
 // Les informations de version pour un assembly se composent des quatre valeurs suivantes :
 //

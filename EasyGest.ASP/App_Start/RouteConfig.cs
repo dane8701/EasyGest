@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace EasyGest.ASP
+namespace EASYGEST
 {
     public class RouteConfig
     {
@@ -16,7 +16,7 @@ namespace EasyGest.ASP
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Menu", action = "Menu", id = UrlParameter.Optional }
             );
         }
     }

@@ -1,4 +1,5 @@
 ﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -7,16 +8,16 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{04DE87C9-24BA-48EB-B731-9DF95BCCA1BE}</ProjectGuid>
+    <ProjectGuid>{481335E1-9CA1-4FBE-B82A-5E4420146F63}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EasyGest.ASP</RootNamespace>
-    <AssemblyName>EasyGest.ASP</AssemblyName>
+    <RootNamespace>EASYGEST</RootNamespace>
+    <AssemblyName>EASYGEST</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44350</IISExpressSSLPort>
+    <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -43,7 +44,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Runtime, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.1\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -88,25 +103,207 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\TESTEASY.mdf" />
+    <Content Include="App_Data\TESTEASY_log.ldf">
+      <DependentUpon>TESTEASY.mdf</DependentUpon>
+    </Content>
+    <Content Include="Categorie.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Categorie.edmx</DependentUpon>
+      <LastGenOutput>Categorie.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Categorie.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Categorie.edmx</DependentUpon>
+      <LastGenOutput>Categorie.cs</LastGenOutput>
+    </Content>
+    <Content Include="Content\css\animate.css" />
+    <Content Include="Content\css\baguetteBox.min.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\classic.css" />
+    <Content Include="Content\css\classic.date.css" />
+    <Content Include="Content\css\classic.time.css" />
+    <Content Include="Content\css\connection.css" />
+    <Content Include="Content\css\custom.css" />
+    <Content Include="Content\css\font-awesome.min.css" />
+    <Content Include="Content\css\responsive.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\css\superslides.css" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\images\about-bg.jpg" />
+    <Content Include="Content\images\about-img.jpg" />
+    <Content Include="Content\images\all-bg.jpg" />
+    <Content Include="Content\images\avt-img.jpg" />
+    <Content Include="Content\images\bg_1.jpg" />
+    <Content Include="Content\images\blog-img-01.jpg" />
+    <Content Include="Content\images\blog-img-02.jpg" />
+    <Content Include="Content\images\blog-img-03.jpg" />
+    <Content Include="Content\images\blog-img-04.jpg" />
+    <Content Include="Content\images\blog-img-05.jpg" />
+    <Content Include="Content\images\blog-img-06.jpg" />
+    <Content Include="Content\images\blog-img-07.jpg" />
+    <Content Include="Content\images\blog-img-08.jpg" />
+    <Content Include="Content\images\blog-img-09.jpg" />
+    <Content Include="Content\images\footer-bg.jpg" />
+    <Content Include="Content\images\gallery-img-01.jpg" />
+    <Content Include="Content\images\gallery-img-02.jpg" />
+    <Content Include="Content\images\gallery-img-03.jpg" />
+    <Content Include="Content\images\gallery-img-04.jpg" />
+    <Content Include="Content\images\gallery-img-05.jpg" />
+    <Content Include="Content\images\gallery-img-06.jpg" />
+    <Content Include="Content\images\img-01.jpg" />
+    <Content Include="Content\images\img-02.jpg" />
+    <Content Include="Content\images\img-03.jpg" />
+    <Content Include="Content\images\img-04.jpg" />
+    <Content Include="Content\images\img-05.jpg" />
+    <Content Include="Content\images\img-06.jpg" />
+    <Content Include="Content\images\img-07.jpg" />
+    <Content Include="Content\images\img-08.jpg" />
+    <Content Include="Content\images\img-09.jpg" />
+    <Content Include="Content\images\inner-blog-img.jpg" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\post-img-01.jpg" />
+    <Content Include="Content\images\post-img-02.jpg" />
+    <Content Include="Content\images\post-img-03.jpg" />
+    <Content Include="Content\images\qt-bg.jpg" />
+    <Content Include="Content\images\quotations-button.png" />
+    <Content Include="Content\images\slider-01.jpg" />
+    <Content Include="Content\images\slider-02.jpg" />
+    <Content Include="Content\images\slider-03.jpg" />
+    <Content Include="Content\images\stuff-img-01.jpg" />
+    <Content Include="Content\images\stuff-img-02.jpg" />
+    <Content Include="Content\images\stuff-img-03.jpg" />
+    <Content Include="Content\images\stuff-img-04.jpg" />
+    <Content Include="Content\images\stuff-img-05.jpg" />
+    <Content Include="Content\images\stuff-img-06.jpg" />
+    <Content Include="Content\js\baguetteBox.min.js" />
+    <Content Include="Content\js\bootstrap.min.js" />
+    <Content Include="Content\js\contact-form-script.js" />
+    <Content Include="Content\js\custom.js" />
+    <Content Include="Content\js\form-validator.min.js" />
+    <Content Include="Content\js\images-loded.min.js" />
+    <Content Include="Content\js\isotope.min.js" />
+    <Content Include="Content\js\jquery-3.2.1.min.js" />
+    <Content Include="Content\js\jquery.mapify.js" />
+    <Content Include="Content\js\jquery.superslides.min.js" />
+    <Content Include="Content\js\legacy.js" />
+    <Content Include="Content\js\picker.date.js" />
+    <Content Include="Content\js\picker.js" />
+    <Content Include="Content\js\picker.time.js" />
+    <Content Include="Content\js\popper.min.js" />
+    <Content Include="Content\js\scripte.js" />
+    <Content Include="Content\php\form-process.php" />
     <Content Include="Global.asax" />
+    <Content Include="Produit.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Produit.Context.cs</LastGenOutput>
+      <DependentUpon>Produit.edmx</DependentUpon>
+    </Content>
+    <Content Include="Produit.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Produit.edmx</DependentUpon>
+      <LastGenOutput>Produit.cs</LastGenOutput>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Categorie.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Categorie.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Categorie.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Categorie.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Categorie.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Categorie.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="CATEGORIES.cs">
+      <DependentUpon>Categorie.tt</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Controllers\CardController.cs" />
+    <Compile Include="Controllers\GalleryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MenuController.cs" />
-    <Compile Include="Controllers\PannierController.cs" />
+    <Compile Include="Controllers\ReservationController.cs" />
+    <Compile Include="Controllers\StuffController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountModel.cs" />
+    <Compile Include="Models\Article.cs" />
+    <Compile Include="Models\CardModel.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\DbRegisterModel.cs" />
+    <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\MenuModel.cs" />
+    <Compile Include="Models\Produits_Categories.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\RegisterModel.cs" />
+    <Compile Include="Models\Users.cs" />
+    <Compile Include="Produit.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Produit.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Produit.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Produit.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Produit.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Produit.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUITS.cs">
+      <DependentUpon>Produit.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="Content\.vscode\settings.json" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
+    <EntityDeploy Include="Categorie.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Categorie.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Categorie.edmx.diagram">
+      <DependentUpon>Categorie.edmx</DependentUpon>
+    </Content>
     <None Include="packages.config" />
+    <Content Include="Views\Menu\Menu.cshtml" />
+    <Content Include="Views\Gallery\Gallery.cshtml" />
+    <Content Include="Views\Reservation\Reservation.cshtml" />
+    <Content Include="Views\Stuff\Stuff.cshtml" />
+    <Content Include="Views\About\About.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\About\Contact.cshtml" />
+    <Content Include="Views\Blog\Blog.cshtml" />
+    <Content Include="Views\Blog\Details.cshtml" />
+    <Content Include="Views\Home\Home.cshtml" />
+    <EntityDeploy Include="Produit.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Produit.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Produit.edmx.diagram">
+      <DependentUpon>Produit.edmx</DependentUpon>
+    </Content>
+    <Content Include="Views\Card\Card.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -115,14 +312,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
-    <Folder Include="Views\About\" />
-    <Folder Include="Views\Account\" />
-    <Folder Include="Views\Contact\" />
-    <Folder Include="Views\Home\" />
-    <Folder Include="Views\Menu\" />
-    <Folder Include="Views\Pannier\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -137,9 +330,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>9023</DevelopmentServerPort>
+          <DevelopmentServerPort>49447</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44350/</IISUrl>
+          <IISUrl>http://localhost:49447/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
@@ -154,7 +347,10 @@
       <ErrorText>Ce projet fait référence à des packages NuGet qui sont manquants sur cet ordinateur. Utilisez l'option de restauration des packages NuGet pour les télécharger. Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkID=322105. Le fichier manquant est : {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
   </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

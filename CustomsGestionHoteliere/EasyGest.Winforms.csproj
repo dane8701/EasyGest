@@ -146,29 +146,11 @@
     <Compile Include="Form\FrmGestionFactures.Designer.cs">
       <DependentUpon>FrmGestionFactures.cs</DependentUpon>
     </Compile>
-    <Compile Include="OldForm\FrmGestionMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="OldForm\FrmGestionMenu.Designer.cs">
-      <DependentUpon>FrmGestionMenu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="OldForm\FrmGestionParametre.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="OldForm\FrmGestionParametre.Designer.cs">
-      <DependentUpon>FrmGestionParametre.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form\FrmGestionPlat.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\FrmGestionPlat.Designer.cs">
       <DependentUpon>FrmGestionPlat.cs</DependentUpon>
-    </Compile>
-    <Compile Include="OldForm\FrmGestionReservation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="OldForm\FrmGestionReservation.Designer.cs">
-      <DependentUpon>FrmGestionReservation.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\FrmGestionTable.cs">
       <SubType>Form</SubType>
@@ -176,23 +158,11 @@
     <Compile Include="Form\FrmGestionTable.Designer.cs">
       <DependentUpon>FrmGestionTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="OldForm\FrmGestionUtilisateur.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="OldForm\FrmGestionUtilisateur.Designer.cs">
-      <DependentUpon>FrmGestionUtilisateur.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form\FrmControl.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\FrmControl.Designer.cs">
       <DependentUpon>FrmControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="OldForm\FrmStatut.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="OldForm\FrmStatut.Designer.cs">
-      <DependentUpon>FrmStatut.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -222,29 +192,14 @@
     <EmbeddedResource Include="Form\FrmGestionFactures.resx">
       <DependentUpon>FrmGestionFactures.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OldForm\FrmGestionMenu.resx">
-      <DependentUpon>FrmGestionMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="OldForm\FrmGestionParametre.resx">
-      <DependentUpon>FrmGestionParametre.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form\FrmGestionPlat.resx">
       <DependentUpon>FrmGestionPlat.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="OldForm\FrmGestionReservation.resx">
-      <DependentUpon>FrmGestionReservation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FrmGestionTable.resx">
       <DependentUpon>FrmGestionTable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OldForm\FrmGestionUtilisateur.resx">
-      <DependentUpon>FrmGestionUtilisateur.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form\FrmControl.resx">
       <DependentUpon>FrmControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="OldForm\FrmStatut.resx">
-      <DependentUpon>FrmStatut.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

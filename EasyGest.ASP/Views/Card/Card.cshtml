@@ -1,0 +1,136 @@
+﻿@model EASYGEST.Models.Produits_Categories
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <form style="border: 1px;">
+            <table id="cart" class="table table-hover table-condensed">
+                <thead>
+                    <tr>
+                        <th style="width:50%">Product</th>
+                        <th style="width:10%">Price</th>
+                        <th style="width:8%">Quantity</th>
+
+                        <th style="width:22%" class="text-center">Subtotal</th>
+                        <th style="width:10%"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{foreach (Article i in Produits_Categories.panier)
+                        {
+                            <tr>
+                                <td data-th="Product">
+                                    <div class="row">
+                                        <div class="col-sm-2 hidden-xs"><img src="@Url.Content("~/Content/images/img-01.jpg")" alt="..." class="img-responsive" /></div>
+                                        <div class="col-sm-10">
+                                            <h4 class="nomargin">
+                                                @foreach (var item in Model.produits)
+                                                {
+                                                    if (item.idProduit == i.Id)
+                                                    {
+                                                        @item.nomProduit
+                                                    }
+                                                }
+                                            </h4>
+                                            <p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td data-th="Price">
+                                    @foreach (var item in Model.produits)
+                                    {
+                                        if (item.idProduit == i.Id)
+                                        {
+                                            <input class="idProduit" type="number" readonly value="@item.prix_ht" style="border:none" />
+                                        }
+                                    }
+                                </td>
+                                <td data-th="Quantity">
+                                    @foreach (var item in Model.produits)
+                                    {
+                                        if (item.idProduit == i.Id)
+                                        {
+                                            <input id="@item.idProduit" type="number" class="form-control text-center product-range" value="@i.Qte" min="1">
+                                        }
+                                    }
+                                </td>
+                                <td data-th="Subtotal" class="text-center">
+                                    @foreach (var item in Model.produits)
+                                    {
+                                        if (item.idProduit == i.Id)
+                                        {
+                                            item.prix_ttc = item.prix_ht * @i.Qte;
+                                            <div class="price">
+                                                @item.prix_ttc
+                                            </div>
+
+                                        }
+                                    }
+                                </td>
+
+                                <td class="actions" data-th="">
+                                    <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
+                                    @foreach (var item in Model.produits)
+                                    {
+                                        if (item.idProduit == i.Id)
+                                        {
+                                            <input type="submit" name="@item.idProduit" class="btn btn-danger btn-sm">
+                                        }
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+                <tfoot>
+                    <tr class="visible-xs">
+                        <td class="text-center">
+                            <strong>
+
+                            </strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="@Url.Action("Menu","Menu")" class="btn btn-warning" style="background:#d65106;"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+                        <td colspan="2" class="hidden-xs"></td>
+                        <td class="hidden-xs text-center">
+                            Total <input type="number" id="total" value="0" readonly /> FCFA
+                        </td>
+                        <td><a href="@Url.Action("Reservation","Reservation")" class="btn btn-success btn-block" style="background:#4e7af3;">Checkout <i class="fa fa-angle-right"></i></a></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </form>
+    </div>
+    <script>
+        let rangeInputs = document.querySelectorAll("input.product-range");
+        let total = document.querySelector("input#total");
+
+        rangeInputs.forEach(rangeInput => {
+            //let oldQte = number(rangeInput.value);
+            rangeInput.addEventListener("change", (e) => {
+                
+                let unitPrice = rangeInput.closest("tr").querySelector("input.idProduit").value;
+                let newVal = rangeInput.value * unitPrice
+                rangeInput.closest("tr").querySelector("div.price").innerHTML = newVal;
+                total.value = Number(total.value) + newVal;
+            });
+        });
+    </script>
+    <script src="~/Content/js/scripte.js"></script>
+</body>
+</html>

@@ -4,8 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using System.Data.Entity;
+using EASYGEST.Models;
 
-namespace EasyGest.ASP
+
+namespace EASYGEST
 {
     public class MvcApplication : System.Web.HttpApplication
     {

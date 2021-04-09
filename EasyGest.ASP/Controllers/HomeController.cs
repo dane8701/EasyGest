@@ -4,12 +4,12 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace EasyGest.ASP.Controllers
+namespace EASYGEST.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
-        public ActionResult Index()
+        // GET: index
+        public ActionResult Home()
         {
             return View();
         }
